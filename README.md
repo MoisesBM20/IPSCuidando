@@ -1,59 +1,80 @@
-# IPSWeb
+# IPSCuidando
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+¡Bienvenido a IPSCuidando! Este es un proyecto web moderno y responsivo para una Institución Prestadora de Salud (IPS), enfocado en brindar servicios médicos domiciliarios con calidad, humanismo y confianza.
 
-## Development server
+## 🚀 Características principales
 
-To start a local development server, run:
+- **Landing page profesional** con información clara y atractiva.
+- **Navbar fijo y responsivo** con acceso rápido a secciones clave.
+- **Sección de servicios**: muestra los principales servicios domiciliarios con íconos y descripciones.
+- **Sección de pilares (Sobre Nosotros)**: destaca los valores institucionales con tarjetas visuales y una imagen representativa.
+- **Galería, testimonios y video**: refuerzan la confianza y el compromiso con los pacientes.
+- **Diseño 100% responsivo**: se adapta perfectamente a cualquier dispositivo.
+- **Estilos modernos**: uso de Angular Material, SCSS y buenas prácticas de UI/UX.
 
-```bash
-ng serve
+## 🛠️ Tecnologías utilizadas
+
+- **Angular** 16+
+- **Angular Material**
+- **SCSS** (Sass)
+- **TypeScript**
+- **HTML5**
+
+## 📁 Estructura del proyecto
+
+```
+IPSCuidando-main/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   └── hero/           # Sección principal y landing
+│   │   └── layout/
+│   │       ├── navbar/         # Barra de navegación
+│   │       └── footer/         # Pie de página
+│   ├── assets/                 # Imágenes y recursos estáticos
+│   └── styles.scss             # Estilos globales
+├── angular.json
+├── package.json
+└── README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📸 Capturas de pantalla
 
-## Code scaffolding
+- **Header atractivo** con fondo degradado y botón de acción.
+- **Servicios** en tarjetas con íconos y descripciones.
+- **Pilares** con valores institucionales y foto representativa.
+- **Diseño responsivo** en móvil, tablet y escritorio.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ Instalación y ejecución
 
-```bash
-ng generate component component-name
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/usuario/IPSCuidando-nuevo.git
+   cd IPSCuidando-nuevo
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Ejecuta el servidor de desarrollo:
+   ```bash
+   ng serve
+   ```
+4. Abre tu navegador en [http://localhost:4200](http://localhost:4200)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ✨ Personalización
 
-```bash
-ng generate --help
-```
+- Cambia los textos, imágenes y colores en los archivos de componentes según la identidad de tu IPS.
+- Puedes agregar más servicios, testimonios o secciones fácilmente siguiendo la estructura del proyecto.
 
-## Building
+## 🤝 Contribuciones
 
-To build the project run:
+¡Las contribuciones son bienvenidas! Si deseas mejorar el proyecto, abre un issue o haz un pull request.
 
-```bash
-ng build
-```
+## 📄 Licencia
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Este proyecto es de uso libre para fines educativos y de presentación institucional.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Desarrollado con ❤️ para la salud y el bienestar de todos.**
