@@ -40,10 +40,12 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  box-sizing: border-box;
+  max-width: 100vw;
 }
 
 .section-padding {
@@ -71,8 +73,10 @@ body {
 // Media Queries para responsividad global
 @media (max-width: 1200px) {
     .container {
-        width: 95%;
+        width: 100%;
         padding: 0 0.8rem;
+        box-sizing: border-box;
+        max-width: 100vw;
     }
     
     .section-padding {
@@ -86,8 +90,10 @@ body {
 
 @media (max-width: 992px) {
     .container {
-        width: 98%;
+        width: 100%;
         padding: 0 0.5rem;
+        box-sizing: border-box;
+        max-width: 100vw;
     }
     
     .section-padding {
@@ -112,6 +118,8 @@ body {
     .container {
         width: 100%;
         padding: 0 1rem;
+        box-sizing: border-box;
+        max-width: 100vw;
     }
     
     .section-padding {
@@ -136,7 +144,10 @@ body {
     }
     
     .container {
+        width: 100%;
         padding: 0 0.8rem;
+        box-sizing: border-box;
+        max-width: 100vw;
     }
     
     .section-padding {
