@@ -1,0 +1,41 @@
+// Estilos generales de la aplicación
+main {
+    min-height: calc(100vh - 200px); // Ajuste para el contenido principal
+    overflow-x: hidden; // Prevenir scroll horizontal
+}
+
+// Mejoras de accesibilidad y UX móvil
+* {
+    box-sizing: border-box;
+}
+
+// Mejorar el comportamiento de los botones en móvil
+button, a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+// Optimizar imágenes para móvil
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Mejorar el scroll en móvil
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+// Media queries específicas para la aplicación
+@media (max-width: 768px) {
+    main {
+        min-height: calc(100vh - 150px);
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        min-height: calc(100vh - 120px);
+    }
+}

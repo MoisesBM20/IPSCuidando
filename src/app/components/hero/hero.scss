@@ -1,0 +1,365 @@
+// --- Estilos Hero Principal ---
+.hero-section {
+    position: relative;
+    z-index: 1;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    background: #f5f7fa; // Gris claro, puedes cambiarlo por otro color si prefieres
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 90, 156, 0.6);
+    z-index: 2;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 1rem;
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+    .hero-button {
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    color: #222; // Gris oscuro para mejor contraste sobre fondo claro
+  }
+  
+  // --- Estilos Sección de Servicios ---
+  .services-section {
+    background-color: var(--background-light);
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.service-icon .mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: var(--secondary-color);
+    display: block;
+    margin: 0 auto;
+}
+
+.mat-card-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mat-card-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+  
+  // --- Estilos Sección Pilares ---
+  .pillars-section {
+      background-color: var(--white);
+  }
+  
+  .pillars-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+  }
+  
+  .pillars-image img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+  }
+  
+  .list-item-subtitle {
+      color: var(--text-color-light);
+  }
+  
+  // --- Estilos Sección Video ---
+  .video-section {
+      background-color: var(--background-light);
+  }
+  
+  .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+      iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+  }
+  
+  // --- Estilos Galería (Carrusel) ---
+  .gallery-section {
+      background-color: var(--white);
+  }
+  .carousel-container {
+      height: 500px;
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+  }
+  
+  .slide {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.5s ease-in-out;
+  }
+  
+  .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+      &.left { left: 16px; }
+      &.right { right: 16px; }
+      &:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+      }
+  }
+  
+  .carousel-description {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--text-color-light);
+  }
+  
+  // --- Estilos Reseñas ---
+  .testimonials-section {
+      background-color: var(--background-light);
+  }
+  
+  .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+  }
+  
+  .testimonial-card {
+      display: flex;
+      flex-direction: column;
+      .mat-card-content {
+          flex-grow: 1;
+          font-style: italic;
+          color: var(--text-color-light);
+      }
+  }
+  
+  .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 16px;
+      img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+      }
+      strong {
+          color: var(--primary-color);
+      }
+      span {
+          font-size: 0.9rem;
+          color: var(--text-color-light);
+      }
+  }
+  
+  .testimonials-action {
+      text-align: center;
+  }
+  
+  // --- Media Queries para Responsividad ---
+  @media (max-width: 1200px) {
+      .hero-content h1 {
+          font-size: 2.8rem;
+      }
+      .hero-content p {
+          font-size: 1.1rem;
+      }
+      .services-grid {
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+  }
+  
+  @media (max-width: 992px) {
+      .hero-section {
+          height: 60vh;
+      }
+      .hero-content h1 {
+          font-size: 2.5rem;
+      }
+      .pillars-content, .testimonials-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+      }
+      .pillars-image {
+          order: -1;
+      }
+      .carousel-container {
+          height: 400px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .hero-section {
+          height: 50vh;
+      }
+      .hero-content {
+          padding: 0 1.5rem;
+          h1 {
+              font-size: 2rem;
+              margin-bottom: 0.8rem;
+          }
+          p {
+              font-size: 1rem;
+              margin-bottom: 1.5rem;
+          }
+          .hero-button {
+              padding: 12px 30px;
+              font-size: 1rem;
+          }
+      }
+      .section-title {
+          font-size: 1.8rem;
+      }
+      .section-subtitle {
+          font-size: 1rem;
+      }
+      .services-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+      }
+      .service-card {
+          .service-icon .mat-icon {
+              font-size: 35px;
+              width: 35px;
+              height: 35px;
+          }
+      }
+      .pillars-content {
+          gap: 1.5rem;
+      }
+      .carousel-container {
+          height: 300px;
+      }
+      .carousel-arrow {
+          &.left { left: 8px; }
+          &.right { right: 8px; }
+      }
+      .testimonials-grid {
+          gap: 1.5rem;
+      }
+      .testimonial-author {
+          padding: 12px;
+          img {
+              width: 50px;
+              height: 50px;
+          }
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .hero-section {
+          height: 45vh;
+      }
+      .hero-content {
+          padding: 0 1rem;
+          h1 {
+              font-size: 1.6rem;
+          }
+          p {
+              font-size: 0.9rem;
+          }
+          .hero-button {
+              padding: 10px 25px;
+              font-size: 0.9rem;
+          }
+      }
+      .section-title {
+          font-size: 1.5rem;
+      }
+      .section-subtitle {
+          font-size: 0.9rem;
+      }
+      .services-grid {
+          gap: 1rem;
+      }
+      .service-card {
+          .service-icon .mat-icon {
+              font-size: 30px;
+              width: 30px;
+              height: 30px;
+          }
+      }
+      .carousel-container {
+          height: 250px;
+      }
+      .carousel-description {
+          font-size: 0.9rem;
+      }
+      .testimonial-author {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+          img {
+              width: 45px;
+              height: 45px;
+          }
+      }
+  }

@@ -1,0 +1,161 @@
+<!-- Sección Principal (Hero) -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Cuidamos de ti y tu familia en cada momentos</h1>
+      <p>Accede a nuestros servicios de salud con la calidad y el respaldo que mereces. Tu bienestar es nuestra prioridad.</p>
+      <button mat-raised-button color="accent" class="hero-button">Afíliate Ahora</button>
+    </div>
+  </section>
+  
+  <!-- Sección de Servicios -->
+  <section class="section-padding services-section">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios Domiciliarios</h2>
+      <p class="section-subtitle">Llevamos atención médica de alta calidad directamente a tu puerta, con un equipo profesional y comprometido.</p>
+      <div class="services-grid">
+        <mat-card class="service-card">
+          <div class="service-icon"><mat-icon>house-heart</mat-icon></div>
+          <mat-card-title>Atención Médica</mat-card-title>
+          <mat-card-content>
+            <p>Consultas médicas generales y especializadas en la comodidad de tu hogar.</p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="service-card">
+          <div class="service-icon"><mat-icon>person_add</mat-icon></div>
+          <mat-card-title>Enfermería</mat-card-title>
+          <mat-card-content>
+            <p>Cuidados de enfermería profesionales, desde procedimientos básicos hasta complejos.</p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="service-card">
+          <div class="service-icon"><mat-icon>accessibility_new</mat-icon></div>
+          <mat-card-title>Terapia Física</mat-card-title>
+          <mat-card-content>
+            <p>Rehabilitación y terapia física personalizada para una recuperación óptima.</p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="service-card">
+          <div class="service-icon"><mat-icon>psychology</mat-icon></div>
+          <mat-card-title>Nutrición y Psicología</mat-card-title>
+          <mat-card-content>
+            <p>Asesoramiento nutricional y apoyo psicológico para un bienestar integral.</p>
+          </mat-card-content>
+        </mat-card>
+         <mat-card class="service-card">
+          <div class="service-icon"><mat-icon>healing</mat-icon></div>
+          <mat-card-title>Atención Postquirúrgicsa</mat-card-title>
+          <mat-card-content>
+            <p>Cuidados especializados después de una cirugía para garantizar una pronta recuperación.</p>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="service-card">
+          <div class="service-icon"><mat-icon>opacity</mat-icon></div>
+          <mat-card-title>Sueroterapia</mat-card-title>
+          <mat-card-content>
+            <p>Administración intravenosa de vitaminas y nutrientes para revitalizar tu cuerpo.</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sección Pilares (Sobre Nosotros) -->
+  <section class="pillars-section section-padding">
+      <div class="container">
+          <div class="pillars-content">
+              <div class="pillars-text">
+                  <h2 class="section-title" style="text-align: left;">Salud y bienestar al alcance de todos</h2>
+                  <p>Somos una Institución Prestadora de Salud (IPS) dedicada a ofrecer servicios médicos domiciliarios con un enfoque humano, ético y de alta calidad. Nuestra misión es facilitar el acceso a la salud, eliminando barreras y llevando bienestar directamente a los hogares de nuestros pacientes.</p>
+                  <mat-list>
+                      <mat-list-item>
+                          <mat-icon mat-list-icon>shield</mat-icon>
+                          <div mat-line>Calidad</div>
+                          <div mat-line class="list-item-subtitle">Protocolos rigurosos y personal calificado.</div>
+                      </mat-list-item>
+                      <mat-list-item>
+                          <mat-icon mat-list-icon>people</mat-icon>
+                          <div mat-line>Humanismo</div>
+                          <div mat-line class="list-item-subtitle">Trato digno, empático y cercano con cada paciente.</div>
+                      </mat-list-item>
+                      <mat-list-item>
+                          <mat-icon mat-list-icon>thumb_up</mat-icon>
+                          <div mat-line>Confianza</div>
+                          <div mat-line class="list-item-subtitle">Transparencia y compromiso en cada servicio.</div>
+                      </mat-list-item>
+                  </mat-list>
+              </div>
+              <div class="pillars-image">
+                  <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1932&auto=format&fit=crop" alt="Doctora sonriendo a un paciente">
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Sección Video -->
+  <section class="video-section section-padding">
+      <div class="container">
+          <h2 class="section-title">Conoce cómo cuidamos de ti</h2>
+          <p class="section-subtitle">Descubre en este video la esencia de nuestro servicio y el compromiso de nuestro equipo profesional.</p>
+          <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/j335m6-GkYc?si=n7mS8r9iLqYy_pZt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Sección Galería (Carrusel) -->
+  <section class="gallery-section section-padding">
+      <div class="container">
+          <h2 class="section-title">Nuestras Instalaciones y Equipo</h2>
+          <p class="section-subtitle">Contamos con tecnología de punta y un ambiente diseñado para tu comodidad y confianza.</p>
+          <div class="carousel-container">
+              <div class="slide" [style.backgroundImage]="'url(' + slides[currentIndex].url + ')'"></div>
+              <button mat-icon-button class="carousel-arrow left" (click)="goToPrevious()"><mat-icon>chevron_left</mat-icon></button>
+              <button mat-icon-button class="carousel-arrow right" (click)="goToNext()"><mat-icon>chevron_right</mat-icon></button>
+          </div>
+          <div class="carousel-description">
+              <p>{{ slides[currentIndex].description }}</p>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Sección Reseñas -->
+  <section class="testimonials-section section-padding">
+      <div class="container">
+          <h2 class="section-title">Lo que nuestros pacientes dicen</h2>
+          <p class="section-subtitle">La satisfacción y el bienestar de quienes confían en nosotros es nuestro mayor orgullo.</p>
+          <div class="testimonials-grid">
+              <mat-card class="testimonial-card">
+                  <mat-card-content>
+                      <p>"El servicio de enfermería en casa para mi madre fue excepcional. El personal es muy profesional y, sobre todo, muy humano. ¡Totalmente recomendados!"</p>
+                  </mat-card-content>
+                  <mat-card-footer>
+                      <div class="testimonial-author">
+                          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto de Ana Pérez">
+                          <div>
+                              <strong>Ana Pérez</strong>
+                              <span>Familiar de paciente</span>
+                          </div>
+                      </div>
+                  </mat-card-footer>
+              </mat-card>
+              <mat-card class="testimonial-card">
+                  <mat-card-content>
+                      <p>"La terapia física en mi domicilio me ayudó a recuperarme de mi lesión mucho más rápido de lo esperado. Un equipo increíble, siempre puntuales y dedicados."</p>
+                  </mat-card-content>
+                  <mat-card-footer>
+                      <div class="testimonial-author">
+                          <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Foto de Carlos Gómez">
+                          <div>
+                              <strong>Carlos Gómez</strong>
+                              <span>Paciente de Terapia Física</span>
+                          </div>
+                      </div>
+                  </mat-card-footer>
+              </mat-card>
+          </div>
+          <div class="testimonials-action">
+              <button mat-raised-button color="primary">Ver todas las reseñas</button>
+          </div>
+      </div>
+  </section>
