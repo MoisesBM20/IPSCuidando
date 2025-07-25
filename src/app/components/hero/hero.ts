@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// --- Módulos de Angular Material ---
+// --- Angular Material ---
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-
 
 interface Slide {
   url: string;
@@ -21,35 +20,69 @@ interface Slide {
   templateUrl: './hero.html',
   styleUrls: ['./hero.scss']
 })
-export class Hero {
-
+export class Hero implements OnInit, OnDestroy {
   slides: Slide[] = [
     {
-      url: 'https://images.unsplash.com/photo-1581091224003-01e7c14a5b9b?q=80&w=2070&auto=format&fit=crop',
-      alt: 'Personal de enfermería atendiendo a un paciente en casa',
-      description: 'Nuestro equipo de enfermería brinda cuidados expertos y humanos en la comodidad de tu hogar.'
+      url: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop',
+      alt: 'Enfermería a domicilio',
+      description: 'Cuidados expertos en tu hogar'
     },
     {
-      url: 'https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1932&auto=format&fit=crop',
-      alt: 'Médico realizando una consulta domiciliaria a una familia',
-      description: 'Atención médica integral para toda la familia, sin necesidad de desplazamientos.'
+      url: 'https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=800&auto=format&fit=crop',
+      alt: 'Consulta médica familiar',
+      description: 'Atención integral sin desplazamientos.'
     },
     {
-      url: 'https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=2070&auto=format&fit=crop',
-      alt: 'Terapeuta realizando ejercicios de rehabilitación a un adulto mayor',
-      description: 'Programas de terapia física personalizados para una recuperación efectiva.'
+      url: 'https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=800&auto=format&fit=crop',
+      alt: 'Terapia física',
+      description: 'Rehabilitación para adultos mayores.'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop',
+      alt: 'Doctora sonriendo',
+      description: 'Profesionalismo y calidez humana.'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop',
+      alt: 'Visita médica',
+      description: 'Especialistas en tu hogar.'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop',
+      alt: 'Paciente sonriente',
+      description: 'Tu bienestar es nuestra prioridad.'
     }
   ];
 
   currentIndex = 0;
+  itemsPerSlide = 3;
+  autoSlideInterval: any;
+
+  get totalSlides(): number {
+    return Math.ceil(this.slides.length / this.itemsPerSlide);
+  }
+
+  ngOnInit(): void {
+    this.startAutoSlide();
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.autoSlideInterval);
+  }
+
+  startAutoSlide(): void {
+    this.autoSlideInterval = setInterval(() => this.goToNext(), 3000);
+  }
 
   goToPrevious(): void {
-    const isFirstSlide = this.currentIndex === 0;
-    this.currentIndex = isFirstSlide ? this.slides.length - 1 : this.currentIndex - 1;
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    } else {
+      this.currentIndex = this.totalSlides - 1;
+    }
   }
 
   goToNext(): void {
-    const isLastSlide = this.currentIndex === this.slides.length - 1;
-    this.currentIndex = isLastSlide ? 0 : this.currentIndex + 1;
+    this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
   }
 }
