@@ -1,70 +1,106 @@
 <mat-toolbar color="primary" class="navbar-sticky">
   <div class="navbar-container">
-    <a href="#" class="navbar-brand">
-      <img src="assets/images/global/logo2.png" alt="Logo C&E IPS S.A.S" class="logo">
-    </a>
-
-    <nav class="desktop-nav">
-      <a mat-button href="#">
+    <!-- Logo y barra de búsqueda a la izquierda -->
+    <div class="left-section">
+      <!-- Logo -->
+      <div class="navbar-brand">
+        <a routerLink="/" class="logo-link">
+          <img src="assets/images/global/logo2.png" alt="Logo C&E IPS S.A.S" class="logo">
+        </a>
+      </div>
+      
+      <!-- Barra de búsqueda -->
+      <div class="search-container">
+        <mat-form-field appearance="outline" class="search-field">
+          <input 
+            matInput 
+            placeholder="Buscar servicios..." 
+            [(ngModel)]="searchQuery"
+            (keyup.enter)="onSearch()"
+            class="search-input">
+          <button 
+            mat-icon-button 
+            matSuffix 
+            (click)="onSearch()"
+            class="search-button">
+            <mat-icon>search</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+    </div>
+    
+    <!-- Navegación a la derecha -->
+    <div class="navbar-nav">
+      <a mat-button routerLink="/" class="nav-link">
         <mat-icon>home</mat-icon>
         <span>Inicio</span>
       </a>
-      <a mat-button href="#">
+      <a mat-button routerLink="/services" class="nav-link">
         <mat-icon>medical_services</mat-icon>
         <span>Servicios</span>
       </a>
-      <a mat-button href="#">
-        <mat-icon>help_outline</mat-icon>
-        <span>FAQ</span>
-      </a>
-      <a mat-button href="#">
+      <a mat-button routerLink="/bussiness" class="nav-link">
         <mat-icon>groups</mat-icon>
         <span>Nosotros</span>
       </a>
-      <a mat-button href="#">
+      <a mat-button routerLink="/pqrs" class="nav-link">
         <mat-icon>call</mat-icon>
         <span>Contacto</span>
       </a>
-    </nav>
-
-    <div class="desktop-actions">
-      <a mat-raised-button color="accent" class="main-action-btn" href="#">
+      <a mat-raised-button color="accent" class="portal-btn" href="#">
         <mat-icon>login</mat-icon>
-        Portal
+        <span>Portal</span>
       </a>
     </div>
-
-    <div class="mobile-nav">
-      <button mat-icon-button (click)="toggleMenu()">
+    
+    <!-- Botón móvil -->
+    <div class="mobile-toggle">
+      <button mat-icon-button (click)="toggleMenu()" class="menu-btn">
         <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
       </button>
     </div>
   </div>
 </mat-toolbar>
 
+<!-- Menú móvil -->
 <div class="mobile-menu" [class.active]="isMenuOpen">
-  <a mat-button href="#">
+  <!-- Barra de búsqueda móvil -->
+  <div class="mobile-search-container">
+    <mat-form-field appearance="outline" class="mobile-search-field">
+      <input 
+        matInput 
+        placeholder="Buscar servicios..." 
+        [(ngModel)]="searchQuery"
+        (keyup.enter)="onSearch()"
+        class="search-input">
+      <button 
+        mat-icon-button 
+        matSuffix 
+        (click)="onSearch()"
+        class="search-button">
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  
+  <a mat-button routerLink="/" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>home</mat-icon>
     <span>Inicio</span>
   </a>
-  <a mat-button href="#">
+  <a mat-button routerLink="/services" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>medical_services</mat-icon>
     <span>Servicios</span>
   </a>
-  <a mat-button href="#">
-    <mat-icon>help_outline</mat-icon>
-    <span>FAQ</span>
-  </a>
-  <a mat-button href="#">
+  <a mat-button routerLink="/bussiness" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>groups</mat-icon>
     <span>Nosotros</span>
   </a>
-  <a mat-button href="#">
+  <a mat-button routerLink="/pqrs" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>call</mat-icon>
     <span>Contacto</span>
   </a>
-  <a mat-raised-button color="accent" class="main-action-btn" href="#">
+  <a mat-raised-button color="accent" class="mobile-portal-btn" href="#">
     <mat-icon>login</mat-icon>
-    Portal
+    <span>Portal</span>
   </a>
 </div>

@@ -8,11 +8,6 @@
   <div class="container hero-container">
     <div class="hero-flex">
       <div class="hero-text">
-        <div class="hero-badge">
-          <mat-icon>favorite</mat-icon>
-          <span>Cuidado personalizado</span>
-        </div>
-        
         <h1 class="hero-title">
           Cuidamos de ti y tu familia<br>
           <span class="hero-title-highlight">en cada momento</span>
@@ -118,19 +113,11 @@
       </mat-card>
       <mat-card class="service-card">
         <div class="service-icon"><mat-icon>psychology</mat-icon></div>
-        <mat-card-title>Nutrición y Psicología</mat-card-title>
+        <mat-card-title>Psicología</mat-card-title>
         <mat-card-content>
-          <p>Asesoramiento nutricional y apoyo psicológico para un bienestar integral.</p>
+          <p>Apoyo psicológico y terapia para un bienestar mental integral.</p>
         </mat-card-content>
       </mat-card>
-      <mat-card class="service-card">
-        <div class="service-icon"><mat-icon>healing</mat-icon></div>
-        <mat-card-title>Atención Postquirúrgica</mat-card-title>
-        <mat-card-content>
-          <p>Cuidados especializados después de una cirugía para garantizar una pronta recuperación.</p>
-        </mat-card-content>
-      </mat-card>
-      <!-- Puedes agregar más servicios aquí -->
     </div>
     <div class="section-action">
       <button mat-stroked-button color="primary" class="see-more-btn">
@@ -162,11 +149,7 @@
             </div>
             <div class="pillar-content">
               <h3 class="pillar-title">Calidad</h3>
-              <p class="pillar-description">Protocolos rigurosos y personal calificado.</p>
-              <div class="pillar-features">
-                <span class="pillar-feature">Certificaciones</span>
-                <span class="pillar-feature">Estándares ISO</span>
-              </div>
+              <p class="pillar-description">Protocolos rigurosos y personal calificado con certificaciones y estándares ISO.</p>
             </div>
           </div>
           
@@ -179,28 +162,7 @@
             </div>
             <div class="pillar-content">
               <h3 class="pillar-title">Humanismo</h3>
-              <p class="pillar-description">Trato digno, empático y cercano.</p>
-              <div class="pillar-features">
-                <span class="pillar-feature">Atención personalizada</span>
-                <span class="pillar-feature">Empatía profesional</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="pillar-card">
-            <div class="pillar-icon-wrapper">
-              <div class="pillar-icon">
-                <mat-icon>thumb_up</mat-icon>
-              </div>
-              <div class="pillar-number">03</div>
-            </div>
-            <div class="pillar-content">
-              <h3 class="pillar-title">Confianza</h3>
-              <p class="pillar-description">Transparencia y compromiso total.</p>
-              <div class="pillar-features">
-                <span class="pillar-feature">Transparencia total</span>
-                <span class="pillar-feature">Comunicación clara</span>
-              </div>
+              <p class="pillar-description">Trato digno, empático y cercano con atención personalizada y empatía profesional.</p>
             </div>
           </div>
           
@@ -209,15 +171,11 @@
               <div class="pillar-icon">
                 <mat-icon>favorite</mat-icon>
               </div>
-              <div class="pillar-number">04</div>
+              <div class="pillar-number">03</div>
             </div>
             <div class="pillar-content">
               <h3 class="pillar-title">Cuidado</h3>
-              <p class="pillar-description">Atención cálida y personalizada.</p>
-              <div class="pillar-features">
-                <span class="pillar-feature">Cuidado integral</span>
-                <span class="pillar-feature">Seguimiento continuo</span>
-              </div>
+              <p class="pillar-description">Atención cálida y personalizada con cuidado integral y seguimiento continuo.</p>
             </div>
           </div>
         </div>
@@ -276,7 +234,7 @@
         class="carousel-track"
         [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
       >
-        <mat-card *ngFor="let slide of slides" class="carousel-item">
+        <mat-card *ngFor="let slide of slides; let i = index" class="carousel-item" (click)="openModal(slide)">
           <div class="image-wrapper">
             <img mat-card-image [src]="slide.url" [alt]="slide.alt" />
             <div class="info-blur">
@@ -292,6 +250,40 @@
     </button>
   </div>
 </section>
+
+<!-- Modal para servicios destacados -->
+<div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="modal-close" (click)="closeModal()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <div class="modal-body">
+      <img [src]="selectedSlide?.url" [alt]="selectedSlide?.alt" class="modal-image">
+      <div class="modal-info">
+        <h3 class="modal-title">{{ selectedSlide?.alt }}</h3>
+        <p class="modal-description">{{ selectedSlide?.description }}</p>
+        <div class="modal-features">
+          <div class="feature-item">
+            <mat-icon>check_circle</mat-icon>
+            <span>Profesionales certificados</span>
+          </div>
+          <div class="feature-item">
+            <mat-icon>check_circle</mat-icon>
+            <span>Atención personalizada</span>
+          </div>
+          <div class="feature-item">
+            <mat-icon>check_circle</mat-icon>
+            <span>Horarios flexibles</span>
+          </div>
+        </div>
+        <button mat-raised-button color="primary" class="modal-cta">
+          <mat-icon>phone</mat-icon>
+          Solicitar servicio
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Sección Reseñas -->
 <section class="testimonials-section section-padding">

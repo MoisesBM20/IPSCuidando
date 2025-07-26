@@ -57,6 +57,8 @@ export class Hero implements OnInit, OnDestroy {
   currentIndex = 0;
   itemsPerSlide = 3;
   autoSlideInterval: any;
+  showModal = false;
+  selectedSlide: Slide | null = null;
 
   get totalSlides(): number {
     return Math.ceil(this.slides.length / this.itemsPerSlide);
@@ -84,5 +86,17 @@ export class Hero implements OnInit, OnDestroy {
 
   goToNext(): void {
     this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
+  }
+
+  openModal(slide: Slide): void {
+    this.selectedSlide = slide;
+    this.showModal = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeModal(): void {
+    this.showModal = false;
+    this.selectedSlide = null;
+    document.body.style.overflow = 'auto';
   }
 }
