@@ -24,7 +24,7 @@ mat-toolbar {
   background: linear-gradient(135deg, var(--primary-color) 0%, #004a8c 100%);
   color: var(--white);
   height: var(--navbar-height);
-  padding: 0;
+  padding: 0.5rem !important;
   box-shadow: var(--shadow);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -35,10 +35,10 @@ mat-toolbar {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
+  height: 62px;
   margin: 0 auto;
   padding: 0 2rem;
-  height: 100%;
   gap: 1rem;
 }
 
@@ -78,7 +78,7 @@ mat-toolbar {
 // Barra de búsqueda (más pequeña)
 .search-container {
   flex: 0 0 auto;
-  width: 300px;
+  width: 400px;
   
   .search-field {
     width: 100%;
@@ -129,9 +129,6 @@ mat-toolbar {
     }
     
     // Color del borde cuando está enfocado
-    ::ng-deep .mat-mdc-outlined-field.mat-focused .mat-mdc-field-outline {
-      color: var(--accent-color);
-    }
   }
   
   .search-input {
