@@ -1,217 +1,298 @@
-<!-- Sección Principal (Hero) -->
+<!-- Sección Principal (Hero) - Rediseño Elegante -->
 <section class="hero-section">
+  <div class="hero-background">
     <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Cuidamos de ti y tu familia en cada momento</h1>
-      <p>Accede a nuestros servicios de salud con la calidad y el respaldo que mereces. Tu bienestar es nuestra prioridad.</p>
-      <button mat-raised-button color="accent" class="hero-button">¡Contactanos!</button>
-    </div>
-  </section>
+    <div class="hero-pattern"></div>
+  </div>
   
-  <!-- Sección de Servicios -->
-  <section class="section-padding services-section">
-    <div class="container">
+  <div class="container hero-container">
+    <div class="hero-flex">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <mat-icon>favorite</mat-icon>
+          <span>Cuidado personalizado</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Cuidamos de ti y tu familia<br>
+          <span class="hero-title-highlight">en cada momento</span>
+        </h1>
+        
+        <p class="hero-description">
+          Accede a nuestros servicios de salud con la calidad y el respaldo que mereces. 
+          Tu bienestar es nuestra prioridad absoluta.
+        </p>
+        
+        <div class="hero-actions">
+          <button mat-raised-button color="primary" class="hero-primary-btn">
+            <mat-icon>phone</mat-icon>
+            ¡Contáctanos!
+          </button>
+          <button mat-stroked-button class="hero-secondary-btn">
+            <mat-icon>play_circle</mat-icon>
+            Ver video
+          </button>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Pacientes atendidos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Atención disponible</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Satisfacción</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img 
+            src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=800&auto=format&fit=crop" 
+            alt="Doctora profesional sonriendo" 
+            class="hero-main-image"
+          >
+          <div class="hero-image-overlay">
+            <div class="overlay-content">
+              <mat-icon>verified</mat-icon>
+              <span>Profesionales certificados</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-floating-card">
+          <div class="floating-card-icon">
+            <mat-icon>schedule</mat-icon>
+          </div>
+          <div class="floating-card-content">
+            <span class="floating-card-title">Atención inmediata</span>
+            <span class="floating-card-desc">Respuesta en menos de 30 min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero-wave">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#fff"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="#fff"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#fff"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Sección de Servicios -->
+<section class="section-padding services-section">
+  <div class="container">
+    <div class="section-header">
       <h2 class="section-title">Nuestros Servicios Domiciliarios</h2>
       <p class="section-subtitle">Llevamos atención médica de alta calidad directamente a tu puerta, con un equipo profesional y comprometido.</p>
-      <div class="services-grid">
-        <mat-card class="service-card">
-          <div class="service-icon"><mat-icon>house-heart</mat-icon></div>
-          <mat-card-title>Atención Médica</mat-card-title>
-          <mat-card-content>
-            <p>Consultas médicas generales y especializadas en la comodidad de tu hogar.</p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="service-card">
-          <div class="service-icon"><mat-icon>person_add</mat-icon></div>
-          <mat-card-title>Enfermería</mat-card-title>
-          <mat-card-content>
-            <p>Cuidados de enfermería profesionales, desde procedimientos básicos hasta complejos.</p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="service-card">
-          <div class="service-icon"><mat-icon>accessibility_new</mat-icon></div>
-          <mat-card-title>Terapia Física</mat-card-title>
-          <mat-card-content>
-            <p>Rehabilitación y terapia física personalizada para una recuperación óptima.</p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="service-card">
-          <div class="service-icon"><mat-icon>psychology</mat-icon></div>
-          <mat-card-title>Nutrición y Psicología</mat-card-title>
-          <mat-card-content>
-            <p>Asesoramiento nutricional y apoyo psicológico para un bienestar integral.</p>
-          </mat-card-content>
-        </mat-card>
-         <mat-card class="service-card">
-          <div class="service-icon"><mat-icon>healing</mat-icon></div>
-          <mat-card-title>Atención Postquirúrgica</mat-card-title>
-          <mat-card-content>
-            <p>Cuidados especializados después de una cirugía para garantizar una pronta recuperación</p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="service-card">
-          <div class="service-icon"><mat-icon>opacity</mat-icon></div>
-          <mat-card-title>-------------</mat-card-title>
-          <mat-card-content>
-            <p>----------------------------------------------------------</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
     </div>
-  </section>
-  
-  <!-- Sección Pilares (Sobre Nosotros) -->
-  <section class="pillars-section section-padding">
-      <div class="container">
-          <div class="pillars-content">
-              <div class="pillars-text">
-                  <h2 class="section-title" style="text-align: left;">Salud y bienestar al alcance de todos</h2>
-                  <p>
-                    En CUIDANDO DE TI CyE IPS SAS, trabajamos con el firme compromiso de ofrecer servicios de salud integrales, humanizados y de alta calidad, orientados a mejorar la calidad de vida de nuestros pacientes y sus familias. Nuestro portafolio de servicios ha sido diseñado con base en estándares clínicos actualizados, principios éticos y un enfoque centrado en el paciente, garantizando atención oportuna, segura y eficaz en cada uno de nuestros procesos.
-                  </p>
-                  <div class="pillars-skills">
-                    <div class="pillar-skill-card">
-                      <span class="pillar-skill-icon"><mat-icon>shield</mat-icon></span>
-                      <div class="pillar-skill-info">
-                        <span class="pillar-skill-title">Calidad</span>
-                        <span class="pillar-skill-desc">Protocolos rigurosos y personal calificado.</span>
-                      </div>
-                    </div>
-                    <div class="pillar-skill-card">
-                      <span class="pillar-skill-icon"><mat-icon>people</mat-icon></span>
-                      <div class="pillar-skill-info">
-                        <span class="pillar-skill-title">Humanismo</span>
-                        <span class="pillar-skill-desc">Trato digno, empático y cercano con cada paciente.</span>
-                      </div>
-                    </div>
-                    <div class="pillar-skill-card">
-                      <span class="pillar-skill-icon"><mat-icon>thumb_up</mat-icon></span>
-                      <div class="pillar-skill-info">
-                        <span class="pillar-skill-title">Confianza</span>
-                        <span class="pillar-skill-desc">Transparencia y compromiso en cada servicio.</span>
-                      </div>
-                    </div>
-                    <div class="pillar-skill-card">
-                      <span class="pillar-skill-icon"><mat-icon>favorite</mat-icon></span>
-                      <div class="pillar-skill-info">
-                        <span class="pillar-skill-title">Cuidado</span>
-                        <span class="pillar-skill-desc">Atención cálida y personalizada para cada familia.</span>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="pillars-image">
-                <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=600&auto=format&fit=crop" alt="Doctora sonriendo a un paciente" class="main-pillar-img">
-              </div>
-          </div>
-      </div>
-  </section>
-  
-  <!-- Sección Video -->
-  <section class="video-section section-padding">
-    <div class="container video-flex">
-      <div class="video-text">
-        <h2 class="video-title">
-          Devolvé un poco del amor que te dieron<br>
-          <span class="video-title-highlight">con nuestros cuidados.</span>
-        </h2>
-        <p class="video-desc">
-          Mirá el siguiente video para conocer en detalle nuestros servicios y el compromiso de nuestro equipo profesional.
-        </p>
-      </div>
-  
-      <div class="video-card">
-        <div class="video-frame">
-          <iframe 
-            src="https://www.youtube.com/embed/dUYGFUGphF8" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="video-info-bar">
-          <img src="assets/images/global/logo2.png" alt="Logo MayorSalud" class="video-logo">
-          <div class="video-info-text">
-            <span class="video-brand">Scenic Relaxation</span>
-            <span class="video-subbrand">A Wonderful World</span>
-          </div>
-        </div>
-      </div>
-  
-  <!-- Sección Galería (Carrusel) -->
-  <section class="carousel-section">
-    <h2 class="carousel-title">✨ Conoce nuestros servicios destacados</h2>
-    <p class="carousel-subtitle">Atención médica personalizada y profesional en la comodidad de tu hogar.</p>
-  
-    <div class="carousel-container">
-      <button mat-icon-button class="nav-button left" (click)="goToPrevious()">
-        <mat-icon>chevron_left</mat-icon>
-      </button>
-  
-      <div class="carousel-wrapper">
-        <div
-          class="carousel-track"
-          [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
-        >
-          <mat-card *ngFor="let slide of slides" class="carousel-item">
-            <div class="image-wrapper">
-              <img mat-card-image [src]="slide.url" [alt]="slide.alt" />
-              <div class="info-blur">
-                <mat-icon class="info-icon">medical_services</mat-icon>
-                <div class="description">{{ slide.description }}</div>
-              </div>
-            </div>
-          </mat-card>
-        </div>
-      </div>
-  
-      <button mat-icon-button class="nav-button right" (click)="goToNext()">
-        <mat-icon>chevron_right</mat-icon>
+    <div class="services-grid">
+      <mat-card class="service-card">
+        <div class="service-icon"><mat-icon>house-heart</mat-icon></div>
+        <mat-card-title>Atención Médica</mat-card-title>
+        <mat-card-content>
+          <p>Consultas médicas generales y especializadas en la comodidad de tu hogar.</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="service-card">
+        <div class="service-icon"><mat-icon>person_add</mat-icon></div>
+        <mat-card-title>Enfermería</mat-card-title>
+        <mat-card-content>
+          <p>Cuidados de enfermería profesionales, desde procedimientos básicos hasta complejos.</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="service-card">
+        <div class="service-icon"><mat-icon>accessibility_new</mat-icon></div>
+        <mat-card-title>Terapia Física</mat-card-title>
+        <mat-card-content>
+          <p>Rehabilitación y terapia física personalizada para una recuperación óptima.</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="service-card">
+        <div class="service-icon"><mat-icon>psychology</mat-icon></div>
+        <mat-card-title>Nutrición y Psicología</mat-card-title>
+        <mat-card-content>
+          <p>Asesoramiento nutricional y apoyo psicológico para un bienestar integral.</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="service-card">
+        <div class="service-icon"><mat-icon>healing</mat-icon></div>
+        <mat-card-title>Atención Postquirúrgica</mat-card-title>
+        <mat-card-content>
+          <p>Cuidados especializados después de una cirugía para garantizar una pronta recuperación.</p>
+        </mat-card-content>
+      </mat-card>
+      <!-- Puedes agregar más servicios aquí -->
+    </div>
+    <div class="section-action">
+      <button mat-stroked-button color="primary" class="see-more-btn">
+        <mat-icon>arrow_forward</mat-icon>
+        Ver todos los servicios
       </button>
     </div>
-  </section>
-  
-  
-  
+  </div>
+</section>
 
-  <!-- Sección Reseñas -->
-  <section class="testimonials-section section-padding">
-      <div class="container">
-          <h2 class="section-title">Lo que nuestros pacientes dicen</h2>
-          <p class="section-subtitle">La satisfacción y el bienestar de quienes confían en nosotros es nuestro mayor orgullo.</p>
-          <div class="testimonials-grid">
-              <mat-card class="testimonial-card">
-                  <mat-card-content>
-                      <p>"El servicio de enfermería en casa para mi madre fue excepcional. El personal es muy profesional y, sobre todo, muy humano. ¡Totalmente recomendados!"</p>
-                  </mat-card-content>
-                  <mat-card-footer>
-                      <div class="testimonial-author">
-                          <img src="https://images.icon-icons.com/1674/PNG/512/person_110935.png" alt="Foto de Ana Pérez">
-                          <div>
-                              <strong>Ana Pérez</strong>
-                              <span>Familiar de paciente</span>
-                          </div>
-                      </div>
-                  </mat-card-footer>
-              </mat-card>
-              <mat-card class="testimonial-card">
-                  <mat-card-content>
-                      <p>"La terapia física en mi domicilio me ayudó a recuperarme de mi lesión mucho más rápido de lo esperado. Un equipo increíble, siempre puntuales y dedicados."</p>
-                  </mat-card-content>
-                  <mat-card-footer>
-                      <div class="testimonial-author">
-                          <img src="https://images.icon-icons.com/1674/PNG/512/person_110935.png" alt="Foto de Carlos Gómez">
-                          <div>
-                              <strong>Carlos Gómez</strong>
-                              <span>Paciente de Terapia Física</span>
-                          </div>
-                      </div>
-                  </mat-card-footer>
-              </mat-card>
+<!-- Sección Pilares (Sobre Nosotros) -->
+<section class="pillars-section section-padding">
+  <div class="container">
+    <div class="pillars-content">
+      <div class="pillars-text">
+        <h2 class="section-title" style="text-align: left;">Salud y bienestar al alcance de todos</h2>
+        <p>
+          En CUIDANDO DE TI CyE IPS SAS, trabajamos con el firme compromiso de ofrecer servicios de salud integrales, humanizados y de alta calidad, orientados a mejorar la calidad de vida de nuestros pacientes y sus familias. Nuestro portafolio de servicios ha sido diseñado con base en estándares clínicos actualizados, principios éticos y un enfoque centrado en el paciente, garantizando atención oportuna, segura y eficaz en cada uno de nuestros procesos.
+        </p>
+        <div class="pillars-skills">
+          <div class="pillar-skill-card">
+            <span class="pillar-skill-icon"><mat-icon>shield</mat-icon></span>
+            <div class="pillar-skill-info">
+              <span class="pillar-skill-title">Calidad</span>
+              <span class="pillar-skill-desc">Protocolos rigurosos y personal calificado.</span>
+            </div>
           </div>
-          <div class="testimonials-action">
-              <button mat-raised-button color="primary">Ver todas las reseñas</button>
+          <div class="pillar-skill-card">
+            <span class="pillar-skill-icon"><mat-icon>people</mat-icon></span>
+            <div class="pillar-skill-info">
+              <span class="pillar-skill-title">Humanismo</span>
+              <span class="pillar-skill-desc">Trato digno, empático y cercano con cada paciente.</span>
+            </div>
           </div>
+          <div class="pillar-skill-card">
+            <span class="pillar-skill-icon"><mat-icon>thumb_up</mat-icon></span>
+            <div class="pillar-skill-info">
+              <span class="pillar-skill-title">Confianza</span>
+              <span class="pillar-skill-desc">Transparencia y compromiso en cada servicio.</span>
+            </div>
+          </div>
+          <div class="pillar-skill-card">
+            <span class="pillar-skill-icon"><mat-icon>favorite</mat-icon></span>
+            <div class="pillar-skill-info">
+              <span class="pillar-skill-title">Cuidado</span>
+              <span class="pillar-skill-desc">Atención cálida y personalizada para cada familia.</span>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+      <div class="pillars-image">
+        <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=600&auto=format&fit=crop" alt="Doctora sonriendo a un paciente" class="main-pillar-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Video -->
+<section class="video-section section-padding">
+  <div class="container video-flex">
+    <div class="video-text">
+      <h2 class="video-title">
+        Devolvé un poco del amor que te dieron<br>
+        <span class="video-title-highlight">con nuestros cuidados.</span>
+      </h2>
+      <p class="video-desc">
+        Mirá el siguiente video para conocer en detalle nuestros servicios y el compromiso de nuestro equipo profesional.
+      </p>
+    </div>
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe 
+          src="https://www.youtube.com/embed/dUYGFUGphF8" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-info-bar">
+        <img src="assets/images/global/logo2.png" alt="Logo MayorSalud" class="video-logo">
+        <div class="video-info-text">
+          <span class="video-brand">Scenic Relaxation</span>
+          <span class="video-subbrand">A Wonderful World</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Galería (Carrusel) -->
+<section class="carousel-section">
+  <h2 class="carousel-title">✨ Conoce nuestros servicios destacados</h2>
+  <p class="carousel-subtitle">Atención médica personalizada y profesional en la comodidad de tu hogar.</p>
+  <div class="carousel-container">
+    <button mat-icon-button class="nav-button left" (click)="goToPrevious()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <div class="carousel-wrapper">
+      <div
+        class="carousel-track"
+        [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+      >
+        <mat-card *ngFor="let slide of slides" class="carousel-item">
+          <div class="image-wrapper">
+            <img mat-card-image [src]="slide.url" [alt]="slide.alt" />
+            <div class="info-blur">
+              <mat-icon class="info-icon">medical_services</mat-icon>
+              <div class="description">{{ slide.description }}</div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <button mat-icon-button class="nav-button right" (click)="goToNext()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+</section>
+
+<!-- Sección Reseñas -->
+<section class="testimonials-section section-padding">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Lo que nuestros pacientes dicen</h2>
+      <p class="section-subtitle">La satisfacción y el bienestar de quienes confían en nosotros es nuestro mayor orgullo.</p>
+    </div>
+    <div class="testimonials-grid">
+      <mat-card class="testimonial-card">
+        <mat-card-content>
+          <p>"El servicio de enfermería en casa para mi madre fue excepcional. El personal es muy profesional y, sobre todo, muy humano. ¡Totalmente recomendados!"</p>
+        </mat-card-content>
+        <mat-card-footer>
+          <div class="testimonial-author">
+            <img src="https://images.icon-icons.com/1674/PNG/512/person_110935.png" alt="Foto de Ana Pérez">
+            <div>
+              <strong>Ana Pérez</strong>
+              <span>Familiar de paciente</span>
+            </div>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+      <mat-card class="testimonial-card">
+        <mat-card-content>
+          <p>"La terapia física en mi domicilio me ayudó a recuperarme de mi lesión mucho más rápido de lo esperado. Un equipo increíble, siempre puntuales y dedicados."</p>
+        </mat-card-content>
+        <mat-card-footer>
+          <div class="testimonial-author">
+            <img src="https://images.icon-icons.com/1674/PNG/512/person_110935.png" alt="Foto de Carlos Gómez">
+            <div>
+              <strong>Carlos Gómez</strong>
+              <span>Paciente de Terapia Física</span>
+            </div>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+    <div class="section-action">
+      <button mat-stroked-button color="primary" class="see-more-btn">
+        <mat-icon>arrow_forward</mat-icon>
+        Ver más testimonios
+      </button>
+    </div>
+  </div>
+</section>

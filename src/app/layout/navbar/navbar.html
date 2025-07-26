@@ -1,34 +1,70 @@
 <mat-toolbar color="primary" class="navbar-sticky">
-    <div class="navbar-container">
-      <a href="#" class="navbar-brand">
-        <img src="assets/images/global/logo2.png" alt="Logo C&E IPS S.A.S" class="logo">
+  <div class="navbar-container">
+    <a href="#" class="navbar-brand">
+      <img src="assets/images/global/logo2.png" alt="Logo C&E IPS S.A.S" class="logo">
+    </a>
+
+    <nav class="desktop-nav">
+      <a mat-button href="#">
+        <mat-icon>home</mat-icon>
+        <span>Inicio</span>
       </a>
-  
-      <div class="desktop-nav">
-        <a mat-button href="#">Inicio</a>
-        <a mat-button href="#">Portafolio de Servicios</a>
-        <a mat-button href="#">Preguntas Frecuentes</a>
-        <a mat-button href="#">Nosotros</a>
-        <a mat-button href="#">Contáctanos</a>
-      </div>
-  
-      <div class="desktop-nav">
-         <a mat-raised-button color="accent" href="#">Portal Transaccional</a>
-      </div>
-  
-      <div class="mobile-nav">
-         <button mat-icon-button (click)="toggleMenu()">
-            <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
-         </button>
-      </div>
+      <a mat-button href="#">
+        <mat-icon>medical_services</mat-icon>
+        <span>Servicios</span>
+      </a>
+      <a mat-button href="#">
+        <mat-icon>help_outline</mat-icon>
+        <span>FAQ</span>
+      </a>
+      <a mat-button href="#">
+        <mat-icon>groups</mat-icon>
+        <span>Nosotros</span>
+      </a>
+      <a mat-button href="#">
+        <mat-icon>call</mat-icon>
+        <span>Contacto</span>
+      </a>
+    </nav>
+
+    <div class="desktop-actions">
+      <a mat-raised-button color="accent" class="main-action-btn" href="#">
+        <mat-icon>login</mat-icon>
+        Portal
+      </a>
     </div>
-  </mat-toolbar>
-  
-  <div class="mobile-menu" [class.active]="isMenuOpen">
-    <a mat-button href="#">Inicio</a>
-    <a mat-button href="#">Portafolio de Servicios</a>
-    <a mat-button href="#">Preguntas Frecuentes</a>
-    <a mat-button href="#">Nosotros</a>
-    <a mat-button href="#">Contáctanos</a>
-      <a mat-raised-button color="accent" href="#">Portal Transaccional</a>
+
+    <div class="mobile-nav">
+      <button mat-icon-button (click)="toggleMenu()">
+        <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
+      </button>
+    </div>
   </div>
+</mat-toolbar>
+
+<div class="mobile-menu" [class.active]="isMenuOpen">
+  <a mat-button href="#">
+    <mat-icon>home</mat-icon>
+    <span>Inicio</span>
+  </a>
+  <a mat-button href="#">
+    <mat-icon>medical_services</mat-icon>
+    <span>Servicios</span>
+  </a>
+  <a mat-button href="#">
+    <mat-icon>help_outline</mat-icon>
+    <span>FAQ</span>
+  </a>
+  <a mat-button href="#">
+    <mat-icon>groups</mat-icon>
+    <span>Nosotros</span>
+  </a>
+  <a mat-button href="#">
+    <mat-icon>call</mat-icon>
+    <span>Contacto</span>
+  </a>
+  <a mat-raised-button color="accent" class="main-action-btn" href="#">
+    <mat-icon>login</mat-icon>
+    Portal
+  </a>
+</div>
