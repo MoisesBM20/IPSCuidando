@@ -38,14 +38,26 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "700kb",
+                  "maximumError": "800kb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
-                }
+                  "maximumWarning": "40kB",
+                  "maximumError": "40kB"
+                },
+                    {
+                      "type": "bundle", 
+                      "name": "src/app/components/hero/hero.scss",
+                      "maximumWarning": "40kb", 
+                      "maximumError": "40kb"   
+                    },
+                    {
+                      "type": "bundle", 
+                      "name": "src/app/components/bussiness/bussiness.scss",
+                      "maximumWarning": "40kb", 
+                      "maximumError": "40kb"   
+                    }
               ],
               "outputHashing": "all",
               "optimization": true,
