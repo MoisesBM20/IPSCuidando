@@ -1,30 +1,31 @@
 // Variables
 :root {
-  --navbar-height: 80px;
+  --navbar-height: 70px;
   --primary-color: #005A9C;
   --accent-color: #00B5E2;
   --white: #ffffff;
   --text-light: #f8f9fa;
-  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   --transition: all 0.3s ease;
 }
 
 // Estilos del host
 :host {
   display: block;
-  position: fixed; // Cambiado de absolute a fixed
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
 }
 
-// Toolbar principal
+// Toolbar principal - Nuevo diseño
 mat-toolbar {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #004a8c 100%);
+  background: #003d7a;
+  backdrop-filter: blur(20px);
   color: var(--white);
   height: var(--navbar-height);
-  padding: 0.5rem !important;
+  padding: 0 !important;
   box-shadow: var(--shadow);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -36,21 +37,21 @@ mat-toolbar {
   justify-content: space-between;
   width: 100%;
   max-width: 1600px;
-  height: 62px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 2rem;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 // Sección izquierda (Logo + Búsqueda)
 .left-section {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   flex: 1;
 }
 
-// Logo
+// Logo - Nuevo diseño
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -61,74 +62,60 @@ mat-toolbar {
     align-items: center;
     text-decoration: none;
     transition: var(--transition);
+    padding: 0.5rem;
+    border-radius: 12px;
     
     &:hover {
-      transform: scale(1.05dd);
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.1);
     }
   }
   
   .logo {
-    height: 100px;
+    height: 60px;
     width: auto;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); // Hacer el logo blanco
     transition: var(--transition);
   }
 }
 
-// Barra de búsqueda (más pequeña y mejorada)
+// Nueva Barra de búsqueda moderna
 .search-container {
   flex: 0 0 auto;
-  width: 280px;
+  width: 300px;
   
-  .search-field {
-    width: 100%;
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+    overflow: hidden;
     
-    ::ng-deep .mat-mdc-form-field {
-      width: 100%;
+    &:hover {
+      background: rgba(255, 255, 255, 1);
+      border-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     
-    ::ng-deep .mat-mdc-text-field-wrapper {
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 90px;
-      backdrop-filter: blur(10px);
-      transition: var(--transition);
-      height: 40px;
-      
-      &:hover {
-        background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      }
-    
-    }
-    
-    ::ng-deep .mat-mdc-form-field-focus-overlay {
-      background-color: transparent;
-    }
-    
-    ::ng-deep .mat-mdc-outlined-field {
-      border-radius: 20px;
-    }
-    
-    ::ng-deep .mat-mdc-form-field-subscript-wrapper {
-      display: none;
-    }
-    
-    ::ng-deep .mat-mdc-form-field-infix {
-      padding: 0.5rem 1rem;
-      min-height: 30px;
-      padding-top: 0.5rem !important;
-      padding-bottom: 0.5rem !important;
+    &:focus-within {
+      background: rgba(255, 255, 255, 1);
+      border-color: var(--accent-color);
+      box-shadow: 0 4px 20px #00b5e226;
     }
   }
   
   .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
     color: var(--primary-color);
-    font-size: 0.85rem;
     font-weight: 500;
-    padding-left: 0.5rem;
-    border: none !important;
-    outline: none !important;
-    background: transparent !important;
     
     &::placeholder {
       color: rgba(0, 90, 156, 0.6);
@@ -137,19 +124,26 @@ mat-toolbar {
   }
   
   .search-button {
-    color: var(--primary-color) !important;
-    background: rgba(0, 90, 156, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #003d7a;
+    color: white;
+    border: none;
     border-radius: 50%;
-    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    margin: 0.3rem;
+    cursor: pointer;
     transition: var(--transition);
     
     &:hover {
-      background: rgba(0, 90, 156, 0.2);
+      background: #0099cc;
       transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 181, 226, 0.3);
     }
     
     mat-icon {
-      color: var(--primary-color) !important;
       font-size: 1.1rem;
       width: 1.1rem;
       height: 1.1rem;
@@ -157,11 +151,11 @@ mat-toolbar {
   }
 }
 
-// Navegación principal (a la derecha)
+// Navegación principal - Nuevo diseño
 .navbar-nav {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
   flex-shrink: 0;
   
   .nav-link {
@@ -170,26 +164,55 @@ mat-toolbar {
     gap: 0.5rem;
     color: var(--white);
     text-decoration: none;
-    padding: 0.6rem 0.8rem;
-    border-radius: 20px;
-    font-weight: 500;
+    padding: 0.7rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 600;
     font-size: 0.9rem;
     transition: var(--transition);
     background: transparent;
-    border: none;
+    border: 2px solid transparent;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    &:hover::before {
+      left: 100%;
+    }
     
     mat-icon {
       font-size: 1.1rem;
       width: 1.1rem;
       height: 1.1rem;
       color: var(--white);
+      transition: var(--transition);
+    }
+    
+    span {
+      position: relative;
+      z-index: 1;
     }
     
     &:hover {
       background: rgba(255, 255, 255, 0.15);
+      border-color: var(--accent-color);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      
+      mat-icon {
+        color: var(--accent-color);
+        transform: scale(1.1);
+      }
     }
     
     &:active {
@@ -200,39 +223,66 @@ mat-toolbar {
   .portal-btn {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    background: var(--accent-color);
+    gap: 0.6rem;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #0099cc 100%);
     color: var(--white);
-    padding: 0.6rem 1.2rem;
-    border-radius: 20px;
-    font-weight: 600;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
     font-size: 0.9rem;
     text-decoration: none;
     transition: var(--transition);
     box-shadow: 0 4px 15px rgba(0, 181, 226, 0.3);
     border: none;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+    
+    &:hover::before {
+      left: 100%;
+    }
     
     mat-icon {
       font-size: 1.1rem;
       width: 1.1rem;
       height: 1.1rem;
       color: var(--white);
+      transition: var(--transition);
+    }
+    
+    span {
+      position: relative;
+      z-index: 1;
     }
     
     &:hover {
-      background: #0099cc;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 181, 226, 0.4);
+      background: linear-gradient(135deg, #0099cc 0%, var(--accent-color) 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 181, 226, 0.4);
+      
+      mat-icon {
+        transform: scale(1.1);
+      }
     }
     
     &:active {
-      transform: translateY(0);
+      transform: translateY(-1px);
     }
   }
 }
 
-// Botón móvil
+// Botón móvil - Nuevo diseño
 .mobile-toggle {
   display: none;
   
@@ -243,10 +293,13 @@ mat-toolbar {
     width: 45px;
     height: 45px;
     transition: var(--transition);
+    border: 2px solid transparent;
     
     &:hover {
       background: rgba(255, 255, 255, 0.2);
+      border-color: var(--accent-color);
       transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
     
     mat-icon {
@@ -256,7 +309,7 @@ mat-toolbar {
   }
 }
 
-// Menú móvil
+// Menú móvil - Nuevo diseño
 .mobile-menu {
   display: none;
   position: fixed;
@@ -264,50 +317,91 @@ mat-toolbar {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(10px);
-  padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   z-index: 999;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 90, 156, 0.1);
   
   &.active {
-    display: flex;
+    display: flex !important;
   }
   
   .mobile-search-container {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: block !important;
     
-    .mobile-search-field {
+    .mobile-search-wrapper {
+      position: relative;
+      display: flex !important;
+      align-items: center;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 25px;
+      border: 2px solid rgba(0, 90, 156, 0.2);
+      transition: var(--transition);
+      overflow: hidden;
       width: 100%;
+      min-height: 50px;
       
-      ::ng-deep .mat-mdc-text-field-wrapper {
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 20px;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(0, 90, 156, 0.2);
+      &:hover {
+        background: rgba(255, 255, 255, 1);
+        border-color: rgba(0, 90, 156, 0.3);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       }
       
-      ::ng-deep .mat-mdc-form-field-subscript-wrapper {
-        display: none;
-      }
-      
-      // Color del borde del campo móvil
-      ::ng-deep .mat-mdc-outlined-field .mat-mdc-field-outline {
-        color: rgba(0, 90, 156, 0.3);
-      }
-      
-      // Color del borde cuando está enfocado
-      ::ng-deep .mat-mdc-outlined-field.mat-focused .mat-mdc-field-outline {
-        color: var(--accent-color);
+      &:focus-within {
+        background: rgba(255, 255, 255, 1);
+        border-color: var(--accent-color);
+        box-shadow: 0 4px 20px rgba(0, 181, 226, 0.15);
       }
     }
     
-    .search-button {
-      color: var(--primary-color) !important;
+    .mobile-search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 1rem 1.2rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+      font-weight: 500;
+      width: 100%;
+      display: block !important;
+      
+      &::placeholder {
+        color: rgba(0, 90, 156, 0.6);
+        font-weight: 400;
+      }
+    }
+    
+    .mobile-search-button {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-color);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 0.3rem;
+      cursor: pointer;
+      transition: var(--transition);
+      flex-shrink: 0;
+      
+      &:hover {
+        background: #0099cc;
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0, 181, 226, 0.3);
+      }
       
       mat-icon {
-        color: var(--primary-color) !important;
+        font-size: 1.1rem;
+        width: 1.1rem;
+        height: 1.1rem;
       }
     }
   }
@@ -318,56 +412,69 @@ mat-toolbar {
     gap: 1rem;
     color: var(--primary-color);
     text-decoration: none;
-    padding: 1rem 1.5rem;
-    border-radius: 15px;
-    font-weight: 500;
-    font-size: 1rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
     transition: var(--transition);
     background: transparent;
-    border: none;
+    border: 2px solid transparent;
     cursor: pointer;
     
     mat-icon {
-      font-size: 1.3rem;
-      width: 1.3rem;
-      height: 1.3rem;
+      font-size: 1.4rem;
+      width: 1.4rem;
+      height: 1.4rem;
       color: var(--primary-color);
+      transition: var(--transition);
     }
     
     &:hover {
-      background: rgba(0, 90, 156, 0.1);
-      transform: translateX(5px);
+      background: rgba(0, 181, 226, 0.1);
+      border-color: var(--accent-color);
+      transform: translateX(8px);
+      box-shadow: 0 4px 15px rgba(0, 181, 226, 0.15);
+      
+      mat-icon {
+        color: var(--accent-color);
+        transform: scale(1.1);
+      }
     }
   }
   
   .mobile-portal-btn {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    background: var(--accent-color);
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #0099cc 100%);
     color: var(--white);
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.5rem;
     border-radius: 25px;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
     text-decoration: none;
     transition: var(--transition);
     box-shadow: 0 4px 15px rgba(0, 181, 226, 0.3);
     border: none;
     cursor: pointer;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     
     mat-icon {
-      font-size: 1.3rem;
-      width: 1.3rem;
-      height: 1.3rem;
+      font-size: 1.4rem;
+      width: 1.4rem;
+      height: 1.4rem;
       color: var(--white);
+      transition: var(--transition);
     }
     
     &:hover {
-      background: #0099cc;
+      background: linear-gradient(135deg, #0099cc 0%, var(--accent-color) 100%);
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 181, 226, 0.4);
+      box-shadow: 0 8px 25px rgba(0, 181, 226, 0.4);
+      
+      mat-icon {
+        transform: scale(1.1);
+      }
     }
   }
 }
@@ -379,11 +486,11 @@ mat-toolbar {
   }
   
   .search-container {
-    width: 250px;
+    width: 280px;
   }
   
   .navbar-nav .nav-link {
-    padding: 0.5rem 0.7rem;
+    padding: 0.6rem 1rem;
     font-size: 0.85rem;
     
     mat-icon {
@@ -394,7 +501,7 @@ mat-toolbar {
   }
   
   .navbar-nav .portal-btn {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     font-size: 0.85rem;
     
     mat-icon {
@@ -407,7 +514,7 @@ mat-toolbar {
 
 @media (max-width: 992px) {
   :root {
-    --navbar-height: 70px;
+    --navbar-height: 65px;
   }
   
   .navbar-nav {
@@ -431,13 +538,46 @@ mat-toolbar {
   }
   
   .left-section {
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+  
+  // Asegurar que el menú móvil y su buscador sean visibles
+  .mobile-menu {
+    display: none;
+    
+    &.active {
+      display: flex !important;
+    }
+    
+    .mobile-search-container {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      
+      .mobile-search-wrapper {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
+      .mobile-search-input {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
+      .mobile-search-button {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    }
   }
 }
 
 @media (max-width: 768px) {
   :root {
-    --navbar-height: 65px;
+    --navbar-height: 60px;
   }
   
   .navbar-container {
@@ -450,13 +590,39 @@ mat-toolbar {
   
   .mobile-menu {
     top: var(--navbar-height);
-    padding: 1rem;
+    padding: 1.5rem;
+    
+    .mobile-search-container {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      margin-bottom: 1.5rem;
+      
+      .mobile-search-wrapper {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 50px;
+      }
+      
+      .mobile-search-input {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
+      .mobile-search-button {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
   :root {
-    --navbar-height: 60px;
+    --navbar-height: 55px;
   }
   
   .navbar-container {
@@ -469,23 +635,49 @@ mat-toolbar {
   
   .mobile-menu {
     top: var(--navbar-height);
-    padding: 0.8rem;
-  }
-  
-  .mobile-menu .mobile-nav-link {
-    padding: 0.8rem 1rem;
-    font-size: 0.95rem;
-  }
-  
-  .mobile-menu .mobile-portal-btn {
-    padding: 0.8rem 1.2rem;
-    font-size: 0.95rem;
+    padding: 1rem;
+    
+    .mobile-search-container {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      margin-bottom: 1.5rem;
+      
+      .mobile-search-wrapper {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-height: 50px;
+      }
+      
+      .mobile-search-input {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+      
+      .mobile-search-button {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    }
+    
+    .mobile-nav-link {
+      padding: 1rem 1.2rem;
+      font-size: 1rem;
+    }
+    
+    .mobile-portal-btn {
+      padding: 1rem 1.2rem;
+      font-size: 1rem;
+    }
   }
 }
 
 // Asegurar que el navbar esté sobre el hero
 .navbar-sticky {
-  position: fixed; // Cambiado de absolute a fixed
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

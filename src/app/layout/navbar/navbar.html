@@ -9,23 +9,21 @@
         </a>
       </div>
       
-      <!-- Barra de búsqueda -->
+      <!-- Nueva Barra de búsqueda -->
       <div class="search-container">
-        <mat-form-field appearance="outline" class="search-field">
+        <div class="search-wrapper">
           <input 
-            matInput 
+            type="text" 
             placeholder="Buscar servicios..." 
             [(ngModel)]="searchQuery"
             (keyup.enter)="onSearch()"
             class="search-input">
           <button 
-            mat-icon-button 
-            matSuffix 
             (click)="onSearch()"
             class="search-button">
             <mat-icon>search</mat-icon>
           </button>
-        </mat-form-field>
+        </div>
       </div>
     </div>
     
@@ -33,19 +31,19 @@
     <div class="navbar-nav">
       <a mat-button routerLink="/" class="nav-link">
         <mat-icon>home</mat-icon>
-        <span>Inicio</span>
+        <span>INICIO</span>
       </a>
       <a mat-button routerLink="/services" class="nav-link">
         <mat-icon>medical_services</mat-icon>
-        <span>Servicios</span>
+        <span>SERVICIOS</span>
       </a>
       <a mat-button routerLink="/bussiness" class="nav-link">
         <mat-icon>groups</mat-icon>
-        <span>Nosotros</span>
+        <span>NOSOTROS</span>
       </a>
       <a mat-button routerLink="/pqrs" class="nav-link">
         <mat-icon>call</mat-icon>
-        <span>Contacto</span>
+        <span>CONTACTO</span>
       </a>
     </div>
     
@@ -60,39 +58,37 @@
 
 <!-- Menú móvil -->
 <div class="mobile-menu" [class.active]="isMenuOpen">
-  <!-- Barra de búsqueda móvil -->
+  <!-- Nueva Barra de búsqueda móvil -->
   <div class="mobile-search-container">
-    <mat-form-field appearance="outline" class="mobile-search-field">
+    <div class="mobile-search-wrapper">
       <input 
-        matInput 
+        type="text" 
         placeholder="Buscar servicios..." 
         [(ngModel)]="searchQuery"
         (keyup.enter)="onSearch()"
-        class="search-input">
+        class="mobile-search-input">
       <button 
-        mat-icon-button 
-        matSuffix 
         (click)="onSearch()"
-        class="search-button">
+        class="mobile-search-button">
         <mat-icon>search</mat-icon>
       </button>
-    </mat-form-field>
+    </div>
   </div>
   
   <a mat-button routerLink="/" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>home</mat-icon>
-    <span>Inicio</span>
+    <span>INICIO</span>
   </a>
   <a mat-button routerLink="/services" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>medical_services</mat-icon>
-    <span>Servicios</span>
+    <span>SERVICIOS</span>
   </a>
   <a mat-button routerLink="/bussiness" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>groups</mat-icon>
-    <span>Nosotros</span>
+    <span>NOSOTROS</span>
   </a>
   <a mat-button routerLink="/pqrs" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>call</mat-icon>
-    <span>Contacto</span>
+    <span>CONTACTO</span>
   </a>
 </div>

@@ -2,7 +2,7 @@
 main {
     min-height: calc(100vh - 200px); // Ajuste para el contenido principal
     overflow-x: hidden; // Prevenir scroll horizontal
-    padding-top: 85px; // Espacio para el navbar fijo más grande
+    padding-top: 35px; // Espacio para el navbar fijo más grande
 }
 
 // Mejoras de accesibilidad y UX móvil
@@ -50,10 +50,25 @@ html {
     align-items: center;
 }
 
+// Contenedor de iconos apilados
+.floating-icons-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+// Wrapper para cada icono con su texto
+.floating-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .floating-contact-text {
     position: absolute;
     right: 100%;
-    margin-right: 5px; // <-- antes 15px, ahora 5px
+    margin-right: 8px;
 
     background-color: white;
     color: #005A9C;
@@ -61,17 +76,34 @@ html {
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     white-space: nowrap;
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+// Texto para el icono superior (Audífonos)
+.floating-text-top {
+    color: #0088cc;
+}
+
+// Texto para el icono inferior (WhatsApp)
+.floating-text-bottom {
+    color: #25d366;
+}
+
+// Mostrar texto al hacer hover en el wrapper
+.floating-icon-wrapper:hover .floating-contact-text {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
-
-    animation: text-pulse 2.5s infinite ease-in-out;
-    transition: all 0.3s ease;
 }
 
 .floating-icon-link {
@@ -80,25 +112,54 @@ html {
     z-index: 1;
 
     background: transparent;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 
     &:hover {
       transform: scale(1.1);
     }
+    
+    // Icono superior (Audífonos)
+    &.floating-icon-top {
+        background: linear-gradient(135deg, #0088cc 0%, #00a8ff 100%);
+        border: 2px solid #fff;
+        
+        &:hover {
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.3);
+        }
+        
+        mat-icon {
+            font-size: 1.8rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            color: white;
+        }
+    }
+    
+    // Icono inferior (WhatsApp)
+    &.floating-icon-bottom {
+        background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        border: 2px solid #fff;
+        
+        &:hover {
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+    }
 }
 
 .floating-icon-link img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
     animation: signal-pulse 2.5s infinite ease-in-out;
+    // Remover el filter para que los logos mantengan sus colores originales
 }
 
 @keyframes signal-pulse {
@@ -116,17 +177,49 @@ html {
     }
 }
 
-@keyframes text-pulse {
-    0% {
-      transform: translateX(0) scale(0.98);
-      opacity: 0.9;
+// Responsive para el botón flotante
+@media (max-width: 768px) {
+    .floating-contact-container {
+        bottom: 20px;
+        right: 20px;
     }
-    50% {
-      transform: translateX(0) scale(1.02);
-      opacity: 1;
+    
+    .floating-icon-link {
+        width: 50px;
+        height: 50px;
+        
+        &.floating-icon-top mat-icon {
+            font-size: 1.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
-    100% {
-      transform: translateX(0) scale(0.98);
-      opacity: 0.9;
+    
+    .floating-contact-text {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-contact-container {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .floating-icon-link {
+        width: 45px;
+        height: 45px;
+        
+        &.floating-icon-top mat-icon {
+            font-size: 1.3rem;
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+    }
+    
+    .floating-contact-text {
+        font-size: 0.75rem;
+        padding: 5px 10px;
     }
 }

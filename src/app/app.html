@@ -9,12 +9,23 @@
 <!-- Botón de contacto flotante con texto que aparece al hacer hover -->
 <div class="floating-contact-container">
   
-  <!-- Texto que aparece a la izquierda -->
-  <span class="floating-contact-text">Agenda tu cita</span>
-  
-  <!-- Enlace que contiene solo el icono -->
-  <a href="https://signal.me/#p/+573001234567" target="_blank" rel="noopener noreferrer" class="floating-icon-link" aria-label="Contactar por Signal">
-    <img src="assets/images/global/wsp.png" alt="whatsapp Issscon">
-  </a>
+  <!-- Contenedor de iconos apilados -->
+  <div class="floating-icons-stack">
+    <!-- Icono superior (Audífonos/Telegram) -->
+    <div class="floating-icon-wrapper">
+      <span class="floating-contact-text floating-text-top">Consulta rápida</span>
+      <a href="https://t.me/+573001234567" target="_blank" rel="noopener noreferrer" class="floating-icon-link floating-icon-top" aria-label="Contactar por Audífonos">
+        <mat-icon>headphones</mat-icon>
+      </a>
+    </div>
+    
+    <!-- Icono inferior (WhatsApp) -->
+    <div class="floating-icon-wrapper">
+      <span class="floating-contact-text floating-text-bottom">Agenda tu cita</span>
+      <a href="https://wa.me/+573001234567" target="_blank" rel="noopener noreferrer" class="floating-icon-link floating-icon-bottom" aria-label="Contactar por WhatsApp">
+        <img src="assets/images/global/wsp.png" alt="Logo Issscon">
+      </a>
+    </div>
+  </div>
   
 </div>
