@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 // --- Angular Material ---
 import { MatButtonModule } from '@angular/material/button';
@@ -16,7 +17,7 @@ interface Slide {
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatCardModule, MatIconModule, MatListModule],
+  imports: [CommonModule, MatButtonModule, MatCardModule, MatIconModule, MatListModule, RouterModule],
   templateUrl: './hero.html',
   styleUrls: ['./hero.scss']
 })
