@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-pqrs',
@@ -14,53 +15,56 @@ export class Pqrs {
   formData = {
     nombre: '',
     email: '',
-    telefono: '',
-    mensaje: ''
+    mensaje: '',
+    telefono: ''
   };
-  
-  submitted = false;
-  isSubmitting = false;
-  showSuccessModal = false;
-  showErrorModal = false;
 
-  onSubmit() {
-    this.submitted = true;
-    
-    // Validar campos obligatorios
+  isSubmitting = false;
+  showSuccess = false;
+  showError = false;
+
+  serviceID = 'service_918ede5';
+  templateID = 'template_es6hb0g';
+  publicKey = 'suQaP75ZIQ1ILc_FQ';
+
+  onSubmit(): void {
     if (!this.formData.nombre || !this.formData.email || !this.formData.mensaje) {
+      this.showError = true;
       return;
     }
-    
+
     this.isSubmitting = true;
-    
-    // Simular envío del formulario
-    setTimeout(() => {
-      this.isSubmitting = false;
-      
-      // Simular éxito (puedes cambiar esto por tu lógica real)
-      const success = Math.random() > 0.3; // 70% de éxito para demo
-      
-      if (success) {
-        this.showSuccessModal = true;
+
+    const params = {
+      from_name: this.formData.nombre,
+      email: this.formData.email,
+      telefono: this.formData.telefono,
+      message: this.formData.mensaje,
+    };
+
+    emailjs.send(this.serviceID, this.templateID, params, this.publicKey)
+      .then(() => {
+        this.isSubmitting = false;
+        this.showSuccess = true;
         this.resetForm();
-      } else {
-        this.showErrorModal = true;
-      }
-    }, 2000);
+      })
+      .catch(() => {
+        this.isSubmitting = false;
+        this.showError = true;
+      });
   }
 
-  closeModal() {
-    this.showSuccessModal = false;
-    this.showErrorModal = false;
-  }
-
-  resetForm() {
+  resetForm(): void {
     this.formData = {
       nombre: '',
       email: '',
-      telefono: '',
-      mensaje: ''
+      mensaje: '',
+      telefono: ''
     };
-    this.submitted = false;
+  }
+
+  closeModals(): void {
+    this.showSuccess = false;
+    this.showError = false;
   }
 }

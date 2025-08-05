@@ -1,110 +1,47 @@
-<section class="pqrs-section">
-  <div class="pqrs-container">
-    <!-- Formulario de contacto -->
-    <div class="pqrs-form">
-      <h2>Contáctanos</h2>
-      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-        <div class="form-group">
-          <label for="nombre">Nombre completo <span class="required">*</span></label>
-          <input 
-            type="text" 
-            id="nombre" 
-            name="nombre" 
-            placeholder="Tu nombre" 
-            [(ngModel)]="formData.nombre"
-            required
-            [class.error]="submitted && !formData.nombre">
-          <span class="error-message" *ngIf="submitted && !formData.nombre">
-            El nombre es obligatorio
-          </span>
-        </div>
-        <div class="form-group">
-          <label for="email">Correo electrónico <span class="required">*</span></label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="tucorreo@ejemplo.com" 
-            [(ngModel)]="formData.email"
-            required
-            [class.error]="submitted && !formData.email">
-          <span class="error-message" *ngIf="submitted && !formData.email">
-            El correo electrónico es obligatorio
-          </span>
-        </div>
-        <div class="form-group">
-          <label for="telefono">Teléfono</label>
-          <input 
-            type="tel" 
-            id="telefono" 
-            name="telefono" 
-            placeholder="Tu teléfono"
-            [(ngModel)]="formData.telefono">
-        </div>
-        <div class="form-group">
-          <label for="mensaje">Mensaje <span class="required">*</span></label>
-          <textarea 
-            id="mensaje" 
-            name="mensaje" 
-            rows="4" 
-            placeholder="Escribe tu mensaje aquí..." 
-            [(ngModel)]="formData.mensaje"
-            required
-            [class.error]="submitted && !formData.mensaje"></textarea>
-          <span class="error-message" *ngIf="submitted && !formData.mensaje">
-            El mensaje es obligatorio
-          </span>
-        </div>
-        <button type="submit" class="pqrs-btn" [disabled]="isSubmitting">
-          <span *ngIf="!isSubmitting">Enviar mensaje</span>
-          <span *ngIf="isSubmitting">Enviando...</span>
-        </button>
-      </form>
+<section class="pqrs-container">
+  <h2>Contáctanos</h2>
+
+  <form (ngSubmit)="onSubmit()" #form="ngForm" novalidate>
+    <div class="form-field">
+      <label>Nombre completo *</label>
+      <input type="text" name="nombre" [(ngModel)]="formData.nombre" required />
     </div>
 
-    <!-- Lado derecho: título y párrafo -->
-    <div class="pqrs-info">
-      <h3>¿Por qué contactarnos?</h3>
-      <p>
-        En <strong>C&E IPS S.A.S</strong> estamos comprometidos con tu bienestar. Nuestro equipo está disponible para resolver tus dudas sobre servicios de salud domiciliaria.
-      </p>
-      <p>
-        Puedes escribirnos para:
-        <ul>
-          <li>Solicitar información sobre servicios y coberturas</li>
-          <li>Agendar servicios de enfermería a domicilio</li>
-          <li>Realizar peticiones, quejas, reclamos o sugerencias (PQRS)</li>
-        </ul>
-      <p>
-        <strong>¡Tu mensaje es importante!</strong> Te responderemos lo más pronto posible con confidencialidad y profesionalismo.
-      </p>
-      <p>
-        También puedes contactarnos al <strong>+57 300 123 4567</strong> o <strong>contacto#ceips.com</strong>.
-      </p>
+    <div class="form-field">
+      <label>Correo electrónico *</label>
+      <input type="email" name="email" [(ngModel)]="formData.email" required />
+    </div>
+
+    <div class="form-field">
+      <label>Teléfono</label>
+      <input type="tel" name="telefono" [(ngModel)]="formData.telefono" />
+    </div>
+
+    <div class="form-field">
+      <label>Mensaje *</label>
+      <textarea name="mensaje" rows="4" [(ngModel)]="formData.mensaje" required></textarea>
+    </div>
+
+    <button type="submit" [disabled]="isSubmitting">
+      {{ isSubmitting ? 'Enviando...' : 'Enviar mensaje' }}
+    </button>
+  </form>
+
+  <!-- Modal de éxisto -->
+  <div class="modal" *ngIf="showSuccess">
+    <div class="modal-content success">
+      <mat-icon>check_circle</mat-icon>
+      <p>Mensaje enviado con éxito. Te responderemos pronto.</p>
+      <button (click)="closeModals()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Modal de error -->
+  <div class="modal" *ngIf="showError">
+    <div class="modal-content error">
+      <mat-icon>error</mat-icon>
+      <p>Error al enviar el mensaje. Verifica tus datos e intenta de nuevo.</p>
+      <button (click)="closeModals()">Cerrar</button>
     </div>
   </div>
 </section>
-
-<!-- Modal de éxito -->
-<div class="modal-overlay" *ngIf="showSuccessModal" (click)="closeModal()">
-  <div class="modal-content success-modal" (click)="$event.stopPropagation()">
-    <div class="modal-icon success-icon">
-      <mat-icon>check_circle</mat-icon>
-    </div>
-    <h3>¡Mensaje enviado!</h3>
-    <p>Tu mensaje ha sido enviado correctamente. Te responderemos lo más pronto posible.</p>
-    <button class="modal-btn" (click)="closeModal()">Aceptar</button>
-  </div>
-</div>
-
-<!-- Modal de error -->
-<div class="modal-overlay" *ngIf="showErrorModal" (click)="closeModal()">
-  <div class="modal-content error-modal" (click)="$event.stopPropagation()">
-    <div class="modal-icon error-icon">
-      <mat-icon>error</mat-icon>
-    </div>
-    <h3>Error al enviar</h3>
-    <p>Hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente.</p>
-    <button class="modal-btn" (click)="closeModal()">Aceptar</button>
-  </div>
-</div>

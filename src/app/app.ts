@@ -1,6 +1,7 @@
 import { Component, inject, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+
 import { Navbar } from './layout/navbar/navbar';
 import { Footer } from './layout/footer/footer';
 
