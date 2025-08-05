@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, '../dist/IPSWeb')));
 
 // Usa expresión regular para evitar el error
 app.get(/^\/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/IPSWeb/index.html'));
+  res.sendFile(path.join(__dirname, '../dist/IPSWeb/browser/index.html'));
 });
 
 app.listen(port, () => {
