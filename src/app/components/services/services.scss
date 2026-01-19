@@ -1,502 +1,195 @@
 // Variables
-$primary-color: #1976d2;
-$secondary-color: #005A9C;
-$tertiary-color: #4caf50;
-$quaternary-color: #9c27b0;
-$text-dark: #333;
-$text-light: #666;
-$background-light: #f8f9fa;
-$border-radius: 12px;
-$shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+$primary: #005cbb;
+$primary-hover: #004a96;
+$text-main: #1a1c1e;
+$text-muted: #44474e;
+$bg-light: #f8f9ff;
+$radius: 28px;
 
-// Animación de fade-in para las secciones
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+.health-page {
+  font-family: 'Roboto', sans-serif;
 
-// Header de Servicios (color estático)
-.services-header {
-  background: $primary-color; // Color sólido
-  color: white;
-  padding: 80px 0 60px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  min-height: 350px;
-  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.08);
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  margin-top: 40px; // Ajustar para el navbar fijo más compacto
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.3;
+  .main-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 24px;
   }
 
-  .header-content {
-    position: relative;
-    z-index: 2;
-    animation: fadeInUp 1s;
-    padding-bottom: 2rem;
-  }
+  // --- Hero ---
+  .hero-header {
+    background: linear-gradient(135deg, $primary 0%, #0d47a1 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
 
-  .services-main-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 8px rgba(236, 0, 0, 0.08);
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      background: rgba(white, 0.2);
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
 
-    @media (max-width: 768px) {
-      font-size: 2rem;
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin: 24px 0;
+      font-weight: 800;
+      .highlight { color: #8ab4f8; }
+    }
+
+    p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto 40px; }
+
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .stat-box {
+        background: rgba(white, 0.1);
+        padding: 20px;
+        border-radius: 20px;
+        min-width: 120px;
+        border: 1px solid rgba(white, 0.1);
+
+        .stat-number { display: block; font-size: 1.8rem; font-weight: 700; }
+        .stat-label { font-size: 0.7rem; text-transform: uppercase; opacity: 0.8; }
+      }
     }
   }
 
-  .services-main-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // --- Services Section ---
+  .services-section {
+    padding: 80px 0;
+    background: $bg-light;
 
-  .header-stats {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2.5rem;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .stat-item {
+    .section-header {
       text-align: center;
-      background: rgba(255,255,255,0.12);
-      border-radius: 16px;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      transition: background 0.3s;
-
-      &:hover {
-        background: rgba(255,255,255,0.22);
-      }
-
-      .stat-number {
-        display: block;
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: white;
-        text-shadow: 0 1px 4px rgba(255, 0, 0, 0.08);
-      }
-
-      .stat-label {
-        font-size: 0.9rem;
-        opacity: 0.8;
-      }
+      margin-bottom: 50px;
+      h2 { font-size: 2.2rem; font-weight: 700; color: $text-main; }
+      p { color: $text-muted; }
     }
   }
-}
-
-// Servicios Principales
-.main-services {
-  padding: 80px 0;
-  background: $background-light;
 
   .services-grid {
     display: grid;
+    gap: 24px;
+    // Ajuste grid para que las tarjetas se acomoden responsive
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
   }
 
   .service-card {
-    background: white;
-    border-radius: $border-radius;
-    box-shadow: $shadow;
-    transition: all 0.3s ease;
-    overflow: visible;
+    border-radius: $radius;
     border: none;
-    box-shadow: 0 6px 32px rgba(25, 118, 210, 0.08);
-    animation: fadeInUp 0.8s;
-    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05) !important;
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
-    &:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 40px rgba(25, 118, 210, 0.15);
+    &:hover { transform: translateY(-8px); }
+
+    .card-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 24px 0 0 24px;
+
+      // Colores originales
+      &.blue { background: #e3f2fd; color: #1976d2; }
+      &.red { background: #fdecea; color: #d32f2f; }
+      &.teal { background: #e0f2f1; color: #00796b; }
+      &.orange { background: #fff3e0; color: #f57c00; }
+      
+      // Nuevos colores agregados para los nuevos servicios
+      &.purple { background: #f3e5f5; color: #7b1fa2; }
+      &.pink { background: #fce4ec; color: #c2185b; }
     }
 
-    // Elimina borde y badge de destacado
-    &.featured {
-      border: none;
-      box-shadow: $shadow;
-      &::after {
-        display: none;
-      }
+    mat-card-header {
+      padding: 16px 24px 0;
+      mat-card-title { font-weight: 700; color: $text-main; font-size: 1.25rem; }
     }
 
-    .service-header {
-      position: relative;
-      padding: 1.5rem 1.5rem 0;
-
-      .service-icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        box-shadow: 0 2px 12px rgba(25, 118, 210, 0.10);
-        border: 3px solid #fff;
-        margin-top: -30px;
-
-        &.primary {
-          background: linear-gradient(135deg, $primary-color, #1565c0);
-          color: white;
-        }
-        &.secondary {
-          background: linear-gradient(135deg, $secondary-color, #003d7a);
-          color: white;
-        }
-        &.tertiary {
-          background: linear-gradient(135deg, $tertiary-color, #2e7d32);
-          color: white;
-        }
-        &.quaternary {
-          background: linear-gradient(135deg, $quaternary-color, #7b1fa2);
-          color: white;
-        }
-        mat-icon {
-          font-size: 1.2rem;
-          width: 1.2rem;
-          height: 1.2rem;
-        }
-      }
-
-      // Elimina el badge
-      .service-badge {
-        display: none;
-      }
-    }
-
-    mat-card-title {
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: $primary-color;
-      margin-bottom: 1rem;
-      padding: 0 1.5rem;
-      margin-top: 0.5rem;
-      letter-spacing: 0.5px;
-    }
-
-    .service-description {
-      color: $text-light;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      padding: 0 1.5rem;
-      font-size: 1.05rem;
-      color: $text-dark;
-      opacity: 0.92;
-    }
-
-    .service-features {
-      padding: 0 1.5rem;
-      margin-bottom: 1.5rem;
-
-      .feature-item {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        margin-bottom: 0.5rem;
-
-        mat-icon {
-          color: $primary-color;
-          font-size: 1rem;
-          width: 2.2rem;
-          height: 1rem;
-        }
-
-        span {
-          font-size: 0.9rem;
-          color: $text-dark;
+    mat-card-content {
+      padding: 16px 24px;
+      flex-grow: 1;
+      p { color: $text-muted; font-size: 0.95rem; line-height: 1.4; margin-bottom: 12px; }
+      .check-icon { color: #4caf50; font-size: 18px; margin-right: 8px; }
+      
+      mat-list-item { 
+        font-size: 0.9rem; 
+        height: auto !important; 
+        padding: 4px 0; 
+        
+        // Ajuste para alinear texto en material
+        .mdc-list-item__content {
+           display: flex; align-items: center;
         }
       }
     }
 
     mat-card-actions {
-      padding: 0 1.5rem 1.5rem;
-      display: flex;
-      justify-content: center;
-      margin-top: 1.5rem;
-
-      // Solo el botón principal, bien centrado
-      .service-btn {
-        min-width: 200px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
-        padding: 0.75rem 2rem;
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $primary-color;
-        color: #fff;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-        
-        &:hover {
-          background: $secondary-color;
-          color: #fff;
-          box-shadow: 0 4px 16px rgba(0,90,156,0.18);
-          transform: translateY(-2px);
-        }
-        
-        &:active {
-          transform: translateY(0);
-        }
-        
-        mat-icon {
-          margin-right: 0.5rem;
-          font-size: 1.1rem;
-          width: 1.1rem;
-          height: 1.1rem;
-        }
-      }
-
-      // Elimina el botón secundario
-      .service-btn-secondary {
-        display: none;
-      }
-    }
-  }
-}
-
-// Proceso de Atención
-.process-section {
-  padding: 80px 0;
-  background: linear-gradient(120deg, #f8f9fa 60%, #fff 100%);
-
-  .section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-
-    .section-title {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: $primary-color;
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
-    }
-
-    .section-subtitle {
-      font-size: 1.1rem;
-      color: $text-light;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-  }
-
-  .process-steps {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-
-    .step-item {
-      background: white;
-      border-radius: $border-radius;
-      box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
-      padding: 2rem 1.5rem;
-      text-align: center;
-      width: 220px;
-      position: relative;
-      transition: all 0.3s ease;
-
-      &:hover {
-        border: 1.5px solid $primary-color;
-        box-shadow: 0 8px 32px rgba(25, 118, 210, 0.13);
-        transform: translateY(-8px) scale(1.03);
-      }
-
-      .step-number {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: $primary-color;
-        margin-bottom: 0.5rem;
-      }
-
-      .step-icon {
-        width: 48px;
+      padding: 16px 24px 24px;
+      .btn-solicitar {
+        width: 100%;
+        border-radius: 100px;
         height: 48px;
-        border-radius: 50%;
-        background: $primary-color;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 1rem;
-        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
-
-        mat-icon {
-          font-size: 1.5rem;
-        }
-      }
-
-      h3 {
-        font-size: 1.1rem;
         font-weight: 600;
-        color: $primary-color;
-        margin-bottom: 0.5rem;
-      }
+        background-color: $primary !important;
+        color: white !important;
 
-      p {
-        color: $text-light;
-        font-size: 0.95rem;
-        line-height: 1.5;
+        &:hover { background-color: $primary-hover !important; }
       }
     }
   }
-}
 
-// CTA Final (footer) con color estático
-.services-cta {
-  background: $primary-color; // Color sólido
-  color: white;
-  padding: 60px 0;
-  text-align: center;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  box-shadow: 0 -8px 32px rgba(25, 118, 210, 0.08);
+  // --- Steps Section ---
+  .steps-section {
+    padding: 80px 0;
+    text-align: center;
+    h2 { margin-bottom: 50px; font-weight: 700; }
 
-  .cta-content {
-    max-width: 600px;
-    margin: 0 auto;
-    animation: fadeInUp 1s;
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      opacity: 0.95;
-    }
-
-    .cta-actions {
+    .steps-grid {
       display: flex;
-      justify-content: center;
-      gap: 1.5rem;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
 
-      .cta-primary-btn {
-        min-width: 180px;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
-        border-radius: 25px;
-        transition: all 0.3s ease;
-        
-        &:hover {
-          background: $secondary-color;
-          color: #fff;
-          box-shadow: 0 4px 16px rgba(0,90,156,0.18);
-          transform: translateY(-2px);
+      .step-item {
+        flex: 1;
+        min-width: 200px;
+        max-width: 250px;
+
+        .step-circle {
+          width: 60px;
+          height: 60px;
+          background: $primary;
+          color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          font-weight: 700;
+          margin: 0 auto 20px;
+          
+          &.success { background: #4caf50; }
         }
         
-        &:active {
-          transform: translateY(0);
-        }
-      }
-
-      .cta-secondary-btn {
-        display: none; // Oculta el botón de agendar consulta
+        .step-icon-bg { display: none; } // Oculto el bg extra si solo quieres el círculo, o ajusta según prefieras
+        
+        h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;}
+        p { color: $text-muted; font-size: 0.9rem; }
       }
     }
-  }
-}
-
-// Separadores decorativos entre secciones
-section:not(:last-child) {
-  margin-bottom: 3rem;
-  position: relative;
-  &::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, $primary-color, $secondary-color, $tertiary-color, $quaternary-color);
-    border-radius: 2px;
-    margin: 2.5rem auto 0;
-    opacity: 0.12;
-  }
-}
-
-// Responsive (mejorado)
-@media (max-width: 1200px) {
-  .services-header {
-    margin-top: 0px; // Mantener espaciado consistente
-  }
-}
-
-@media (max-width: 900px) {
-  .main-services .services-grid,
-  .process-section .process-steps {
-    grid-template-columns: 1fr !important;
-    flex-direction: column !important;
-    gap: 1.5rem !important;
-  }
-  .main-services,
-  .process-section {
-    padding: 40px 0;
-  }
-  .services-header {
-    padding: 40px 0 30px;
-    min-height: 220px;
-    margin-top: 30px; // Mantener espaciado consistente
-  }
-  .services-cta {
-    padding: 30px 0;
-  }
-  section:not(:last-child)::after {
-    margin: 1.5rem auto 0;
   }
 }
 
 @media (max-width: 768px) {
-  .services-header {
-    margin-top: 25px; // Mantener espaciado consistente
-    padding: 50px 0 30px; // Aumentar padding superior
-  }
-}
-
-@media (max-width: 480px) {
-  .services-header {
-    margin-top: 20px; // Mantener espaciado consistente
-    padding: 60px 0 30px; // Aumentar aún más el padding superior
-  }
+  .health-page .steps-grid { flex-direction: column; align-items: center; }
 }

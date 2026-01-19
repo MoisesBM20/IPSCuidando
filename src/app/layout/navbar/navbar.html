@@ -9,22 +9,6 @@
         </a>
       </div>
       
-      <!-- Nueva Barra de búsqueda -->
-      <div class="search-container">
-        <div class="search-wrapper">
-          <input 
-            type="text" 
-            placeholder="Buscar servicios..." 
-            [(ngModel)]="searchQuery"
-            (keyup.enter)="onSearch()"
-            class="search-input">
-          <button 
-            (click)="onSearch()"
-            class="search-button">
-            <mat-icon>search</mat-icon>
-          </button>
-        </div>
-      </div>
     </div>
     
     <!-- Navegación a la derecha -->
@@ -33,10 +17,15 @@
         <mat-icon>home</mat-icon>
         <span>INICIO</span>
       </a>
+      <a mat-button routerLink="/sueroterapia" class="nav-link">
+        <mat-icon>medical_services</mat-icon>
+        <span>SUEROTERAPIA</span>
+      </a>
       <a mat-button routerLink="/services" class="nav-link">
         <mat-icon>medical_services</mat-icon>
         <span>SERVICIOS</span>
       </a>
+
       <a mat-button routerLink="/bussiness" class="nav-link">
         <mat-icon>groups</mat-icon>
         <span>NOSOTROS</span>
@@ -78,6 +67,10 @@
   <a mat-button routerLink="/" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>home</mat-icon>
     <span>INICIO</span>
+  </a>
+  <a mat-button routerLink="/sueroterapia" class="mobile-nav-link" (click)="closeMenu()">
+    <mat-icon>medical_services</mat-icon>
+    <span>SUEROTERAPIA</span>
   </a>
   <a mat-button routerLink="/services" class="mobile-nav-link" (click)="closeMenu()">
     <mat-icon>medical_services</mat-icon>

@@ -23,7 +23,7 @@ export class Pqrs {
   showSuccess = false;
   showError = false;
 
-  serviceID = 'service_918ede5';
+  serviceID = 'service_mltki39';
   templateID = 'template_es6hb0g';
   publicKey = 'suQaP75ZIQ1ILc_FQ';
 
@@ -43,7 +43,7 @@ export class Pqrs {
     };
 
     emailjs.send(this.serviceID, this.templateID, params, this.publicKey)
-      .then(() => {
+      .then((response) => {
         this.isSubmitting = false;
         this.showSuccess = true;
         this.resetForm();
