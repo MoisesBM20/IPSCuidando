@@ -84,7 +84,7 @@ export class SueroterapiaComponent implements OnInit {
         nombre: 'Cuidado Especializado',
         protocolos: [
           { titulo: 'Enf. Osteoarticular', desc: 'Reduce el dolor en fibromialgia y fatiga.', color: 'blue', icon: 'accessibility_new', items: ['Control dolor', 'Modulación inmune', 'Antiinflamatorio'] },
-          { titulo: 'Plasma Rico', desc: 'Medicina regenerativa para reparar tejidos.', color: 'red', icon: 'bloodtype', items: ['Regeneración', 'Factores crecimiento', 'Tejidos'] },
+          { titulo: 'Plasma Rico en Plaquetas', desc: 'Medicina regenerativa para reparar tejidos.', color: 'red', icon: 'bloodtype', items: ['Regeneración', 'Factores crecimiento', 'Tejidos'] },
           { titulo: 'Neoplasias', desc: 'Altas dosis de Vitamina C para proteger tejidos.', color: 'teal', icon: 'biotech', items: ['Protección celular', 'Apoyo en cáncer', 'Inmunidad'] },
           { titulo: 'Parkinson/Alzheimer', desc: 'Mejora la función cerebral y síntomas neurológicos.', color: 'purple', icon: 'psychology', items: ['Vitaminas B', 'Cognición', 'Antioxidantes'] },
           { titulo: 'Próstata/Renal', desc: 'Ayuda en la relajación y expulsión de cálculos.', color: 'teal', icon: 'medication_liquid', items: ['Desinflamación', 'Alivio renal', 'Hidratación'] },
