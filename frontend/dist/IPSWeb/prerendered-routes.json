@@ -1,0 +1,23 @@
+{
+  "routes": {
+    "/": {},
+    "/admin": {},
+    "/admin/appointments": {},
+    "/admin/audit": {},
+    "/admin/availability": {},
+    "/admin/clinical": {},
+    "/admin/dashboard": {},
+    "/admin/login": {},
+    "/admin/patients": {},
+    "/admin/rips": {},
+    "/admin/users": {},
+    "/bussiness": {},
+    "/portal": {},
+    "/pqrs": {},
+    "/question": {},
+    "/registro": {},
+    "/services": {},
+    "/sueroterapia": {},
+    "/testimonials": {}
+  }
+}

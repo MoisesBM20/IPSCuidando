@@ -1,0 +1,1293 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="utf-8">
+  <title>CUIDANDO DE TI CyE IPS SAS</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Accede a nuestros servicios de salud con la calidad y el respaldo que mereces. Tu bienestar es nuestra prioridad absoluta.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap Icons para complementar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css"><style ng-app-id="ng">
+
+main[_ngcontent-ng-c2518764147] {
+  overflow-x: hidden;
+}
+main.main-content[_ngcontent-ng-c2518764147] {
+  min-height: calc(100vh - 200px);
+  padding-top: 35px;
+}
+main[_ngcontent-ng-c2518764147]:not(.main-content) {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+*[_ngcontent-ng-c2518764147] {
+  box-sizing: border-box;
+}
+button[_ngcontent-ng-c2518764147], 
+a[_ngcontent-ng-c2518764147] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+img[_ngcontent-ng-c2518764147] {
+  max-width: 100%;
+  height: auto;
+}
+html[_ngcontent-ng-c2518764147] {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 768px) {
+  main[_ngcontent-ng-c2518764147] {
+    min-height: calc(100vh - 150px);
+  }
+}
+@media (max-width: 480px) {
+  main[_ngcontent-ng-c2518764147] {
+    min-height: calc(100vh - 120px);
+  }
+}
+.floating-contact-container[_ngcontent-ng-c2518764147] {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.floating-icons-stack[_ngcontent-ng-c2518764147] {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.floating-icon-wrapper[_ngcontent-ng-c2518764147] {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.floating-contact-text[_ngcontent-ng-c2518764147] {
+  position: absolute;
+  right: 100%;
+  margin-right: 8px;
+  background-color: white;
+  color: #005A9C;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.floating-text-top[_ngcontent-ng-c2518764147] {
+  color: #0088cc;
+}
+.floating-text-bottom[_ngcontent-ng-c2518764147] {
+  color: #25d366;
+}
+.floating-icon-wrapper[_ngcontent-ng-c2518764147]:hover   .floating-contact-text[_ngcontent-ng-c2518764147] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147] {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147]:hover {
+  transform: scale(1.1);
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147] {
+  background:
+    linear-gradient(
+      135deg,
+      #0088cc 0%,
+      #00a8ff 100%);
+  border: 2px solid #fff;
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]:hover {
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.3);
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+  font-size: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  color: white;
+}
+.floating-icon-link.floating-icon-bottom[_ngcontent-ng-c2518764147] {
+  background:
+    linear-gradient(
+      135deg,
+      #25d366 0%,
+      #128c7e 100%);
+  border: 2px solid #fff;
+}
+.floating-icon-link.floating-icon-bottom[_ngcontent-ng-c2518764147]:hover {
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147]   img[_ngcontent-ng-c2518764147] {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  animation: _ngcontent-ng-c2518764147_signal-pulse 2.5s infinite ease-in-out;
+}
+@keyframes _ngcontent-ng-c2518764147_signal-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+@media (max-width: 768px) {
+  .floating-contact-container[_ngcontent-ng-c2518764147] {
+    bottom: 20px;
+    right: 20px;
+  }
+  .floating-icon-link[_ngcontent-ng-c2518764147] {
+    width: 50px;
+    height: 50px;
+  }
+  .floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .floating-contact-text[_ngcontent-ng-c2518764147] {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .floating-contact-container[_ngcontent-ng-c2518764147] {
+    bottom: 15px;
+    right: 15px;
+  }
+  .floating-icon-link[_ngcontent-ng-c2518764147] {
+    width: 45px;
+    height: 45px;
+  }
+  .floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+    font-size: 1.3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .floating-contact-text[_ngcontent-ng-c2518764147] {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
+/*# sourceMappingURL=/app.css.map */</style><style ng-app-id="ng">
+
+[_ngcontent-ng-c3918952098]:root {
+  --navbar-height: 70px;
+  --primary-color: #005A9C;
+  --accent-color: #00B5E2;
+  --white: #ffffff;
+  --text-light: #f8f9fa;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+[_nghost-ng-c3918952098] {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+mat-toolbar[_ngcontent-ng-c3918952098] {
+  background: #003d7a;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: var(--white);
+  height: var(--navbar-height);
+  padding: 0 !important;
+  box-shadow: var(--shadow);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar-container[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 1.5rem;
+}
+.left-section[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+.navbar-brand[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.navbar-brand[_ngcontent-ng-c3918952098]   .logo-link[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: var(--transition);
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+.navbar-brand[_ngcontent-ng-c3918952098]   .logo-link[_ngcontent-ng-c3918952098]:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+}
+.navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: var(--transition);
+}
+.search-container[_ngcontent-ng-c3918952098] {
+  flex: 0 0 auto;
+  width: 300px;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-wrapper[_ngcontent-ng-c3918952098] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+  overflow: hidden;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-wrapper[_ngcontent-ng-c3918952098]:hover {
+  background: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-wrapper[_ngcontent-ng-c3918952098]:focus-within {
+  background: rgb(255, 255, 255);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0, 181, 226, 0.1490196078);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-input[_ngcontent-ng-c3918952098] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-input[_ngcontent-ng-c3918952098]::placeholder {
+  color: rgba(0, 90, 156, 0.6);
+  font-weight: 400;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-button[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #003d7a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-button[_ngcontent-ng-c3918952098]:hover {
+  background: #0099cc;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 181, 226, 0.3);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-button[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.navbar-nav[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  transition: left 0.5s ease;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:hover::before {
+  left: 100%;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--white);
+  transition: var(--transition);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]   span[_ngcontent-ng-c3918952098] {
+  position: relative;
+  z-index: 1;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:active {
+  transform: translateY(0);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .login-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background:
+    linear-gradient(
+      135deg,
+      #ff6b35 0%,
+      #f7931e 100%);
+  color: var(--white) !important;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .login-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .login-btn[_ngcontent-ng-c3918952098]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+  background:
+    linear-gradient(
+      135deg,
+      #e55a25 0%,
+      #e07818 100%);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-color) 0%,
+      #0099cc 100%);
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 181, 226, 0.3);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transition: left 0.5s ease;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:hover::before {
+  left: 100%;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--white);
+  transition: var(--transition);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]   span[_ngcontent-ng-c3918952098] {
+  position: relative;
+  z-index: 1;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #0099cc 0%,
+      var(--accent-color) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 181, 226, 0.4);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  transform: scale(1.1);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:active {
+  transform: translateY(-1px);
+}
+.mobile-toggle[_ngcontent-ng-c3918952098] {
+  display: none;
+}
+.mobile-toggle[_ngcontent-ng-c3918952098]   .menu-btn[_ngcontent-ng-c3918952098] {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+.mobile-toggle[_ngcontent-ng-c3918952098]   .menu-btn[_ngcontent-ng-c3918952098]:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--accent-color);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.mobile-toggle[_ngcontent-ng-c3918952098]   .menu-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+.mobile-menu[_ngcontent-ng-c3918952098] {
+  display: none;
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 90, 156, 0.1);
+}
+.mobile-menu.active[_ngcontent-ng-c3918952098] {
+  display: flex !important;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: block !important;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+  border: 2px solid rgba(0, 90, 156, 0.2);
+  transition: var(--transition);
+  overflow: hidden;
+  width: 100%;
+  min-height: 50px;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098]:hover {
+  background: rgb(255, 255, 255);
+  border-color: rgba(0, 90, 156, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098]:focus-within {
+  background: rgb(255, 255, 255);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0, 181, 226, 0.15);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  width: 100%;
+  display: block !important;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098]::placeholder {
+  color: rgba(0, 90, 156, 0.6);
+  font-weight: 400;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098]:hover {
+  background: #0099cc;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 181, 226, 0.3);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098]:hover {
+  background: rgba(0, 181, 226, 0.1);
+  border-color: var(--accent-color);
+  transform: translateX(8px);
+  box-shadow: 0 4px 15px rgba(0, 181, 226, 0.15);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-login-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background:
+    linear-gradient(
+      135deg,
+      #ff6b35 0%,
+      #f7931e 100%);
+  color: var(--white) !important;
+  padding: 1.2rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin: 0.5rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-login-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-login-btn[_ngcontent-ng-c3918952098]:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-color) 0%,
+      #0099cc 100%);
+  color: var(--white);
+  padding: 1.2rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 181, 226, 0.3);
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--white);
+  transition: var(--transition);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098]:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #0099cc 0%,
+      var(--accent-color) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 181, 226, 0.4);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  transform: scale(1.1);
+}
+@media (max-width: 1200px) {
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 1.5rem;
+  }
+  .search-container[_ngcontent-ng-c3918952098] {
+    width: 280px;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098] {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098] {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  [_ngcontent-ng-c3918952098]:root {
+    --navbar-height: 65px;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098] {
+    display: none;
+  }
+  .search-container[_ngcontent-ng-c3918952098] {
+    display: none;
+  }
+  .mobile-toggle[_ngcontent-ng-c3918952098] {
+    display: block;
+  }
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 1rem;
+  }
+  .navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+    height: 50px;
+  }
+  .left-section[_ngcontent-ng-c3918952098] {
+    gap: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098] {
+    display: none;
+  }
+  .mobile-menu.active[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 768px) {
+  [_ngcontent-ng-c3918952098]:root {
+    --navbar-height: 60px;
+  }
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 0.8rem;
+  }
+  .navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+    height: 45px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098] {
+    top: var(--navbar-height);
+    padding: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 50px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 480px) {
+  [_ngcontent-ng-c3918952098]:root {
+    --navbar-height: 55px;
+  }
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 0.5rem;
+  }
+  .navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+    height: 40px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098] {
+    top: var(--navbar-height);
+    padding: 1rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 50px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098] {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098] {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+.navbar-sticky[_ngcontent-ng-c3918952098] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/*# sourceMappingURL=/navbar.css.map */</style><style ng-app-id="ng">.mat-toolbar{background:var(--mat-toolbar-container-background-color, var(--mat-sys-surface));color:var(--mat-toolbar-container-text-color, var(--mat-sys-on-surface))}.mat-toolbar,.mat-toolbar h1,.mat-toolbar h2,.mat-toolbar h3,.mat-toolbar h4,.mat-toolbar h5,.mat-toolbar h6{font-family:var(--mat-toolbar-title-text-font, var(--mat-sys-title-large-font));font-size:var(--mat-toolbar-title-text-size, var(--mat-sys-title-large-size));line-height:var(--mat-toolbar-title-text-line-height, var(--mat-sys-title-large-line-height));font-weight:var(--mat-toolbar-title-text-weight, var(--mat-sys-title-large-weight));letter-spacing:var(--mat-toolbar-title-text-tracking, var(--mat-sys-title-large-tracking));margin:0}@media(forced-colors: active){.mat-toolbar{outline:solid 1px}}.mat-toolbar .mat-form-field-underline,.mat-toolbar .mat-form-field-ripple,.mat-toolbar .mat-focused .mat-form-field-ripple{background-color:currentColor}.mat-toolbar .mat-form-field-label,.mat-toolbar .mat-focused .mat-form-field-label,.mat-toolbar .mat-select-value,.mat-toolbar .mat-select-arrow,.mat-toolbar .mat-form-field.mat-focused .mat-select-arrow{color:inherit}.mat-toolbar .mat-input-element{caret-color:currentColor}.mat-toolbar .mat-mdc-button-base.mat-mdc-button-base.mat-unthemed{--mat-button-text-label-text-color: var(--mat-toolbar-container-text-color, var(--mat-sys-on-surface));--mat-button-outlined-label-text-color: var(--mat-toolbar-container-text-color, var(--mat-sys-on-surface))}.mat-toolbar-row,.mat-toolbar-single-row{display:flex;box-sizing:border-box;padding:0 16px;width:100%;flex-direction:row;align-items:center;white-space:nowrap;height:var(--mat-toolbar-standard-height, 64px)}@media(max-width: 599px){.mat-toolbar-row,.mat-toolbar-single-row{height:var(--mat-toolbar-mobile-height, 56px)}}.mat-toolbar-multiple-rows{display:flex;box-sizing:border-box;flex-direction:column;width:100%;min-height:var(--mat-toolbar-standard-height, 64px)}@media(max-width: 599px){.mat-toolbar-multiple-rows{min-height:var(--mat-toolbar-mobile-height, 56px)}}
+</style><style ng-app-id="ng">.mat-mdc-button-base{text-decoration:none}.mat-mdc-button-base .mat-icon{min-height:fit-content;flex-shrink:0}.mdc-button{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-appearance:none;overflow:visible;vertical-align:middle;background:rgba(0,0,0,0);padding:0 8px}.mdc-button::-moz-focus-inner{padding:0;border:0}.mdc-button:active{outline:none}.mdc-button:hover{cursor:pointer}.mdc-button:disabled{cursor:default;pointer-events:none}.mdc-button[hidden]{display:none}.mdc-button .mdc-button__label{position:relative}.mat-mdc-button{padding:0 var(--mat-button-text-horizontal-padding, 12px);height:var(--mat-button-text-container-height, 40px);font-family:var(--mat-button-text-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-text-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-text-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-text-label-text-transform);font-weight:var(--mat-button-text-label-text-weight, var(--mat-sys-label-large-weight))}.mat-mdc-button,.mat-mdc-button .mdc-button__ripple{border-radius:var(--mat-button-text-container-shape, var(--mat-sys-corner-full))}.mat-mdc-button:not(:disabled){color:var(--mat-button-text-label-text-color, var(--mat-sys-primary))}.mat-mdc-button[disabled],.mat-mdc-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-text-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-mdc-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-button:has(.material-icons,mat-icon,[matButtonIcon]){padding:0 var(--mat-button-text-with-icon-horizontal-padding, 16px)}.mat-mdc-button>.mat-icon{margin-right:var(--mat-button-text-icon-spacing, 8px);margin-left:var(--mat-button-text-icon-offset, -4px)}[dir=rtl] .mat-mdc-button>.mat-icon{margin-right:var(--mat-button-text-icon-offset, -4px);margin-left:var(--mat-button-text-icon-spacing, 8px)}.mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-text-icon-offset, -4px);margin-left:var(--mat-button-text-icon-spacing, 8px)}[dir=rtl] .mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-text-icon-spacing, 8px);margin-left:var(--mat-button-text-icon-offset, -4px)}.mat-mdc-button .mat-ripple-element{background-color:var(--mat-button-text-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-text-state-layer-color, var(--mat-sys-primary))}.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-text-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-text-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-text-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-text-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-text-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-unelevated-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);height:var(--mat-button-filled-container-height, 40px);font-family:var(--mat-button-filled-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-filled-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-filled-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-filled-label-text-transform);font-weight:var(--mat-button-filled-label-text-weight, var(--mat-sys-label-large-weight));padding:0 var(--mat-button-filled-horizontal-padding, 24px)}.mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-button-filled-icon-spacing, 8px);margin-left:var(--mat-button-filled-icon-offset, -8px)}[dir=rtl] .mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-button-filled-icon-offset, -8px);margin-left:var(--mat-button-filled-icon-spacing, 8px)}.mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-filled-icon-offset, -8px);margin-left:var(--mat-button-filled-icon-spacing, 8px)}[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-filled-icon-spacing, 8px);margin-left:var(--mat-button-filled-icon-offset, -8px)}.mat-mdc-unelevated-button .mat-ripple-element{background-color:var(--mat-button-filled-ripple-color, color-mix(in srgb, var(--mat-sys-on-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-filled-state-layer-color, var(--mat-sys-on-primary))}.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-filled-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-unelevated-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-filled-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-unelevated-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-filled-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-unelevated-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-filled-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-unelevated-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-filled-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-unelevated-button:not(:disabled){color:var(--mat-button-filled-label-text-color, var(--mat-sys-on-primary));background-color:var(--mat-button-filled-container-color, var(--mat-sys-primary))}.mat-mdc-unelevated-button,.mat-mdc-unelevated-button .mdc-button__ripple{border-radius:var(--mat-button-filled-container-shape, var(--mat-sys-corner-full))}.mat-mdc-unelevated-button[disabled],.mat-mdc-unelevated-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-filled-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-button-filled-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-raised-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);box-shadow:var(--mat-button-protected-container-elevation-shadow, var(--mat-sys-level1));height:var(--mat-button-protected-container-height, 40px);font-family:var(--mat-button-protected-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-protected-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-protected-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-protected-label-text-transform);font-weight:var(--mat-button-protected-label-text-weight, var(--mat-sys-label-large-weight));padding:0 var(--mat-button-protected-horizontal-padding, 24px)}.mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-button-protected-icon-spacing, 8px);margin-left:var(--mat-button-protected-icon-offset, -8px)}[dir=rtl] .mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-button-protected-icon-offset, -8px);margin-left:var(--mat-button-protected-icon-spacing, 8px)}.mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-protected-icon-offset, -8px);margin-left:var(--mat-button-protected-icon-spacing, 8px)}[dir=rtl] .mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-protected-icon-spacing, 8px);margin-left:var(--mat-button-protected-icon-offset, -8px)}.mat-mdc-raised-button .mat-ripple-element{background-color:var(--mat-button-protected-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-protected-state-layer-color, var(--mat-sys-primary))}.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-protected-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-raised-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-protected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-raised-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-protected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-raised-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-protected-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-raised-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-protected-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-raised-button:not(:disabled){color:var(--mat-button-protected-label-text-color, var(--mat-sys-primary));background-color:var(--mat-button-protected-container-color, var(--mat-sys-surface))}.mat-mdc-raised-button,.mat-mdc-raised-button .mdc-button__ripple{border-radius:var(--mat-button-protected-container-shape, var(--mat-sys-corner-full))}.mat-mdc-raised-button:hover{box-shadow:var(--mat-button-protected-hover-container-elevation-shadow, var(--mat-sys-level2))}.mat-mdc-raised-button:focus{box-shadow:var(--mat-button-protected-focus-container-elevation-shadow, var(--mat-sys-level1))}.mat-mdc-raised-button:active,.mat-mdc-raised-button:focus:active{box-shadow:var(--mat-button-protected-pressed-container-elevation-shadow, var(--mat-sys-level1))}.mat-mdc-raised-button[disabled],.mat-mdc-raised-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-protected-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-button-protected-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-raised-button[disabled].mat-mdc-button-disabled,.mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled{box-shadow:var(--mat-button-protected-disabled-container-elevation-shadow, var(--mat-sys-level0))}.mat-mdc-raised-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button{border-style:solid;transition:border 280ms cubic-bezier(0.4, 0, 0.2, 1);height:var(--mat-button-outlined-container-height, 40px);font-family:var(--mat-button-outlined-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-outlined-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-outlined-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-outlined-label-text-transform);font-weight:var(--mat-button-outlined-label-text-weight, var(--mat-sys-label-large-weight));border-radius:var(--mat-button-outlined-container-shape, var(--mat-sys-corner-full));border-width:var(--mat-button-outlined-outline-width, 1px);padding:0 var(--mat-button-outlined-horizontal-padding, 24px)}.mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-button-outlined-icon-spacing, 8px);margin-left:var(--mat-button-outlined-icon-offset, -8px)}[dir=rtl] .mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-button-outlined-icon-offset, -8px);margin-left:var(--mat-button-outlined-icon-spacing, 8px)}.mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-outlined-icon-offset, -8px);margin-left:var(--mat-button-outlined-icon-spacing, 8px)}[dir=rtl] .mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-outlined-icon-spacing, 8px);margin-left:var(--mat-button-outlined-icon-offset, -8px)}.mat-mdc-outlined-button .mat-ripple-element{background-color:var(--mat-button-outlined-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-outlined-state-layer-color, var(--mat-sys-primary))}.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-outlined-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-outlined-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-outlined-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-outlined-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-outlined-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-outlined-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-outlined-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-outlined-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-outlined-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-outlined-button:not(:disabled){color:var(--mat-button-outlined-label-text-color, var(--mat-sys-primary));border-color:var(--mat-button-outlined-outline-color, var(--mat-sys-outline))}.mat-mdc-outlined-button[disabled],.mat-mdc-outlined-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-outlined-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));border-color:var(--mat-button-outlined-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-tonal-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);height:var(--mat-button-tonal-container-height, 40px);font-family:var(--mat-button-tonal-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-tonal-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-tonal-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-tonal-label-text-transform);font-weight:var(--mat-button-tonal-label-text-weight, var(--mat-sys-label-large-weight));padding:0 var(--mat-button-tonal-horizontal-padding, 24px)}.mat-tonal-button:not(:disabled){color:var(--mat-button-tonal-label-text-color, var(--mat-sys-on-secondary-container));background-color:var(--mat-button-tonal-container-color, var(--mat-sys-secondary-container))}.mat-tonal-button,.mat-tonal-button .mdc-button__ripple{border-radius:var(--mat-button-tonal-container-shape, var(--mat-sys-corner-full))}.mat-tonal-button[disabled],.mat-tonal-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-tonal-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-button-tonal-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-tonal-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-tonal-button>.mat-icon{margin-right:var(--mat-button-tonal-icon-spacing, 8px);margin-left:var(--mat-button-tonal-icon-offset, -8px)}[dir=rtl] .mat-tonal-button>.mat-icon{margin-right:var(--mat-button-tonal-icon-offset, -8px);margin-left:var(--mat-button-tonal-icon-spacing, 8px)}.mat-tonal-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-tonal-icon-offset, -8px);margin-left:var(--mat-button-tonal-icon-spacing, 8px)}[dir=rtl] .mat-tonal-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-tonal-icon-spacing, 8px);margin-left:var(--mat-button-tonal-icon-offset, -8px)}.mat-tonal-button .mat-ripple-element{background-color:var(--mat-button-tonal-ripple-color, color-mix(in srgb, var(--mat-sys-on-secondary-container) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-tonal-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-tonal-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-tonal-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-tonal-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-tonal-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-tonal-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-tonal-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-tonal-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-tonal-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-tonal-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-tonal-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-tonal-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-tonal-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-tonal-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-button,.mat-mdc-unelevated-button,.mat-mdc-raised-button,.mat-mdc-outlined-button,.mat-tonal-button{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before,.mat-tonal-button .mat-mdc-button-ripple,.mat-tonal-button .mat-mdc-button-persistent-ripple,.mat-tonal-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-tonal-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before,.mat-tonal-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-button .mdc-button__label,.mat-mdc-button .mat-icon,.mat-mdc-unelevated-button .mdc-button__label,.mat-mdc-unelevated-button .mat-icon,.mat-mdc-raised-button .mdc-button__label,.mat-mdc-raised-button .mat-icon,.mat-mdc-outlined-button .mdc-button__label,.mat-mdc-outlined-button .mat-icon,.mat-tonal-button .mdc-button__label,.mat-tonal-button .mat-icon{z-index:1;position:relative}.mat-mdc-button .mat-focus-indicator,.mat-mdc-unelevated-button .mat-focus-indicator,.mat-mdc-raised-button .mat-focus-indicator,.mat-mdc-outlined-button .mat-focus-indicator,.mat-tonal-button .mat-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit}.mat-mdc-button:focus>.mat-focus-indicator::before,.mat-mdc-unelevated-button:focus>.mat-focus-indicator::before,.mat-mdc-raised-button:focus>.mat-focus-indicator::before,.mat-mdc-outlined-button:focus>.mat-focus-indicator::before,.mat-tonal-button:focus>.mat-focus-indicator::before{content:"";border-radius:inherit}.mat-mdc-button._mat-animation-noopable,.mat-mdc-unelevated-button._mat-animation-noopable,.mat-mdc-raised-button._mat-animation-noopable,.mat-mdc-outlined-button._mat-animation-noopable,.mat-tonal-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-button>.mat-icon,.mat-mdc-unelevated-button>.mat-icon,.mat-mdc-raised-button>.mat-icon,.mat-mdc-outlined-button>.mat-icon,.mat-tonal-button>.mat-icon{display:inline-block;position:relative;vertical-align:top;font-size:1.125rem;height:1.125rem;width:1.125rem}.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mdc-button__ripple{top:-1px;left:-1px;bottom:-1px;right:-1px}.mat-mdc-unelevated-button .mat-focus-indicator::before,.mat-tonal-button .mat-focus-indicator::before,.mat-mdc-raised-button .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-outlined-button .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px)*-1)}
+</style><style ng-app-id="ng">@media(forced-colors: active){.mat-mdc-button:not(.mdc-button--outlined),.mat-mdc-unelevated-button:not(.mdc-button--outlined),.mat-mdc-raised-button:not(.mdc-button--outlined),.mat-mdc-outlined-button:not(.mdc-button--outlined),.mat-mdc-button-base.mat-tonal-button,.mat-mdc-icon-button.mat-mdc-icon-button,.mat-mdc-outlined-button .mdc-button__ripple{outline:solid 1px}}
+</style><style ng-app-id="ng">.mat-focus-indicator{position:relative}.mat-focus-indicator::before{top:0;left:0;right:0;bottom:0;position:absolute;box-sizing:border-box;pointer-events:none;display:var(--mat-focus-indicator-display, none);border-width:var(--mat-focus-indicator-border-width, 3px);border-style:var(--mat-focus-indicator-border-style, solid);border-color:var(--mat-focus-indicator-border-color, transparent);border-radius:var(--mat-focus-indicator-border-radius, 4px)}.mat-focus-indicator:focus::before{content:""}@media(forced-colors: active){html{--mat-focus-indicator-display: block}}
+</style><style ng-app-id="ng">mat-icon,mat-icon.mat-primary,mat-icon.mat-accent,mat-icon.mat-warn{color:var(--mat-icon-color, inherit)}.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}
+</style><style ng-app-id="ng">.mat-mdc-icon-button{-webkit-user-select:none;user-select:none;display:inline-block;position:relative;box-sizing:border-box;border:none;outline:none;background-color:rgba(0,0,0,0);fill:currentColor;text-decoration:none;cursor:pointer;z-index:0;overflow:visible;border-radius:var(--mat-icon-button-container-shape, var(--mat-sys-corner-full, 50%));flex-shrink:0;text-align:center;width:var(--mat-icon-button-state-layer-size, 40px);height:var(--mat-icon-button-state-layer-size, 40px);padding:calc(calc(var(--mat-icon-button-state-layer-size, 40px) - var(--mat-icon-button-icon-size, 24px)) / 2);font-size:var(--mat-icon-button-icon-size, 24px);color:var(--mat-icon-button-icon-color, var(--mat-sys-on-surface-variant));-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-icon-button .mat-mdc-button-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-icon-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-icon-button .mdc-button__label,.mat-mdc-icon-button .mat-icon{z-index:1;position:relative}.mat-mdc-icon-button .mat-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit}.mat-mdc-icon-button:focus>.mat-focus-indicator::before{content:"";border-radius:inherit}.mat-mdc-icon-button .mat-ripple-element{background-color:var(--mat-icon-button-ripple-color, color-mix(in srgb, var(--mat-sys-on-surface-variant) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-icon-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-icon-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-icon-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-icon-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-icon-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-icon-button-touch-target-display, block);left:50%;width:48px;transform:translate(-50%, -50%)}.mat-mdc-icon-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-icon-button[disabled],.mat-mdc-icon-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-icon-button-disabled-icon-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-mdc-icon-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-icon-button img,.mat-mdc-icon-button svg{width:var(--mat-icon-button-icon-size, 24px);height:var(--mat-icon-button-icon-size, 24px);vertical-align:baseline}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple{border-radius:var(--mat-icon-button-container-shape, var(--mat-sys-corner-full, 50%))}.mat-mdc-icon-button[hidden]{display:none}.mat-mdc-icon-button.mat-unthemed:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-primary:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-accent:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-warn:not(.mdc-ripple-upgraded):focus::before{background:rgba(0,0,0,0);opacity:1}
+</style><style ng-app-id="ng">
+
+.footer[_ngcontent-ng-c2539398485] {
+  background-color: #002d4d;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 4rem;
+}
+.footer-grid[_ngcontent-ng-c2539398485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+  height: 250px;
+  position: static;
+  margin-bottom: 1rem;
+}
+.footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485] {
+  list-style: none;
+  padding: 0;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485] {
+  margin-bottom: 0.8rem;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s, padding-left 0.3s;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485]:hover {
+  color: var(--white);
+  padding-left: 5px;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   i[_ngcontent-ng-c2539398485] {
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+.social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+  display: inline-block;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+.social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485]:hover {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+}
+.footer-bottom[_ngcontent-ng-c2539398485] {
+  background-color: #001f33;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   .container[_ngcontent-ng-c2539398485] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   p[_ngcontent-ng-c2539398485] {
+  margin: 0.5rem;
+  font-size: 0.9rem;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485]:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1200px) {
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 992px) {
+  .footer[_ngcontent-ng-c2539398485] {
+    padding-top: 3rem;
+  }
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+    height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .footer[_ngcontent-ng-c2539398485] {
+    padding-top: 2.5rem;
+  }
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+    height: 40px;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485] {
+    margin-bottom: 0.6rem;
+  }
+  .social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485] {
+    padding: 1rem 0;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485]   .container[_ngcontent-ng-c2539398485] {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485]   p[_ngcontent-ng-c2539398485] {
+    font-size: 0.8rem;
+    margin: 0.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer[_ngcontent-ng-c2539398485] {
+    padding-top: 2rem;
+  }
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+    height: 35px;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+    font-size: 0.9rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485] {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   i[_ngcontent-ng-c2539398485] {
+    margin-right: 8px;
+  }
+  .social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485]   p[_ngcontent-ng-c2539398485] {
+    font-size: 0.75rem;
+  }
+}
+/*# sourceMappingURL=/footer.css.map */</style><style ng-app-id="ng">
+
+.health-page[_ngcontent-ng-c2546810316] {
+  font-family: "Roboto", sans-serif;
+}
+.health-page[_ngcontent-ng-c2546810316]   .main-container[_ngcontent-ng-c2546810316] {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316] {
+  background:
+    linear-gradient(
+      135deg,
+      #005cbb 0%,
+      #0d47a1 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   .eyebrow[_ngcontent-ng-c2546810316] {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   h1[_ngcontent-ng-c2546810316] {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 24px 0;
+  font-weight: 800;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   h1[_ngcontent-ng-c2546810316]   .highlight[_ngcontent-ng-c2546810316] {
+  color: #8ab4f8;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   p[_ngcontent-ng-c2546810316] {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   .stats-row[_ngcontent-ng-c2546810316] {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   .stats-row[_ngcontent-ng-c2546810316]   .stat-box[_ngcontent-ng-c2546810316] {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   .stats-row[_ngcontent-ng-c2546810316]   .stat-box[_ngcontent-ng-c2546810316]   .stat-number[_ngcontent-ng-c2546810316] {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.health-page[_ngcontent-ng-c2546810316]   .hero-header[_ngcontent-ng-c2546810316]   .stats-row[_ngcontent-ng-c2546810316]   .stat-box[_ngcontent-ng-c2546810316]   .stat-label[_ngcontent-ng-c2546810316] {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.health-page[_ngcontent-ng-c2546810316]   .services-section[_ngcontent-ng-c2546810316] {
+  padding: 80px 0;
+  background: #f8f9ff;
+}
+.health-page[_ngcontent-ng-c2546810316]   .services-section[_ngcontent-ng-c2546810316]   .section-header[_ngcontent-ng-c2546810316] {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .services-section[_ngcontent-ng-c2546810316]   .section-header[_ngcontent-ng-c2546810316]   h2[_ngcontent-ng-c2546810316] {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1c1e;
+}
+.health-page[_ngcontent-ng-c2546810316]   .services-section[_ngcontent-ng-c2546810316]   .section-header[_ngcontent-ng-c2546810316]   p[_ngcontent-ng-c2546810316] {
+  color: #44474e;
+}
+.health-page[_ngcontent-ng-c2546810316]   .services-grid[_ngcontent-ng-c2546810316] {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316] {
+  border-radius: 28px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]:hover {
+  transform: translateY(-8px);
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   .card-icon[_ngcontent-ng-c2546810316] {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0 0 24px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   .card-icon.blue[_ngcontent-ng-c2546810316] {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   .card-icon.red[_ngcontent-ng-c2546810316] {
+  background: #fdecea;
+  color: #d32f2f;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   .card-icon.teal[_ngcontent-ng-c2546810316] {
+  background: #e0f2f1;
+  color: #00796b;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   .card-icon.orange[_ngcontent-ng-c2546810316] {
+  background: #fff3e0;
+  color: #f57c00;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   .card-icon.purple[_ngcontent-ng-c2546810316] {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   .card-icon.pink[_ngcontent-ng-c2546810316] {
+  background: #fce4ec;
+  color: #c2185b;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-header[_ngcontent-ng-c2546810316] {
+  padding: 16px 24px 0;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-header[_ngcontent-ng-c2546810316]   mat-card-title[_ngcontent-ng-c2546810316] {
+  font-weight: 700;
+  color: #1a1c1e;
+  font-size: 1.25rem;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-content[_ngcontent-ng-c2546810316] {
+  padding: 16px 24px;
+  flex-grow: 1;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-content[_ngcontent-ng-c2546810316]   p[_ngcontent-ng-c2546810316] {
+  color: #44474e;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-content[_ngcontent-ng-c2546810316]   .check-icon[_ngcontent-ng-c2546810316] {
+  color: #4caf50;
+  font-size: 18px;
+  margin-right: 8px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-content[_ngcontent-ng-c2546810316]   mat-list-item[_ngcontent-ng-c2546810316] {
+  font-size: 0.9rem;
+  height: auto !important;
+  padding: 4px 0;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-content[_ngcontent-ng-c2546810316]   mat-list-item[_ngcontent-ng-c2546810316]   .mdc-list-item__content[_ngcontent-ng-c2546810316] {
+  display: flex;
+  align-items: center;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-actions[_ngcontent-ng-c2546810316] {
+  padding: 16px 24px 24px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-actions[_ngcontent-ng-c2546810316]   .btn-solicitar[_ngcontent-ng-c2546810316] {
+  width: 100%;
+  border-radius: 100px;
+  height: 48px;
+  font-weight: 600;
+  background-color: #005cbb !important;
+  color: white !important;
+}
+.health-page[_ngcontent-ng-c2546810316]   .service-card[_ngcontent-ng-c2546810316]   mat-card-actions[_ngcontent-ng-c2546810316]   .btn-solicitar[_ngcontent-ng-c2546810316]:hover {
+  background-color: #004a96 !important;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316] {
+  padding: 80px 0;
+  text-align: center;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   h2[_ngcontent-ng-c2546810316] {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316]   .step-item[_ngcontent-ng-c2546810316] {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316]   .step-item[_ngcontent-ng-c2546810316]   .step-circle[_ngcontent-ng-c2546810316] {
+  width: 60px;
+  height: 60px;
+  background: #005cbb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316]   .step-item[_ngcontent-ng-c2546810316]   .step-circle.success[_ngcontent-ng-c2546810316] {
+  background: #4caf50;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316]   .step-item[_ngcontent-ng-c2546810316]   .step-icon-bg[_ngcontent-ng-c2546810316] {
+  display: none;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316]   .step-item[_ngcontent-ng-c2546810316]   h3[_ngcontent-ng-c2546810316] {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.health-page[_ngcontent-ng-c2546810316]   .steps-section[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316]   .step-item[_ngcontent-ng-c2546810316]   p[_ngcontent-ng-c2546810316] {
+  color: #44474e;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .health-page[_ngcontent-ng-c2546810316]   .steps-grid[_ngcontent-ng-c2546810316] {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*# sourceMappingURL=/services.css.map */</style><style ng-app-id="ng">.mat-mdc-card{display:flex;flex-direction:column;box-sizing:border-box;position:relative;border-style:solid;border-width:0;background-color:var(--mat-card-elevated-container-color, var(--mat-sys-surface-container-low));border-color:var(--mat-card-elevated-container-color, var(--mat-sys-surface-container-low));border-radius:var(--mat-card-elevated-container-shape, var(--mat-sys-corner-medium));box-shadow:var(--mat-card-elevated-container-elevation, var(--mat-sys-level1))}.mat-mdc-card::after{position:absolute;top:0;left:0;width:100%;height:100%;border:solid 1px rgba(0,0,0,0);content:"";display:block;pointer-events:none;box-sizing:border-box;border-radius:var(--mat-card-elevated-container-shape, var(--mat-sys-corner-medium))}.mat-mdc-card-outlined{background-color:var(--mat-card-outlined-container-color, var(--mat-sys-surface));border-radius:var(--mat-card-outlined-container-shape, var(--mat-sys-corner-medium));border-width:var(--mat-card-outlined-outline-width, 1px);border-color:var(--mat-card-outlined-outline-color, var(--mat-sys-outline-variant));box-shadow:var(--mat-card-outlined-container-elevation, var(--mat-sys-level0))}.mat-mdc-card-outlined::after{border:none}.mat-mdc-card-filled{background-color:var(--mat-card-filled-container-color, var(--mat-sys-surface-container-highest));border-radius:var(--mat-card-filled-container-shape, var(--mat-sys-corner-medium));box-shadow:var(--mat-card-filled-container-elevation, var(--mat-sys-level0))}.mdc-card__media{position:relative;box-sizing:border-box;background-repeat:no-repeat;background-position:center;background-size:cover}.mdc-card__media::before{display:block;content:""}.mdc-card__media:first-child{border-top-left-radius:inherit;border-top-right-radius:inherit}.mdc-card__media:last-child{border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}.mat-mdc-card-actions{display:flex;flex-direction:row;align-items:center;box-sizing:border-box;min-height:52px;padding:8px}.mat-mdc-card-title{font-family:var(--mat-card-title-text-font, var(--mat-sys-title-large-font));line-height:var(--mat-card-title-text-line-height, var(--mat-sys-title-large-line-height));font-size:var(--mat-card-title-text-size, var(--mat-sys-title-large-size));letter-spacing:var(--mat-card-title-text-tracking, var(--mat-sys-title-large-tracking));font-weight:var(--mat-card-title-text-weight, var(--mat-sys-title-large-weight))}.mat-mdc-card-subtitle{color:var(--mat-card-subtitle-text-color, var(--mat-sys-on-surface));font-family:var(--mat-card-subtitle-text-font, var(--mat-sys-title-medium-font));line-height:var(--mat-card-subtitle-text-line-height, var(--mat-sys-title-medium-line-height));font-size:var(--mat-card-subtitle-text-size, var(--mat-sys-title-medium-size));letter-spacing:var(--mat-card-subtitle-text-tracking, var(--mat-sys-title-medium-tracking));font-weight:var(--mat-card-subtitle-text-weight, var(--mat-sys-title-medium-weight))}.mat-mdc-card-title,.mat-mdc-card-subtitle{display:block;margin:0}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle{padding:16px 16px 0}.mat-mdc-card-header{display:flex;padding:16px 16px 0}.mat-mdc-card-content{display:block;padding:0 16px}.mat-mdc-card-content:first-child{padding-top:16px}.mat-mdc-card-content:last-child{padding-bottom:16px}.mat-mdc-card-title-group{display:flex;justify-content:space-between;width:100%}.mat-mdc-card-avatar{height:40px;width:40px;border-radius:50%;flex-shrink:0;margin-bottom:16px;object-fit:cover}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title{line-height:normal}.mat-mdc-card-sm-image{width:80px;height:80px}.mat-mdc-card-md-image{width:112px;height:112px}.mat-mdc-card-lg-image{width:152px;height:152px}.mat-mdc-card-xl-image{width:240px;height:240px}.mat-mdc-card-subtitle~.mat-mdc-card-title,.mat-mdc-card-title~.mat-mdc-card-subtitle,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-title-group .mat-mdc-card-title,.mat-mdc-card-title-group .mat-mdc-card-subtitle{padding-top:0}.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer){margin-bottom:0}.mat-mdc-card-actions-align-end{justify-content:flex-end}
+</style><style ng-app-id="ng">.mdc-list{margin:0;padding:8px 0;list-style-type:none}.mdc-list:focus{outline:none}.mdc-list-item{display:flex;position:relative;justify-content:flex-start;overflow:hidden;padding:0;align-items:stretch;cursor:pointer;padding-left:16px;padding-right:16px;background-color:var(--mat-list-list-item-container-color, transparent);border-radius:var(--mat-list-list-item-container-shape, var(--mat-sys-corner-none))}.mdc-list-item.mdc-list-item--selected{background-color:var(--mat-list-list-item-selected-container-color)}.mdc-list-item:focus{outline:0}.mdc-list-item.mdc-list-item--disabled{cursor:auto}.mdc-list-item.mdc-list-item--with-one-line{height:var(--mat-list-list-item-one-line-container-height, 48px)}.mdc-list-item.mdc-list-item--with-one-line .mdc-list-item__start{align-self:center;margin-top:0}.mdc-list-item.mdc-list-item--with-one-line .mdc-list-item__end{align-self:center;margin-top:0}.mdc-list-item.mdc-list-item--with-two-lines{height:var(--mat-list-list-item-two-line-container-height, 64px)}.mdc-list-item.mdc-list-item--with-two-lines .mdc-list-item__start{align-self:flex-start;margin-top:16px}.mdc-list-item.mdc-list-item--with-two-lines .mdc-list-item__end{align-self:center;margin-top:0}.mdc-list-item.mdc-list-item--with-three-lines{height:var(--mat-list-list-item-three-line-container-height, 88px)}.mdc-list-item.mdc-list-item--with-three-lines .mdc-list-item__start{align-self:flex-start;margin-top:16px}.mdc-list-item.mdc-list-item--with-three-lines .mdc-list-item__end{align-self:flex-start;margin-top:16px}.mdc-list-item.mdc-list-item--selected::before,.mdc-list-item.mdc-list-item--selected:focus::before,.mdc-list-item:not(.mdc-list-item--selected):focus::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;content:"";pointer-events:none}a.mdc-list-item{color:inherit;text-decoration:none}.mdc-list-item__start{fill:currentColor;flex-shrink:0;pointer-events:none}.mdc-list-item--with-leading-icon .mdc-list-item__start{color:var(--mat-list-list-item-leading-icon-color, var(--mat-sys-on-surface-variant));width:var(--mat-list-list-item-leading-icon-size, 24px);height:var(--mat-list-list-item-leading-icon-size, 24px);margin-left:16px;margin-right:32px}[dir=rtl] .mdc-list-item--with-leading-icon .mdc-list-item__start{margin-left:32px;margin-right:16px}.mdc-list-item--with-leading-icon:hover .mdc-list-item__start{color:var(--mat-list-list-item-hover-leading-icon-color)}.mdc-list-item--with-leading-avatar .mdc-list-item__start{width:var(--mat-list-list-item-leading-avatar-size, 40px);height:var(--mat-list-list-item-leading-avatar-size, 40px);margin-left:16px;margin-right:16px;border-radius:50%}.mdc-list-item--with-leading-avatar .mdc-list-item__start,[dir=rtl] .mdc-list-item--with-leading-avatar .mdc-list-item__start{margin-left:16px;margin-right:16px;border-radius:50%}.mdc-list-item__end{flex-shrink:0;pointer-events:none}.mdc-list-item--with-trailing-meta .mdc-list-item__end{font-family:var(--mat-list-list-item-trailing-supporting-text-font, var(--mat-sys-label-small-font));line-height:var(--mat-list-list-item-trailing-supporting-text-line-height, var(--mat-sys-label-small-line-height));font-size:var(--mat-list-list-item-trailing-supporting-text-size, var(--mat-sys-label-small-size));font-weight:var(--mat-list-list-item-trailing-supporting-text-weight, var(--mat-sys-label-small-weight));letter-spacing:var(--mat-list-list-item-trailing-supporting-text-tracking, var(--mat-sys-label-small-tracking))}.mdc-list-item--with-trailing-icon .mdc-list-item__end{color:var(--mat-list-list-item-trailing-icon-color, var(--mat-sys-on-surface-variant));width:var(--mat-list-list-item-trailing-icon-size, 24px);height:var(--mat-list-list-item-trailing-icon-size, 24px)}.mdc-list-item--with-trailing-icon:hover .mdc-list-item__end{color:var(--mat-list-list-item-hover-trailing-icon-color)}.mdc-list-item.mdc-list-item--with-trailing-meta .mdc-list-item__end{color:var(--mat-list-list-item-trailing-supporting-text-color, var(--mat-sys-on-surface-variant))}.mdc-list-item--selected.mdc-list-item--with-trailing-icon .mdc-list-item__end{color:var(--mat-list-list-item-selected-trailing-icon-color, var(--mat-sys-primary))}.mdc-list-item__content{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;align-self:center;flex:1;pointer-events:none}.mdc-list-item--with-two-lines .mdc-list-item__content,.mdc-list-item--with-three-lines .mdc-list-item__content{align-self:stretch}.mdc-list-item__primary-text{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:var(--mat-list-list-item-label-text-color, var(--mat-sys-on-surface));font-family:var(--mat-list-list-item-label-text-font, var(--mat-sys-body-large-font));line-height:var(--mat-list-list-item-label-text-line-height, var(--mat-sys-body-large-line-height));font-size:var(--mat-list-list-item-label-text-size, var(--mat-sys-body-large-size));font-weight:var(--mat-list-list-item-label-text-weight, var(--mat-sys-body-large-weight));letter-spacing:var(--mat-list-list-item-label-text-tracking, var(--mat-sys-body-large-tracking))}.mdc-list-item:hover .mdc-list-item__primary-text{color:var(--mat-list-list-item-hover-label-text-color, var(--mat-sys-on-surface))}.mdc-list-item:focus .mdc-list-item__primary-text{color:var(--mat-list-list-item-focus-label-text-color, var(--mat-sys-on-surface))}.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-three-lines .mdc-list-item__primary-text{display:block;margin-top:0;line-height:normal;margin-bottom:-20px}.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-three-lines .mdc-list-item__primary-text::before{display:inline-block;width:0;height:28px;content:"";vertical-align:0}.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-three-lines .mdc-list-item__primary-text::after{display:inline-block;width:0;height:20px;content:"";vertical-align:-20px}.mdc-list-item__secondary-text{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:block;margin-top:0;color:var(--mat-list-list-item-supporting-text-color, var(--mat-sys-on-surface-variant));font-family:var(--mat-list-list-item-supporting-text-font, var(--mat-sys-body-medium-font));line-height:var(--mat-list-list-item-supporting-text-line-height, var(--mat-sys-body-medium-line-height));font-size:var(--mat-list-list-item-supporting-text-size, var(--mat-sys-body-medium-size));font-weight:var(--mat-list-list-item-supporting-text-weight, var(--mat-sys-body-medium-weight));letter-spacing:var(--mat-list-list-item-supporting-text-tracking, var(--mat-sys-body-medium-tracking))}.mdc-list-item__secondary-text::before{display:inline-block;width:0;height:20px;content:"";vertical-align:0}.mdc-list-item--with-three-lines .mdc-list-item__secondary-text{white-space:normal;line-height:20px}.mdc-list-item--with-overline .mdc-list-item__secondary-text{white-space:nowrap;line-height:auto}.mdc-list-item--with-leading-radio.mdc-list-item,.mdc-list-item--with-leading-checkbox.mdc-list-item,.mdc-list-item--with-leading-icon.mdc-list-item,.mdc-list-item--with-leading-avatar.mdc-list-item{padding-left:0;padding-right:16px}[dir=rtl] .mdc-list-item--with-leading-radio.mdc-list-item,[dir=rtl] .mdc-list-item--with-leading-checkbox.mdc-list-item,[dir=rtl] .mdc-list-item--with-leading-icon.mdc-list-item,[dir=rtl] .mdc-list-item--with-leading-avatar.mdc-list-item{padding-left:16px;padding-right:0}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines .mdc-list-item__primary-text{display:block;margin-top:0;line-height:normal;margin-bottom:-20px}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before{display:inline-block;width:0;height:32px;content:"";vertical-align:0}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after{display:inline-block;width:0;height:20px;content:"";vertical-align:-20px}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end{display:block;margin-top:0;line-height:normal}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before{display:inline-block;width:0;height:32px;content:"";vertical-align:0}.mdc-list-item--with-trailing-icon.mdc-list-item,[dir=rtl] .mdc-list-item--with-trailing-icon.mdc-list-item{padding-left:0;padding-right:0}.mdc-list-item--with-trailing-icon .mdc-list-item__end{margin-left:16px;margin-right:16px}.mdc-list-item--with-trailing-meta.mdc-list-item{padding-left:16px;padding-right:0}[dir=rtl] .mdc-list-item--with-trailing-meta.mdc-list-item{padding-left:0;padding-right:16px}.mdc-list-item--with-trailing-meta .mdc-list-item__end{-webkit-user-select:none;user-select:none;margin-left:28px;margin-right:16px}[dir=rtl] .mdc-list-item--with-trailing-meta .mdc-list-item__end{margin-left:16px;margin-right:28px}.mdc-list-item--with-trailing-meta.mdc-list-item--with-three-lines .mdc-list-item__end,.mdc-list-item--with-trailing-meta.mdc-list-item--with-two-lines .mdc-list-item__end{display:block;line-height:normal;align-self:flex-start;margin-top:0}.mdc-list-item--with-trailing-meta.mdc-list-item--with-three-lines .mdc-list-item__end::before,.mdc-list-item--with-trailing-meta.mdc-list-item--with-two-lines .mdc-list-item__end::before{display:inline-block;width:0;height:28px;content:"";vertical-align:0}.mdc-list-item--with-leading-radio .mdc-list-item__start,.mdc-list-item--with-leading-checkbox .mdc-list-item__start{margin-left:8px;margin-right:24px}[dir=rtl] .mdc-list-item--with-leading-radio .mdc-list-item__start,[dir=rtl] .mdc-list-item--with-leading-checkbox .mdc-list-item__start{margin-left:24px;margin-right:8px}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__start,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__start{align-self:flex-start;margin-top:8px}.mdc-list-item--with-trailing-radio.mdc-list-item,.mdc-list-item--with-trailing-checkbox.mdc-list-item{padding-left:16px;padding-right:0}[dir=rtl] .mdc-list-item--with-trailing-radio.mdc-list-item,[dir=rtl] .mdc-list-item--with-trailing-checkbox.mdc-list-item{padding-left:0;padding-right:16px}.mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-icon,.mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-avatar,.mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-icon,.mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-avatar{padding-left:0}[dir=rtl] .mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-icon,[dir=rtl] .mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-avatar,[dir=rtl] .mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-icon,[dir=rtl] .mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-avatar{padding-right:0}.mdc-list-item--with-trailing-radio .mdc-list-item__end,.mdc-list-item--with-trailing-checkbox .mdc-list-item__end{margin-left:24px;margin-right:8px}[dir=rtl] .mdc-list-item--with-trailing-radio .mdc-list-item__end,[dir=rtl] .mdc-list-item--with-trailing-checkbox .mdc-list-item__end{margin-left:8px;margin-right:24px}.mdc-list-item--with-trailing-radio.mdc-list-item--with-three-lines .mdc-list-item__end,.mdc-list-item--with-trailing-checkbox.mdc-list-item--with-three-lines .mdc-list-item__end{align-self:flex-start;margin-top:8px}.mdc-list-group__subheader{margin:.75rem 16px}.mdc-list-item--disabled .mdc-list-item__start,.mdc-list-item--disabled .mdc-list-item__content,.mdc-list-item--disabled .mdc-list-item__end{opacity:1}.mdc-list-item--disabled .mdc-list-item__primary-text,.mdc-list-item--disabled .mdc-list-item__secondary-text{opacity:var(--mat-list-list-item-disabled-label-text-opacity, 0.3)}.mdc-list-item--disabled.mdc-list-item--with-leading-icon .mdc-list-item__start{color:var(--mat-list-list-item-disabled-leading-icon-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-disabled-leading-icon-opacity, 0.38)}.mdc-list-item--disabled.mdc-list-item--with-trailing-icon .mdc-list-item__end{color:var(--mat-list-list-item-disabled-trailing-icon-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-disabled-trailing-icon-opacity, 0.38)}.mat-mdc-list-item.mat-mdc-list-item-both-leading-and-trailing,[dir=rtl] .mat-mdc-list-item.mat-mdc-list-item-both-leading-and-trailing{padding-left:0;padding-right:0}.mdc-list-item.mdc-list-item--disabled .mdc-list-item__primary-text{color:var(--mat-list-list-item-disabled-label-text-color, var(--mat-sys-on-surface))}.mdc-list-item:hover::before{background-color:var(--mat-list-list-item-hover-state-layer-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mdc-list-item.mdc-list-item--disabled::before{background-color:var(--mat-list-list-item-disabled-state-layer-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-disabled-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-list-item:focus::before{background-color:var(--mat-list-list-item-focus-state-layer-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-list-item--disabled .mdc-radio,.mdc-list-item--disabled .mdc-checkbox{opacity:var(--mat-list-list-item-disabled-label-text-opacity, 0.3)}.mdc-list-item--with-leading-avatar .mat-mdc-list-item-avatar{border-radius:var(--mat-list-list-item-leading-avatar-shape, var(--mat-sys-corner-full));background-color:var(--mat-list-list-item-leading-avatar-color, var(--mat-sys-primary-container))}.mat-mdc-list-item-icon{font-size:var(--mat-list-list-item-leading-icon-size, 24px)}@media(forced-colors: active){a.mdc-list-item--activated::after{content:"";position:absolute;top:50%;right:16px;transform:translateY(-50%);width:10px;height:0;border-bottom:solid 10px;border-radius:10px}a.mdc-list-item--activated [dir=rtl]::after{right:auto;left:16px}}.mat-mdc-list-base{display:block}.mat-mdc-list-base .mdc-list-item__start,.mat-mdc-list-base .mdc-list-item__end,.mat-mdc-list-base .mdc-list-item__content{pointer-events:auto}.mat-mdc-list-item,.mat-mdc-list-option{width:100%;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-list-item:not(.mat-mdc-list-item-interactive),.mat-mdc-list-option:not(.mat-mdc-list-item-interactive){cursor:default}.mat-mdc-list-item .mat-divider-inset,.mat-mdc-list-option .mat-divider-inset{position:absolute;left:0;right:0;bottom:0}.mat-mdc-list-item .mat-mdc-list-item-avatar~.mat-divider-inset,.mat-mdc-list-option .mat-mdc-list-item-avatar~.mat-divider-inset{margin-left:72px}[dir=rtl] .mat-mdc-list-item .mat-mdc-list-item-avatar~.mat-divider-inset,[dir=rtl] .mat-mdc-list-option .mat-mdc-list-item-avatar~.mat-divider-inset{margin-right:72px}.mat-mdc-list-item-interactive::before{top:0;left:0;right:0;bottom:0;position:absolute;content:"";opacity:0;pointer-events:none;border-radius:inherit}.mat-mdc-list-item>.mat-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-mdc-list-item:focus>.mat-focus-indicator::before{content:""}.mat-mdc-list-item.mdc-list-item--with-three-lines .mat-mdc-list-item-line.mdc-list-item__secondary-text{white-space:nowrap;line-height:normal}.mat-mdc-list-item.mdc-list-item--with-three-lines .mat-mdc-list-item-unscoped-content.mdc-list-item__secondary-text{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}mat-action-list button{background:none;color:inherit;border:none;font:inherit;outline:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0);text-align:start}mat-action-list button::-moz-focus-inner{border:0}.mdc-list-item--with-leading-icon .mdc-list-item__start{margin-inline-start:var(--mat-list-list-item-leading-icon-start-space, 16px);margin-inline-end:var(--mat-list-list-item-leading-icon-end-space, 16px)}.mat-mdc-nav-list .mat-mdc-list-item{border-radius:var(--mat-list-active-indicator-shape, var(--mat-sys-corner-full));--mat-focus-indicator-border-radius: var(--mat-list-active-indicator-shape, var(--mat-sys-corner-full))}.mat-mdc-nav-list .mat-mdc-list-item.mdc-list-item--activated{background-color:var(--mat-list-active-indicator-color, var(--mat-sys-secondary-container))}
+</style></head>
+<body class="mat-typography"><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click","input","compositionstart","compositionend"],["blur"]);</script>
+  <app-root ng-version="20.1.2" _nghost-ng-c2518764147="" ngh="8" ng-server-context="ssg"><app-navbar _ngcontent-ng-c2518764147="" _nghost-ng-c3918952098="" ngh="3"><mat-toolbar _ngcontent-ng-c3918952098="" color="primary" class="mat-toolbar navbar-sticky mat-primary mat-toolbar-single-row" ngh="0"><div _ngcontent-ng-c3918952098="" class="navbar-container"><div _ngcontent-ng-c3918952098="" class="left-section"><div _ngcontent-ng-c3918952098="" class="navbar-brand"><a _ngcontent-ng-c3918952098="" routerlink="/" class="logo-link" href="/" jsaction="click:;"><img _ngcontent-ng-c3918952098="" src="assets/images/global/logo2.png" alt="Logo C&amp;E IPS S.A.S" class="logo"></a></div></div><div _ngcontent-ng-c3918952098="" class="navbar-nav"><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">home</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">INICIO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/sueroterapia" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/sueroterapia" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SUEROTERAPIA</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/services" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/services" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SERVICIOS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/bussiness" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/bussiness" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">groups</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">NOSOTROS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/pqrs" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">call</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">CONTACTO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-raised-button="" routerlink="/admin/login" class="mdc-button mat-mdc-button-base login-btn mdc-button--raised mat-mdc-raised-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/admin/login" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">lock</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">LOGIN</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a></div><div _ngcontent-ng-c3918952098="" class="mobile-toggle"><button _ngcontent-ng-c3918952098="" mat-icon-button="" class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base menu-btn mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" mat-ripple-loader-centered="" ngh="2" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">menu</mat-icon><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div></mat-toolbar><div _ngcontent-ng-c3918952098="" class="mobile-menu"><div _ngcontent-ng-c3918952098="" class="mobile-search-container"><div _ngcontent-ng-c3918952098="" class="mobile-search-wrapper"><input _ngcontent-ng-c3918952098="" type="text" placeholder="Buscar servicios..." class="mobile-search-input ng-untouched ng-pristine ng-valid" value="" jsaction="input:;blur:;compositionstart:;compositionend:;"><button _ngcontent-ng-c3918952098="" class="mobile-search-button" jsaction="click:;"><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">search</mat-icon></button></div></div><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">home</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">INICIO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/sueroterapia" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/sueroterapia" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SUEROTERAPIA</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/services" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/services" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SERVICIOS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/bussiness" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/bussiness" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">groups</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">NOSOTROS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/pqrs" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">call</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">CONTACTO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-raised-button="" routerlink="/admin/login" class="mdc-button mat-mdc-button-base mobile-login-btn mdc-button--raised mat-mdc-raised-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/admin/login" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">lock</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">LOGIN</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a></div></app-navbar><!--container--><main _ngcontent-ng-c2518764147="" class="main-content"><router-outlet _ngcontent-ng-c2518764147=""></router-outlet><app-services _nghost-ng-c2546810316="" ngh="7"><div _ngcontent-ng-c2546810316="" class="health-page"><header _ngcontent-ng-c2546810316="" class="hero-header"><div _ngcontent-ng-c2546810316="" class="main-container"><div _ngcontent-ng-c2546810316="" class="hero-content"><span _ngcontent-ng-c2546810316="" class="eyebrow">C&amp;E IPS S.A.S</span><h1 _ngcontent-ng-c2546810316="">Tu Salud <span _ngcontent-ng-c2546810316="" class="highlight">Primero</span></h1><p _ngcontent-ng-c2546810316="">Servicios confiables, accesibles y con calidez humana, pensados para mejorar la calidad de vida del paciente en casa.</p><div _ngcontent-ng-c2546810316="" class="stats-row"><div _ngcontent-ng-c2546810316="" class="stat-box"><span _ngcontent-ng-c2546810316="" class="stat-number">24/7</span><span _ngcontent-ng-c2546810316="" class="stat-label">Disponibilidad</span></div><div _ngcontent-ng-c2546810316="" class="stat-box"><span _ngcontent-ng-c2546810316="" class="stat-number">IPS</span><span _ngcontent-ng-c2546810316="" class="stat-label">Habilitada</span></div><div _ngcontent-ng-c2546810316="" class="stat-box"><span _ngcontent-ng-c2546810316="" class="stat-number">100%</span><span _ngcontent-ng-c2546810316="" class="stat-label">Humanizado</span></div></div></div></div></header><section _ngcontent-ng-c2546810316="" class="services-section"><div _ngcontent-ng-c2546810316="" class="main-container"><div _ngcontent-ng-c2546810316="" class="section-header"><h2 _ngcontent-ng-c2546810316="">Nuestro Portafolio de Servicios</h2><p _ngcontent-ng-c2546810316="">Un equipo interdisciplinario para cubrir tus necesidades de salud.</p></div><div _ngcontent-ng-c2546810316="" class="services-grid"><mat-card _ngcontent-ng-c2546810316="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2546810316="" class="card-icon blue"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon></div><mat-card-header _ngcontent-ng-c2546810316="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2546810316="" class="mat-mdc-card-title">Atención Médica Domiciliaria</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2546810316="" class="mat-mdc-card-content"><p _ngcontent-ng-c2546810316="">Evaluación y manejo médico integral en la comodidad de su hogar.</p><mat-list _ngcontent-ng-c2546810316="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Evaluación médica general</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Control de enfermedades crónicas</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Manejo farmacológico</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2546810316="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2546810316="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-solicitar mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2546810316="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2546810316="" class="card-icon red"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">vaccines</mat-icon></div><mat-card-header _ngcontent-ng-c2546810316="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2546810316="" class="mat-mdc-card-title">Enfermería Domiciliaria</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2546810316="" class="mat-mdc-card-content"><p _ngcontent-ng-c2546810316="">Procedimientos y cuidados básicos con personal capacitado.</p><mat-list _ngcontent-ng-c2546810316="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Medicamentos y terapia</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Curación de heridas y úlceras</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Monitoreo de signos vitales</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2546810316="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2546810316="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-solicitar mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2546810316="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2546810316="" class="card-icon teal"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">accessibility_new</mat-icon></div><mat-card-header _ngcontent-ng-c2546810316="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2546810316="" class="mat-mdc-card-title">Terapia Física</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2546810316="" class="mat-mdc-card-content"><p _ngcontent-ng-c2546810316="">Rehabilitación para mejorar la fuerza, movilidad y flexibilidad.</p><mat-list _ngcontent-ng-c2546810316="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Rehabilitación de movilidad</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Tratamiento de lesiones</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Ejercicios de fuerza</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2546810316="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2546810316="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-solicitar mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2546810316="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2546810316="" class="card-icon orange"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">restaurant_menu</mat-icon></div><mat-card-header _ngcontent-ng-c2546810316="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2546810316="" class="mat-mdc-card-title">Nutrición</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2546810316="" class="mat-mdc-card-content"><p _ngcontent-ng-c2546810316="">Planes nutricionales y educación para el autocontrol de la enfermedad.</p><mat-list _ngcontent-ng-c2546810316="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Monitoreo (Diabetes/Renal)</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Educación al paciente</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Hábitos de vida saludables</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2546810316="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2546810316="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-solicitar mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2546810316="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2546810316="" class="card-icon purple"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">psychology</mat-icon></div><mat-card-header _ngcontent-ng-c2546810316="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2546810316="" class="mat-mdc-card-title">Psicología</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2546810316="" class="mat-mdc-card-content"><p _ngcontent-ng-c2546810316="">Apoyo emocional y enfoque terapéutico personalizado en el hogar.</p><mat-list _ngcontent-ng-c2546810316="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Manejo de estrés y ansiedad</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Apoyo emocional familiar</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Trastornos del comportamiento</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2546810316="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2546810316="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-solicitar mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2546810316="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2546810316="" class="card-icon pink"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">healing</mat-icon></div><mat-card-header _ngcontent-ng-c2546810316="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2546810316="" class="mat-mdc-card-title">Atencion Postquirúrgica</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2546810316="" class="mat-mdc-card-content"><p _ngcontent-ng-c2546810316="">Seguimiento esencial para asegurar una pronta recuperación.</p><mat-list _ngcontent-ng-c2546810316="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Cambios de vendajes</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Control de infecciones</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2546810316="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2546810316="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check-icon material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2546810316="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Monitoreo de evolución</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2546810316="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2546810316="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-solicitar mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card></div></div></section><section _ngcontent-ng-c2546810316="" class="steps-section"><div _ngcontent-ng-c2546810316="" class="main-container"><div _ngcontent-ng-c2546810316="" class="section-header"><span _ngcontent-ng-c2546810316="" class="step-eyebrow">Proceso Ágil</span><h2 _ngcontent-ng-c2546810316="">Tu salud en 4 simples pasos</h2><p _ngcontent-ng-c2546810316="">Diseñamos un flujo pensado en tu comodidad.</p></div><div _ngcontent-ng-c2546810316="" class="steps-wrapper"><div _ngcontent-ng-c2546810316="" class="steps-grid"><div _ngcontent-ng-c2546810316="" class="step-item"><div _ngcontent-ng-c2546810316="" class="step-visual"><div _ngcontent-ng-c2546810316="" class="step-circle">01</div><div _ngcontent-ng-c2546810316="" class="step-icon-bg"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">phoned_in_talk</mat-icon></div></div><h3 _ngcontent-ng-c2546810316="">Contacto</h3><p _ngcontent-ng-c2546810316="">Escríbenos al WhatsApp o llámanos.</p></div><div _ngcontent-ng-c2546810316="" class="step-item"><div _ngcontent-ng-c2546810316="" class="step-visual"><div _ngcontent-ng-c2546810316="" class="step-circle">02</div><div _ngcontent-ng-c2546810316="" class="step-icon-bg"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">event_available</mat-icon></div></div><h3 _ngcontent-ng-c2546810316="">Agendamiento</h3><p _ngcontent-ng-c2546810316="">Programamos tu visita.</p></div><div _ngcontent-ng-c2546810316="" class="step-item"><div _ngcontent-ng-c2546810316="" class="step-visual"><div _ngcontent-ng-c2546810316="" class="step-circle">03</div><div _ngcontent-ng-c2546810316="" class="step-icon-bg"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">home_health</mat-icon></div></div><h3 _ngcontent-ng-c2546810316="">Atención</h3><p _ngcontent-ng-c2546810316="">El profesional va a tu casa.</p></div><div _ngcontent-ng-c2546810316="" class="step-item"><div _ngcontent-ng-c2546810316="" class="step-visual"><div _ngcontent-ng-c2546810316="" class="step-circle success">04</div><div _ngcontent-ng-c2546810316="" class="step-icon-bg success"><mat-icon _ngcontent-ng-c2546810316="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">verified_user</mat-icon></div></div><h3 _ngcontent-ng-c2546810316="">Seguimiento</h3><p _ngcontent-ng-c2546810316="">Monitoreamos tu evolución.</p></div></div></div></div></section></div></app-services><!--container--></main><app-footer _ngcontent-ng-c2518764147="" _nghost-ng-c2539398485="" ngh="0"><footer _ngcontent-ng-c2539398485="" class="footer"><div _ngcontent-ng-c2539398485="" class="container footer-grid"><div _ngcontent-ng-c2539398485="" class="footer-col"><img _ngcontent-ng-c2539398485="" src="/assets/images/global/logo.png" alt="Logo C&amp;E IPS S.A.S" class="footer-logo"><p _ngcontent-ng-c2539398485="">Comprometidos con tu salud y la de tu familia, ofreciendo un servicio humano y de calidad.</p></div><div _ngcontent-ng-c2539398485="" class="footer-col"><h4 _ngcontent-ng-c2539398485="">Enlaces Rápidos</h4><ul _ngcontent-ng-c2539398485=""><li _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="/services">Servicios</a></li><li _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="/bussiness">Empresa</a></li><li _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="/question">Preguntas Frecuentes</a></li></ul></div><div _ngcontent-ng-c2539398485="" class="footer-col"><h4 _ngcontent-ng-c2539398485="">Contacto</h4><ul _ngcontent-ng-c2539398485=""><li _ngcontent-ng-c2539398485=""><i _ngcontent-ng-c2539398485="" class="bi bi-geo-alt-fill"></i>Cali, Colombia</li><li _ngcontent-ng-c2539398485=""><i _ngcontent-ng-c2539398485="" class="bi bi-telephone-fill"></i> +57 315 105 4448</li><li _ngcontent-ng-c2539398485=""><i _ngcontent-ng-c2539398485="" class="bi bi-envelope-fill"></i> gerencia@ipscuidandodeti.com</li></ul></div><div _ngcontent-ng-c2539398485="" class="footer-col"><h4 _ngcontent-ng-c2539398485="">Síguenos</h4><div _ngcontent-ng-c2539398485="" class="social-links"><a _ngcontent-ng-c2539398485="" href="https://www.facebook.com/profile.php?id=61579108148916" aria-label="Facebook"><i _ngcontent-ng-c2539398485="" class="bi bi-facebook"></i></a><a _ngcontent-ng-c2539398485="" href="https://www.instagram.com/cuidandodeticeips" aria-label="Instagram"><i _ngcontent-ng-c2539398485="" class="bi bi-instagram"></i></a><a _ngcontent-ng-c2539398485="" href="#" aria-label="tiktok"><i _ngcontent-ng-c2539398485="" class="bi bi-tiktok"></i></a><a _ngcontent-ng-c2539398485="" href="#" aria-label="X"><i _ngcontent-ng-c2539398485="" class="bi bi-twitter-x"></i></a><a _ngcontent-ng-c2539398485="" href="#" aria-label="LinkedIn"><i _ngcontent-ng-c2539398485="" class="bi bi-linkedin"></i></a></div></div></div><div _ngcontent-ng-c2539398485="" class="footer-bottom"><div _ngcontent-ng-c2539398485="" class="container"><p _ngcontent-ng-c2539398485="">© 2026 C&amp;E IPS S.A.S. Todos los derechos reservados. - Desarrollado por: <b _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="https://www.vooltlab.com">VooltLab Software</a></b></p><p _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="#">Términos y Condiciones</a> | <a _ngcontent-ng-c2539398485="" href="#">Política de Privacidad</a></p></div></div></footer></app-footer><!--container--><div _ngcontent-ng-c2518764147="" class="floating-contact-container"><div _ngcontent-ng-c2518764147="" class="floating-icons-stack"><div _ngcontent-ng-c2518764147="" class="floating-icon-wrapper"><span _ngcontent-ng-c2518764147="" class="floating-contact-text floating-text-top">Consulta rápida</span><a _ngcontent-ng-c2518764147="" href="https://t.me/+573151054448" target="_blank" rel="noopener noreferrer" aria-label="Contactar por Audífonos" class="floating-icon-link floating-icon-top"><mat-icon _ngcontent-ng-c2518764147="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">headphones</mat-icon></a></div><div _ngcontent-ng-c2518764147="" class="floating-icon-wrapper"><span _ngcontent-ng-c2518764147="" class="floating-contact-text floating-text-bottom">Agenda tu cita</span><a _ngcontent-ng-c2518764147="" href="https://wa.me/+573151054448" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="floating-icon-link floating-icon-bottom"><img _ngcontent-ng-c2518764147="" src="assets/images/global/wsp.png" alt="WhatsApp"></a></div></div></div><!--container--></app-root>
+<link rel="modulepreload" href="chunk-EFCNBKEP.js"><link rel="modulepreload" href="chunk-3N2L2BUB.js"><link rel="modulepreload" href="chunk-PT7R7SID.js"><link rel="modulepreload" href="chunk-QOYWAKCN.js"><link rel="modulepreload" href="chunk-QNZMPU6U.js"><script src="main.js" type="module"></script>
+<link rel="modulepreload" href="chunk-U2IAPDC5.js">
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"n":{"2":"hfn2","5":"hfn3"}},{"n":{"2":"hfn2"}},{"n":{"1":"0f","8":"7fn","9":"8f","10":"7fn2f","13":"12fn","14":"13f","15":"12fn2f","18":"17fn","19":"18f","20":"17fn2f","23":"22fn","24":"23f","25":"22fn2f","28":"27fn","29":"28f","30":"27fn2f","33":"32fn","34":"33f","35":"32fn2f","39":"38fn","40":"39f","47":"46f","49":"48fn","50":"49f","51":"48fn2f","54":"53fn","55":"54f","56":"53fn2f","59":"58fn","60":"59f","61":"58fn2f","64":"63fn","65":"64f","66":"63fn2f","69":"68fn","70":"69f","71":"68fn2f","74":"73fn","75":"74f","76":"73fn2f"}},{"n":{"1":"hf"}},{"n":{"1":"hfn","4":"1fn","9":"hfn2"}},{"n":{"2":"hfn","5":"hfn2"}},{"n":{"37":"36f","39":"38f","41":"40f2","47":"46f","48":"47f","49":"48f","50":"47fnf","53":"52f","54":"53f","55":"52fnf","58":"57f","59":"58f","60":"57fnf","64":"63fnf","66":"65f","68":"67f","70":"69f2","76":"75f","77":"76f","78":"77f","79":"76fnf","82":"81f","83":"82f","84":"81fnf","87":"86f","88":"87f","89":"86fnf","93":"92fnf","95":"94f","97":"96f","99":"98f2","105":"104f","106":"105f","107":"106f","108":"105fnf","111":"110f","112":"111f","113":"110fnf","116":"115f","117":"116f","118":"115fnf","122":"121fnf","124":"123f","126":"125f","128":"127f2","134":"133f","135":"134f","136":"135f","137":"134fnf","140":"139f","141":"140f","142":"139fnf","145":"144f","146":"145f","147":"144fnf","151":"150fnf","153":"152f","155":"154f","157":"156f2","163":"162f","164":"163f","165":"164f","166":"163fnf","169":"168f","170":"169f","171":"168fnf","174":"173f","175":"174f","176":"173fnf","180":"179fnf","182":"181f","184":"183f","186":"185f2","192":"191f","193":"192f","194":"193f","195":"192fnf","198":"197f","199":"198f","200":"197fnf","203":"202f","204":"203f","205":"202fnf","209":"208fnf","227":"226f","238":"237f","249":"248f","260":"259f"}},{"t":{"0":"t0","3":"t1","4":"t2"},"c":{"0":[{"i":"t0","r":1}],"2":[{"i":"c2546810316","r":1}],"3":[{"i":"t1","r":1}],"4":[{"i":"t2","r":1,"n":{"7":"6f"}}]}}]}</script></body></html>

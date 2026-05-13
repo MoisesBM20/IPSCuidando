@@ -1,0 +1,1394 @@
+export default `<!DOCTYPE html><html lang="es"><head>
+  <meta charset="utf-8">
+  <title>CUIDANDO DE TI CyE IPS SAS</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Accede a nuestros servicios de salud con la calidad y el respaldo que mereces. Tu bienestar es nuestra prioridad absoluta.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap Icons para complementar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css"><style ng-app-id="ng">
+
+main[_ngcontent-ng-c2518764147] {
+  overflow-x: hidden;
+}
+main.main-content[_ngcontent-ng-c2518764147] {
+  min-height: calc(100vh - 200px);
+  padding-top: 35px;
+}
+main[_ngcontent-ng-c2518764147]:not(.main-content) {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+*[_ngcontent-ng-c2518764147] {
+  box-sizing: border-box;
+}
+button[_ngcontent-ng-c2518764147], 
+a[_ngcontent-ng-c2518764147] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+img[_ngcontent-ng-c2518764147] {
+  max-width: 100%;
+  height: auto;
+}
+html[_ngcontent-ng-c2518764147] {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 768px) {
+  main[_ngcontent-ng-c2518764147] {
+    min-height: calc(100vh - 150px);
+  }
+}
+@media (max-width: 480px) {
+  main[_ngcontent-ng-c2518764147] {
+    min-height: calc(100vh - 120px);
+  }
+}
+.floating-contact-container[_ngcontent-ng-c2518764147] {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.floating-icons-stack[_ngcontent-ng-c2518764147] {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.floating-icon-wrapper[_ngcontent-ng-c2518764147] {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.floating-contact-text[_ngcontent-ng-c2518764147] {
+  position: absolute;
+  right: 100%;
+  margin-right: 8px;
+  background-color: white;
+  color: #005A9C;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.floating-text-top[_ngcontent-ng-c2518764147] {
+  color: #0088cc;
+}
+.floating-text-bottom[_ngcontent-ng-c2518764147] {
+  color: #25d366;
+}
+.floating-icon-wrapper[_ngcontent-ng-c2518764147]:hover   .floating-contact-text[_ngcontent-ng-c2518764147] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147] {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147]:hover {
+  transform: scale(1.1);
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147] {
+  background:
+    linear-gradient(
+      135deg,
+      #0088cc 0%,
+      #00a8ff 100%);
+  border: 2px solid #fff;
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]:hover {
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.3);
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+  font-size: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  color: white;
+}
+.floating-icon-link.floating-icon-bottom[_ngcontent-ng-c2518764147] {
+  background:
+    linear-gradient(
+      135deg,
+      #25d366 0%,
+      #128c7e 100%);
+  border: 2px solid #fff;
+}
+.floating-icon-link.floating-icon-bottom[_ngcontent-ng-c2518764147]:hover {
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147]   img[_ngcontent-ng-c2518764147] {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  animation: _ngcontent-ng-c2518764147_signal-pulse 2.5s infinite ease-in-out;
+}
+@keyframes _ngcontent-ng-c2518764147_signal-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+@media (max-width: 768px) {
+  .floating-contact-container[_ngcontent-ng-c2518764147] {
+    bottom: 20px;
+    right: 20px;
+  }
+  .floating-icon-link[_ngcontent-ng-c2518764147] {
+    width: 50px;
+    height: 50px;
+  }
+  .floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .floating-contact-text[_ngcontent-ng-c2518764147] {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .floating-contact-container[_ngcontent-ng-c2518764147] {
+    bottom: 15px;
+    right: 15px;
+  }
+  .floating-icon-link[_ngcontent-ng-c2518764147] {
+    width: 45px;
+    height: 45px;
+  }
+  .floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+    font-size: 1.3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .floating-contact-text[_ngcontent-ng-c2518764147] {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
+/*# sourceMappingURL=/app.css.map */</style><style ng-app-id="ng">
+
+[_ngcontent-ng-c3918952098]:root {
+  --navbar-height: 70px;
+  --primary-color: #005A9C;
+  --accent-color: #00B5E2;
+  --white: #ffffff;
+  --text-light: #f8f9fa;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+[_nghost-ng-c3918952098] {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+mat-toolbar[_ngcontent-ng-c3918952098] {
+  background: #003d7a;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: var(--white);
+  height: var(--navbar-height);
+  padding: 0 !important;
+  box-shadow: var(--shadow);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar-container[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 1.5rem;
+}
+.left-section[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+.navbar-brand[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.navbar-brand[_ngcontent-ng-c3918952098]   .logo-link[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: var(--transition);
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+.navbar-brand[_ngcontent-ng-c3918952098]   .logo-link[_ngcontent-ng-c3918952098]:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+}
+.navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: var(--transition);
+}
+.search-container[_ngcontent-ng-c3918952098] {
+  flex: 0 0 auto;
+  width: 300px;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-wrapper[_ngcontent-ng-c3918952098] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+  overflow: hidden;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-wrapper[_ngcontent-ng-c3918952098]:hover {
+  background: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-wrapper[_ngcontent-ng-c3918952098]:focus-within {
+  background: rgb(255, 255, 255);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0, 181, 226, 0.1490196078);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-input[_ngcontent-ng-c3918952098] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-input[_ngcontent-ng-c3918952098]::placeholder {
+  color: rgba(0, 90, 156, 0.6);
+  font-weight: 400;
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-button[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #003d7a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-button[_ngcontent-ng-c3918952098]:hover {
+  background: #0099cc;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 181, 226, 0.3);
+}
+.search-container[_ngcontent-ng-c3918952098]   .search-button[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.navbar-nav[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  transition: left 0.5s ease;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:hover::before {
+  left: 100%;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--white);
+  transition: var(--transition);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]   span[_ngcontent-ng-c3918952098] {
+  position: relative;
+  z-index: 1;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]:active {
+  transform: translateY(0);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .login-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background:
+    linear-gradient(
+      135deg,
+      #ff6b35 0%,
+      #f7931e 100%);
+  color: var(--white) !important;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .login-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .login-btn[_ngcontent-ng-c3918952098]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+  background:
+    linear-gradient(
+      135deg,
+      #e55a25 0%,
+      #e07818 100%);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-color) 0%,
+      #0099cc 100%);
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 181, 226, 0.3);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transition: left 0.5s ease;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:hover::before {
+  left: 100%;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--white);
+  transition: var(--transition);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]   span[_ngcontent-ng-c3918952098] {
+  position: relative;
+  z-index: 1;
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #0099cc 0%,
+      var(--accent-color) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 181, 226, 0.4);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  transform: scale(1.1);
+}
+.navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]:active {
+  transform: translateY(-1px);
+}
+.mobile-toggle[_ngcontent-ng-c3918952098] {
+  display: none;
+}
+.mobile-toggle[_ngcontent-ng-c3918952098]   .menu-btn[_ngcontent-ng-c3918952098] {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+.mobile-toggle[_ngcontent-ng-c3918952098]   .menu-btn[_ngcontent-ng-c3918952098]:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--accent-color);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.mobile-toggle[_ngcontent-ng-c3918952098]   .menu-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+.mobile-menu[_ngcontent-ng-c3918952098] {
+  display: none;
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 90, 156, 0.1);
+}
+.mobile-menu.active[_ngcontent-ng-c3918952098] {
+  display: flex !important;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: block !important;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+  border: 2px solid rgba(0, 90, 156, 0.2);
+  transition: var(--transition);
+  overflow: hidden;
+  width: 100%;
+  min-height: 50px;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098]:hover {
+  background: rgb(255, 255, 255);
+  border-color: rgba(0, 90, 156, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098]:focus-within {
+  background: rgb(255, 255, 255);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0, 181, 226, 0.15);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  width: 100%;
+  display: block !important;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098]::placeholder {
+  color: rgba(0, 90, 156, 0.6);
+  font-weight: 400;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098]:hover {
+  background: #0099cc;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 181, 226, 0.3);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098]:hover {
+  background: rgba(0, 181, 226, 0.1);
+  border-color: var(--accent-color);
+  transform: translateX(8px);
+  box-shadow: 0 4px 15px rgba(0, 181, 226, 0.15);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-login-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background:
+    linear-gradient(
+      135deg,
+      #ff6b35 0%,
+      #f7931e 100%);
+  color: var(--white) !important;
+  padding: 1.2rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin: 0.5rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-login-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-login-btn[_ngcontent-ng-c3918952098]:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-color) 0%,
+      #0099cc 100%);
+  color: var(--white);
+  padding: 1.2rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 181, 226, 0.3);
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+  font-size: 1.4rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--white);
+  transition: var(--transition);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098]:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #0099cc 0%,
+      var(--accent-color) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 181, 226, 0.4);
+}
+.mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098]:hover   mat-icon[_ngcontent-ng-c3918952098] {
+  transform: scale(1.1);
+}
+@media (max-width: 1200px) {
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 1.5rem;
+  }
+  .search-container[_ngcontent-ng-c3918952098] {
+    width: 280px;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098] {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .nav-link[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098] {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098]   .portal-btn[_ngcontent-ng-c3918952098]   mat-icon[_ngcontent-ng-c3918952098] {
+    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  [_ngcontent-ng-c3918952098]:root {
+    --navbar-height: 65px;
+  }
+  .navbar-nav[_ngcontent-ng-c3918952098] {
+    display: none;
+  }
+  .search-container[_ngcontent-ng-c3918952098] {
+    display: none;
+  }
+  .mobile-toggle[_ngcontent-ng-c3918952098] {
+    display: block;
+  }
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 1rem;
+  }
+  .navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+    height: 50px;
+  }
+  .left-section[_ngcontent-ng-c3918952098] {
+    gap: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098] {
+    display: none;
+  }
+  .mobile-menu.active[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 768px) {
+  [_ngcontent-ng-c3918952098]:root {
+    --navbar-height: 60px;
+  }
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 0.8rem;
+  }
+  .navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+    height: 45px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098] {
+    top: var(--navbar-height);
+    padding: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 50px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 480px) {
+  [_ngcontent-ng-c3918952098]:root {
+    --navbar-height: 55px;
+  }
+  .navbar-container[_ngcontent-ng-c3918952098] {
+    padding: 0 0.5rem;
+  }
+  .navbar-brand[_ngcontent-ng-c3918952098]   .logo[_ngcontent-ng-c3918952098] {
+    height: 40px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098] {
+    top: var(--navbar-height);
+    padding: 1rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 1.5rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-wrapper[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 50px;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-input[_ngcontent-ng-c3918952098] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-search-container[_ngcontent-ng-c3918952098]   .mobile-search-button[_ngcontent-ng-c3918952098] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-nav-link[_ngcontent-ng-c3918952098] {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+  }
+  .mobile-menu[_ngcontent-ng-c3918952098]   .mobile-portal-btn[_ngcontent-ng-c3918952098] {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+.navbar-sticky[_ngcontent-ng-c3918952098] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/*# sourceMappingURL=/navbar.css.map */</style><style ng-app-id="ng">.mat-toolbar{background:var(--mat-toolbar-container-background-color, var(--mat-sys-surface));color:var(--mat-toolbar-container-text-color, var(--mat-sys-on-surface))}.mat-toolbar,.mat-toolbar h1,.mat-toolbar h2,.mat-toolbar h3,.mat-toolbar h4,.mat-toolbar h5,.mat-toolbar h6{font-family:var(--mat-toolbar-title-text-font, var(--mat-sys-title-large-font));font-size:var(--mat-toolbar-title-text-size, var(--mat-sys-title-large-size));line-height:var(--mat-toolbar-title-text-line-height, var(--mat-sys-title-large-line-height));font-weight:var(--mat-toolbar-title-text-weight, var(--mat-sys-title-large-weight));letter-spacing:var(--mat-toolbar-title-text-tracking, var(--mat-sys-title-large-tracking));margin:0}@media(forced-colors: active){.mat-toolbar{outline:solid 1px}}.mat-toolbar .mat-form-field-underline,.mat-toolbar .mat-form-field-ripple,.mat-toolbar .mat-focused .mat-form-field-ripple{background-color:currentColor}.mat-toolbar .mat-form-field-label,.mat-toolbar .mat-focused .mat-form-field-label,.mat-toolbar .mat-select-value,.mat-toolbar .mat-select-arrow,.mat-toolbar .mat-form-field.mat-focused .mat-select-arrow{color:inherit}.mat-toolbar .mat-input-element{caret-color:currentColor}.mat-toolbar .mat-mdc-button-base.mat-mdc-button-base.mat-unthemed{--mat-button-text-label-text-color: var(--mat-toolbar-container-text-color, var(--mat-sys-on-surface));--mat-button-outlined-label-text-color: var(--mat-toolbar-container-text-color, var(--mat-sys-on-surface))}.mat-toolbar-row,.mat-toolbar-single-row{display:flex;box-sizing:border-box;padding:0 16px;width:100%;flex-direction:row;align-items:center;white-space:nowrap;height:var(--mat-toolbar-standard-height, 64px)}@media(max-width: 599px){.mat-toolbar-row,.mat-toolbar-single-row{height:var(--mat-toolbar-mobile-height, 56px)}}.mat-toolbar-multiple-rows{display:flex;box-sizing:border-box;flex-direction:column;width:100%;min-height:var(--mat-toolbar-standard-height, 64px)}@media(max-width: 599px){.mat-toolbar-multiple-rows{min-height:var(--mat-toolbar-mobile-height, 56px)}}
+</style><style ng-app-id="ng">.mat-mdc-button-base{text-decoration:none}.mat-mdc-button-base .mat-icon{min-height:fit-content;flex-shrink:0}.mdc-button{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:64px;border:none;outline:none;line-height:inherit;-webkit-appearance:none;overflow:visible;vertical-align:middle;background:rgba(0,0,0,0);padding:0 8px}.mdc-button::-moz-focus-inner{padding:0;border:0}.mdc-button:active{outline:none}.mdc-button:hover{cursor:pointer}.mdc-button:disabled{cursor:default;pointer-events:none}.mdc-button[hidden]{display:none}.mdc-button .mdc-button__label{position:relative}.mat-mdc-button{padding:0 var(--mat-button-text-horizontal-padding, 12px);height:var(--mat-button-text-container-height, 40px);font-family:var(--mat-button-text-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-text-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-text-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-text-label-text-transform);font-weight:var(--mat-button-text-label-text-weight, var(--mat-sys-label-large-weight))}.mat-mdc-button,.mat-mdc-button .mdc-button__ripple{border-radius:var(--mat-button-text-container-shape, var(--mat-sys-corner-full))}.mat-mdc-button:not(:disabled){color:var(--mat-button-text-label-text-color, var(--mat-sys-primary))}.mat-mdc-button[disabled],.mat-mdc-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-text-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-mdc-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-button:has(.material-icons,mat-icon,[matButtonIcon]){padding:0 var(--mat-button-text-with-icon-horizontal-padding, 16px)}.mat-mdc-button>.mat-icon{margin-right:var(--mat-button-text-icon-spacing, 8px);margin-left:var(--mat-button-text-icon-offset, -4px)}[dir=rtl] .mat-mdc-button>.mat-icon{margin-right:var(--mat-button-text-icon-offset, -4px);margin-left:var(--mat-button-text-icon-spacing, 8px)}.mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-text-icon-offset, -4px);margin-left:var(--mat-button-text-icon-spacing, 8px)}[dir=rtl] .mat-mdc-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-text-icon-spacing, 8px);margin-left:var(--mat-button-text-icon-offset, -4px)}.mat-mdc-button .mat-ripple-element{background-color:var(--mat-button-text-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-text-state-layer-color, var(--mat-sys-primary))}.mat-mdc-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-text-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-text-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-text-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-text-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-text-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-unelevated-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);height:var(--mat-button-filled-container-height, 40px);font-family:var(--mat-button-filled-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-filled-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-filled-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-filled-label-text-transform);font-weight:var(--mat-button-filled-label-text-weight, var(--mat-sys-label-large-weight));padding:0 var(--mat-button-filled-horizontal-padding, 24px)}.mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-button-filled-icon-spacing, 8px);margin-left:var(--mat-button-filled-icon-offset, -8px)}[dir=rtl] .mat-mdc-unelevated-button>.mat-icon{margin-right:var(--mat-button-filled-icon-offset, -8px);margin-left:var(--mat-button-filled-icon-spacing, 8px)}.mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-filled-icon-offset, -8px);margin-left:var(--mat-button-filled-icon-spacing, 8px)}[dir=rtl] .mat-mdc-unelevated-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-filled-icon-spacing, 8px);margin-left:var(--mat-button-filled-icon-offset, -8px)}.mat-mdc-unelevated-button .mat-ripple-element{background-color:var(--mat-button-filled-ripple-color, color-mix(in srgb, var(--mat-sys-on-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-filled-state-layer-color, var(--mat-sys-on-primary))}.mat-mdc-unelevated-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-filled-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-unelevated-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-filled-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-unelevated-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-filled-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-unelevated-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-filled-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-unelevated-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-filled-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-unelevated-button:not(:disabled){color:var(--mat-button-filled-label-text-color, var(--mat-sys-on-primary));background-color:var(--mat-button-filled-container-color, var(--mat-sys-primary))}.mat-mdc-unelevated-button,.mat-mdc-unelevated-button .mdc-button__ripple{border-radius:var(--mat-button-filled-container-shape, var(--mat-sys-corner-full))}.mat-mdc-unelevated-button[disabled],.mat-mdc-unelevated-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-filled-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-button-filled-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-unelevated-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-raised-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);box-shadow:var(--mat-button-protected-container-elevation-shadow, var(--mat-sys-level1));height:var(--mat-button-protected-container-height, 40px);font-family:var(--mat-button-protected-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-protected-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-protected-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-protected-label-text-transform);font-weight:var(--mat-button-protected-label-text-weight, var(--mat-sys-label-large-weight));padding:0 var(--mat-button-protected-horizontal-padding, 24px)}.mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-button-protected-icon-spacing, 8px);margin-left:var(--mat-button-protected-icon-offset, -8px)}[dir=rtl] .mat-mdc-raised-button>.mat-icon{margin-right:var(--mat-button-protected-icon-offset, -8px);margin-left:var(--mat-button-protected-icon-spacing, 8px)}.mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-protected-icon-offset, -8px);margin-left:var(--mat-button-protected-icon-spacing, 8px)}[dir=rtl] .mat-mdc-raised-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-protected-icon-spacing, 8px);margin-left:var(--mat-button-protected-icon-offset, -8px)}.mat-mdc-raised-button .mat-ripple-element{background-color:var(--mat-button-protected-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-protected-state-layer-color, var(--mat-sys-primary))}.mat-mdc-raised-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-protected-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-raised-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-protected-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-raised-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-protected-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-raised-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-protected-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-raised-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-protected-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-raised-button:not(:disabled){color:var(--mat-button-protected-label-text-color, var(--mat-sys-primary));background-color:var(--mat-button-protected-container-color, var(--mat-sys-surface))}.mat-mdc-raised-button,.mat-mdc-raised-button .mdc-button__ripple{border-radius:var(--mat-button-protected-container-shape, var(--mat-sys-corner-full))}.mat-mdc-raised-button:hover{box-shadow:var(--mat-button-protected-hover-container-elevation-shadow, var(--mat-sys-level2))}.mat-mdc-raised-button:focus{box-shadow:var(--mat-button-protected-focus-container-elevation-shadow, var(--mat-sys-level1))}.mat-mdc-raised-button:active,.mat-mdc-raised-button:focus:active{box-shadow:var(--mat-button-protected-pressed-container-elevation-shadow, var(--mat-sys-level1))}.mat-mdc-raised-button[disabled],.mat-mdc-raised-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-protected-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-button-protected-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-raised-button[disabled].mat-mdc-button-disabled,.mat-mdc-raised-button.mat-mdc-button-disabled.mat-mdc-button-disabled{box-shadow:var(--mat-button-protected-disabled-container-elevation-shadow, var(--mat-sys-level0))}.mat-mdc-raised-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-outlined-button{border-style:solid;transition:border 280ms cubic-bezier(0.4, 0, 0.2, 1);height:var(--mat-button-outlined-container-height, 40px);font-family:var(--mat-button-outlined-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-outlined-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-outlined-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-outlined-label-text-transform);font-weight:var(--mat-button-outlined-label-text-weight, var(--mat-sys-label-large-weight));border-radius:var(--mat-button-outlined-container-shape, var(--mat-sys-corner-full));border-width:var(--mat-button-outlined-outline-width, 1px);padding:0 var(--mat-button-outlined-horizontal-padding, 24px)}.mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-button-outlined-icon-spacing, 8px);margin-left:var(--mat-button-outlined-icon-offset, -8px)}[dir=rtl] .mat-mdc-outlined-button>.mat-icon{margin-right:var(--mat-button-outlined-icon-offset, -8px);margin-left:var(--mat-button-outlined-icon-spacing, 8px)}.mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-outlined-icon-offset, -8px);margin-left:var(--mat-button-outlined-icon-spacing, 8px)}[dir=rtl] .mat-mdc-outlined-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-outlined-icon-spacing, 8px);margin-left:var(--mat-button-outlined-icon-offset, -8px)}.mat-mdc-outlined-button .mat-ripple-element{background-color:var(--mat-button-outlined-ripple-color, color-mix(in srgb, var(--mat-sys-primary) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-outlined-state-layer-color, var(--mat-sys-primary))}.mat-mdc-outlined-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-outlined-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-outlined-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-outlined-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-outlined-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-outlined-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-outlined-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-outlined-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-outlined-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-outlined-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-outlined-button:not(:disabled){color:var(--mat-button-outlined-label-text-color, var(--mat-sys-primary));border-color:var(--mat-button-outlined-outline-color, var(--mat-sys-outline))}.mat-mdc-outlined-button[disabled],.mat-mdc-outlined-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-outlined-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));border-color:var(--mat-button-outlined-disabled-outline-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-outlined-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-tonal-button{transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);height:var(--mat-button-tonal-container-height, 40px);font-family:var(--mat-button-tonal-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-button-tonal-label-text-size, var(--mat-sys-label-large-size));letter-spacing:var(--mat-button-tonal-label-text-tracking, var(--mat-sys-label-large-tracking));text-transform:var(--mat-button-tonal-label-text-transform);font-weight:var(--mat-button-tonal-label-text-weight, var(--mat-sys-label-large-weight));padding:0 var(--mat-button-tonal-horizontal-padding, 24px)}.mat-tonal-button:not(:disabled){color:var(--mat-button-tonal-label-text-color, var(--mat-sys-on-secondary-container));background-color:var(--mat-button-tonal-container-color, var(--mat-sys-secondary-container))}.mat-tonal-button,.mat-tonal-button .mdc-button__ripple{border-radius:var(--mat-button-tonal-container-shape, var(--mat-sys-corner-full))}.mat-tonal-button[disabled],.mat-tonal-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-button-tonal-disabled-label-text-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-button-tonal-disabled-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-tonal-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-tonal-button>.mat-icon{margin-right:var(--mat-button-tonal-icon-spacing, 8px);margin-left:var(--mat-button-tonal-icon-offset, -8px)}[dir=rtl] .mat-tonal-button>.mat-icon{margin-right:var(--mat-button-tonal-icon-offset, -8px);margin-left:var(--mat-button-tonal-icon-spacing, 8px)}.mat-tonal-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-tonal-icon-offset, -8px);margin-left:var(--mat-button-tonal-icon-spacing, 8px)}[dir=rtl] .mat-tonal-button .mdc-button__label+.mat-icon{margin-right:var(--mat-button-tonal-icon-spacing, 8px);margin-left:var(--mat-button-tonal-icon-offset, -8px)}.mat-tonal-button .mat-ripple-element{background-color:var(--mat-button-tonal-ripple-color, color-mix(in srgb, var(--mat-sys-on-secondary-container) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-tonal-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-tonal-state-layer-color, var(--mat-sys-on-secondary-container))}.mat-tonal-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-button-tonal-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-tonal-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-tonal-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-tonal-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-tonal-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-tonal-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-tonal-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-tonal-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-button-tonal-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-tonal-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-button-tonal-touch-target-display, block);left:0;right:0;transform:translateY(-50%)}.mat-mdc-button,.mat-mdc-unelevated-button,.mat-mdc-raised-button,.mat-mdc-outlined-button,.mat-tonal-button{-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple,.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before,.mat-tonal-button .mat-mdc-button-ripple,.mat-tonal-button .mat-mdc-button-persistent-ripple,.mat-tonal-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-button .mat-mdc-button-ripple,.mat-mdc-unelevated-button .mat-mdc-button-ripple,.mat-mdc-raised-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-tonal-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,.mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before,.mat-tonal-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-button .mdc-button__label,.mat-mdc-button .mat-icon,.mat-mdc-unelevated-button .mdc-button__label,.mat-mdc-unelevated-button .mat-icon,.mat-mdc-raised-button .mdc-button__label,.mat-mdc-raised-button .mat-icon,.mat-mdc-outlined-button .mdc-button__label,.mat-mdc-outlined-button .mat-icon,.mat-tonal-button .mdc-button__label,.mat-tonal-button .mat-icon{z-index:1;position:relative}.mat-mdc-button .mat-focus-indicator,.mat-mdc-unelevated-button .mat-focus-indicator,.mat-mdc-raised-button .mat-focus-indicator,.mat-mdc-outlined-button .mat-focus-indicator,.mat-tonal-button .mat-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit}.mat-mdc-button:focus>.mat-focus-indicator::before,.mat-mdc-unelevated-button:focus>.mat-focus-indicator::before,.mat-mdc-raised-button:focus>.mat-focus-indicator::before,.mat-mdc-outlined-button:focus>.mat-focus-indicator::before,.mat-tonal-button:focus>.mat-focus-indicator::before{content:"";border-radius:inherit}.mat-mdc-button._mat-animation-noopable,.mat-mdc-unelevated-button._mat-animation-noopable,.mat-mdc-raised-button._mat-animation-noopable,.mat-mdc-outlined-button._mat-animation-noopable,.mat-tonal-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-button>.mat-icon,.mat-mdc-unelevated-button>.mat-icon,.mat-mdc-raised-button>.mat-icon,.mat-mdc-outlined-button>.mat-icon,.mat-tonal-button>.mat-icon{display:inline-block;position:relative;vertical-align:top;font-size:1.125rem;height:1.125rem;width:1.125rem}.mat-mdc-outlined-button .mat-mdc-button-ripple,.mat-mdc-outlined-button .mdc-button__ripple{top:-1px;left:-1px;bottom:-1px;right:-1px}.mat-mdc-unelevated-button .mat-focus-indicator::before,.mat-tonal-button .mat-focus-indicator::before,.mat-mdc-raised-button .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-outlined-button .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px)*-1)}
+</style><style ng-app-id="ng">@media(forced-colors: active){.mat-mdc-button:not(.mdc-button--outlined),.mat-mdc-unelevated-button:not(.mdc-button--outlined),.mat-mdc-raised-button:not(.mdc-button--outlined),.mat-mdc-outlined-button:not(.mdc-button--outlined),.mat-mdc-button-base.mat-tonal-button,.mat-mdc-icon-button.mat-mdc-icon-button,.mat-mdc-outlined-button .mdc-button__ripple{outline:solid 1px}}
+</style><style ng-app-id="ng">.mat-focus-indicator{position:relative}.mat-focus-indicator::before{top:0;left:0;right:0;bottom:0;position:absolute;box-sizing:border-box;pointer-events:none;display:var(--mat-focus-indicator-display, none);border-width:var(--mat-focus-indicator-border-width, 3px);border-style:var(--mat-focus-indicator-border-style, solid);border-color:var(--mat-focus-indicator-border-color, transparent);border-radius:var(--mat-focus-indicator-border-radius, 4px)}.mat-focus-indicator:focus::before{content:""}@media(forced-colors: active){html{--mat-focus-indicator-display: block}}
+</style><style ng-app-id="ng">mat-icon,mat-icon.mat-primary,mat-icon.mat-accent,mat-icon.mat-warn{color:var(--mat-icon-color, inherit)}.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}
+</style><style ng-app-id="ng">.mat-mdc-icon-button{-webkit-user-select:none;user-select:none;display:inline-block;position:relative;box-sizing:border-box;border:none;outline:none;background-color:rgba(0,0,0,0);fill:currentColor;text-decoration:none;cursor:pointer;z-index:0;overflow:visible;border-radius:var(--mat-icon-button-container-shape, var(--mat-sys-corner-full, 50%));flex-shrink:0;text-align:center;width:var(--mat-icon-button-state-layer-size, 40px);height:var(--mat-icon-button-state-layer-size, 40px);padding:calc(calc(var(--mat-icon-button-state-layer-size, 40px) - var(--mat-icon-button-icon-size, 24px)) / 2);font-size:var(--mat-icon-button-icon-size, 24px);color:var(--mat-icon-button-icon-color, var(--mat-sys-on-surface-variant));-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-icon-button .mat-mdc-button-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple,.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-icon-button .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-icon-button .mdc-button__label,.mat-mdc-icon-button .mat-icon{z-index:1;position:relative}.mat-mdc-icon-button .mat-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute;border-radius:inherit}.mat-mdc-icon-button:focus>.mat-focus-indicator::before{content:"";border-radius:inherit}.mat-mdc-icon-button .mat-ripple-element{background-color:var(--mat-icon-button-ripple-color, color-mix(in srgb, var(--mat-sys-on-surface-variant) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-icon-button.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-icon-button-disabled-state-layer-color, var(--mat-sys-on-surface-variant))}.mat-mdc-icon-button:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-icon-button.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-icon-button.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-icon-button:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-icon-button-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-icon-button .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-icon-button-touch-target-display, block);left:50%;width:48px;transform:translate(-50%, -50%)}.mat-mdc-icon-button._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-icon-button[disabled],.mat-mdc-icon-button.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-icon-button-disabled-icon-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent))}.mat-mdc-icon-button.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-icon-button img,.mat-mdc-icon-button svg{width:var(--mat-icon-button-icon-size, 24px);height:var(--mat-icon-button-icon-size, 24px);vertical-align:baseline}.mat-mdc-icon-button .mat-mdc-button-persistent-ripple{border-radius:var(--mat-icon-button-container-shape, var(--mat-sys-corner-full, 50%))}.mat-mdc-icon-button[hidden]{display:none}.mat-mdc-icon-button.mat-unthemed:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-primary:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-accent:not(.mdc-ripple-upgraded):focus::before,.mat-mdc-icon-button.mat-warn:not(.mdc-ripple-upgraded):focus::before{background:rgba(0,0,0,0);opacity:1}
+</style><style ng-app-id="ng">
+
+.footer[_ngcontent-ng-c2539398485] {
+  background-color: #002d4d;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 4rem;
+}
+.footer-grid[_ngcontent-ng-c2539398485] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+  height: 250px;
+  position: static;
+  margin-bottom: 1rem;
+}
+.footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485] {
+  list-style: none;
+  padding: 0;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485] {
+  margin-bottom: 0.8rem;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s, padding-left 0.3s;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485]:hover {
+  color: var(--white);
+  padding-left: 5px;
+}
+.footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   i[_ngcontent-ng-c2539398485] {
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+.social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+  display: inline-block;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+.social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485]:hover {
+  transform: scale(1.2);
+  color: var(--secondary-color);
+}
+.footer-bottom[_ngcontent-ng-c2539398485] {
+  background-color: #001f33;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   .container[_ngcontent-ng-c2539398485] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   p[_ngcontent-ng-c2539398485] {
+  margin: 0.5rem;
+  font-size: 0.9rem;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.footer-bottom[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485]:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1200px) {
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 992px) {
+  .footer[_ngcontent-ng-c2539398485] {
+    padding-top: 3rem;
+  }
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+    height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .footer[_ngcontent-ng-c2539398485] {
+    padding-top: 2.5rem;
+  }
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+    height: 40px;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485] {
+    margin-bottom: 0.6rem;
+  }
+  .social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485] {
+    padding: 1rem 0;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485]   .container[_ngcontent-ng-c2539398485] {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485]   p[_ngcontent-ng-c2539398485] {
+    font-size: 0.8rem;
+    margin: 0.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer[_ngcontent-ng-c2539398485] {
+    padding-top: 2rem;
+  }
+  .footer-grid[_ngcontent-ng-c2539398485] {
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   .footer-logo[_ngcontent-ng-c2539398485] {
+    height: 35px;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   h4[_ngcontent-ng-c2539398485] {
+    font-size: 0.9rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485] {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .footer-col[_ngcontent-ng-c2539398485]   ul[_ngcontent-ng-c2539398485]   li[_ngcontent-ng-c2539398485]   i[_ngcontent-ng-c2539398485] {
+    margin-right: 8px;
+  }
+  .social-links[_ngcontent-ng-c2539398485]   a[_ngcontent-ng-c2539398485] {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+  }
+  .footer-bottom[_ngcontent-ng-c2539398485]   p[_ngcontent-ng-c2539398485] {
+    font-size: 0.75rem;
+  }
+}
+/*# sourceMappingURL=/footer.css.map */</style><style ng-app-id="ng">
+
+.health-page[_ngcontent-ng-c2250440546] {
+  font-family: "Roboto", sans-serif;
+  color: #1a1c1e;
+  overflow-x: hidden;
+}
+.health-page[_ngcontent-ng-c2250440546]   .main-container[_ngcontent-ng-c2250440546] {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546] {
+  background:
+    linear-gradient(
+      135deg,
+      #005cbb 0%,
+      #0a468b 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   .eyebrow[_ngcontent-ng-c2250440546] {
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   h1[_ngcontent-ng-c2250440546] {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   h1[_ngcontent-ng-c2250440546]   .highlight[_ngcontent-ng-c2250440546] {
+  color: #8ab4f8;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   p[_ngcontent-ng-c2250440546] {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   .stats-row[_ngcontent-ng-c2250440546] {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   .stats-row[_ngcontent-ng-c2250440546]   .stat-box[_ngcontent-ng-c2250440546] {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   .stats-row[_ngcontent-ng-c2250440546]   .stat-box[_ngcontent-ng-c2250440546]   .icon-wrapper[_ngcontent-ng-c2250440546]   mat-icon[_ngcontent-ng-c2250440546] {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  color: #8ab4f8;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   .stats-row[_ngcontent-ng-c2250440546]   .stat-box[_ngcontent-ng-c2250440546]   .stat-number[_ngcontent-ng-c2250440546] {
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: block;
+}
+.health-page[_ngcontent-ng-c2250440546]   .hero-header[_ngcontent-ng-c2250440546]   .stats-row[_ngcontent-ng-c2250440546]   .stat-box[_ngcontent-ng-c2250440546]   .stat-label[_ngcontent-ng-c2250440546] {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546] {
+  padding: 100px 0;
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .video-grid[_ngcontent-ng-c2250440546] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .video-grid[_ngcontent-ng-c2250440546] {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   h2[_ngcontent-ng-c2250440546] {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   h2[_ngcontent-ng-c2250440546]   .primary-text[_ngcontent-ng-c2250440546] {
+  color: #005cbb;
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .feature-list[_ngcontent-ng-c2250440546] {
+  list-style: none;
+  padding: 0;
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .feature-list[_ngcontent-ng-c2250440546]   li[_ngcontent-ng-c2250440546] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+@media (max-width: 960px) {
+  .health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .feature-list[_ngcontent-ng-c2250440546]   li[_ngcontent-ng-c2250440546] {
+    justify-content: center;
+  }
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .feature-list[_ngcontent-ng-c2250440546]   li[_ngcontent-ng-c2250440546]   mat-icon[_ngcontent-ng-c2250440546] {
+  color: #4caf50;
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .video-card[_ngcontent-ng-c2250440546]   .video-aspect[_ngcontent-ng-c2250440546] {
+  aspect-ratio: 16/9;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: #000;
+}
+.health-page[_ngcontent-ng-c2250440546]   .video-section[_ngcontent-ng-c2250440546]   .video-card[_ngcontent-ng-c2250440546]   .video-aspect[_ngcontent-ng-c2250440546]   .local-video[_ngcontent-ng-c2250440546] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546] {
+  padding: 80px 0;
+  background: #f8f9ff;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .section-header[_ngcontent-ng-c2250440546] {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .section-header[_ngcontent-ng-c2250440546]   h2[_ngcontent-ng-c2250440546] {
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .category-block[_ngcontent-ng-c2250440546] {
+  margin-bottom: 60px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .cat-title[_ngcontent-ng-c2250440546] {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  border-left: 6px solid #005cbb;
+  padding-left: 15px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .carousel-wrapper[_ngcontent-ng-c2250440546] {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .carousel-wrapper[_ngcontent-ng-c2250440546]   .nav-btn[_ngcontent-ng-c2250440546] {
+  position: absolute;
+  z-index: 10;
+  background: white !important;
+  color: #005cbb !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .carousel-wrapper[_ngcontent-ng-c2250440546]   .nav-btn.prev[_ngcontent-ng-c2250440546] {
+  left: -15px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .carousel-wrapper[_ngcontent-ng-c2250440546]   .nav-btn.next[_ngcontent-ng-c2250440546] {
+  right: -15px;
+}
+@media (max-width: 768px) {
+  .health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .carousel-wrapper[_ngcontent-ng-c2250440546]   .nav-btn[_ngcontent-ng-c2250440546] {
+    display: none;
+  }
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .carousel-container[_ngcontent-ng-c2250440546] {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 15px 5px;
+  scrollbar-width: none;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .carousel-container[_ngcontent-ng-c2250440546]::-webkit-scrollbar {
+  display: none;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546] {
+  min-width: 320px;
+  max-width: 320px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  border-radius: 24px;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon[_ngcontent-ng-c2250440546] {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0 8px 24px;
+  overflow: hidden;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon[_ngcontent-ng-c2250440546]   mat-icon[_ngcontent-ng-c2250440546] {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.teal[_ngcontent-ng-c2250440546] {
+  background: #e0f2f1;
+  color: #00796b;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.orange[_ngcontent-ng-c2250440546] {
+  background: #fff3e0;
+  color: #f57c00;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.blue[_ngcontent-ng-c2250440546] {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.pink[_ngcontent-ng-c2250440546] {
+  background: #fce4ec;
+  color: #c2185b;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.purple[_ngcontent-ng-c2250440546] {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.green[_ngcontent-ng-c2250440546] {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.red[_ngcontent-ng-c2250440546] {
+  background: #ffebee;
+  color: #c62828;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.indigo[_ngcontent-ng-c2250440546] {
+  background: #e8eaf6;
+  color: #3f51b5;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.amber[_ngcontent-ng-c2250440546] {
+  background: #fff8e1;
+  color: #ff8f00;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.lime[_ngcontent-ng-c2250440546] {
+  background: #f9fbe7;
+  color: #827717;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   .card-icon.blue-grey[_ngcontent-ng-c2250440546] {
+  background: #eceff1;
+  color: #455a64;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-header[_ngcontent-ng-c2250440546] {
+  padding: 8px 24px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-header[_ngcontent-ng-c2250440546]   mat-card-title[_ngcontent-ng-c2250440546] {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-content[_ngcontent-ng-c2250440546] {
+  padding: 12px 24px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-content[_ngcontent-ng-c2250440546]   p[_ngcontent-ng-c2250440546] {
+  font-size: 0.95rem;
+  color: #44474e;
+  min-height: 50px;
+  line-height: 1.5;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-content[_ngcontent-ng-c2250440546]   .check[_ngcontent-ng-c2250440546] {
+  color: #4caf50;
+  font-size: 18px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-content[_ngcontent-ng-c2250440546]   mat-list-item[_ngcontent-ng-c2250440546] {
+  font-size: 0.85rem;
+  height: auto !important;
+  padding: 4px 0;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-actions[_ngcontent-ng-c2250440546] {
+  padding: 0 24px 24px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .services-carousel-section[_ngcontent-ng-c2250440546]   .service-card[_ngcontent-ng-c2250440546]   mat-card-actions[_ngcontent-ng-c2250440546]   .btn-cta[_ngcontent-ng-c2250440546] {
+  width: 100%;
+  border-radius: 50px;
+  background: #005cbb !important;
+  color: white !important;
+  font-weight: 700;
+  height: 48px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .path-section[_ngcontent-ng-c2250440546] {
+  padding: 80px 0;
+}
+.health-page[_ngcontent-ng-c2250440546]   .path-section[_ngcontent-ng-c2250440546]   .path-header[_ngcontent-ng-c2250440546] {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .path-section[_ngcontent-ng-c2250440546]   .path-grid[_ngcontent-ng-c2250440546] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .path-section[_ngcontent-ng-c2250440546]   .path-card[_ngcontent-ng-c2250440546] {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  background: #f8f9ff;
+  border-radius: 16px;
+}
+.health-page[_ngcontent-ng-c2250440546]   .path-section[_ngcontent-ng-c2250440546]   .path-card[_ngcontent-ng-c2250440546]   mat-icon[_ngcontent-ng-c2250440546] {
+  color: #005cbb;
+}
+.health-page[_ngcontent-ng-c2250440546]   .path-section[_ngcontent-ng-c2250440546]   .path-card[_ngcontent-ng-c2250440546]   h4[_ngcontent-ng-c2250440546] {
+  margin: 0;
+  font-weight: 700;
+}
+.health-page[_ngcontent-ng-c2250440546]   .path-section[_ngcontent-ng-c2250440546]   .path-card[_ngcontent-ng-c2250440546]   p[_ngcontent-ng-c2250440546] {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #44474e;
+}
+/*# sourceMappingURL=/sueroterapia.css.map */</style><style ng-app-id="ng">.cdk-visually-hidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap;outline:0;-webkit-appearance:none;-moz-appearance:none;left:0}[dir=rtl] .cdk-visually-hidden{left:auto;right:0}
+</style><style ng-app-id="ng">.mat-mdc-fab-base{-webkit-user-select:none;user-select:none;position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:none;fill:currentColor;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;overflow:visible;transition:box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),opacity 15ms linear 30ms,transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);flex-shrink:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-fab-base .mat-mdc-button-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple,.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none;border-radius:inherit}.mat-mdc-fab-base .mat-mdc-button-ripple{overflow:hidden}.mat-mdc-fab-base .mat-mdc-button-persistent-ripple::before{content:"";opacity:0}.mat-mdc-fab-base .mdc-button__label,.mat-mdc-fab-base .mat-icon{z-index:1;position:relative}.mat-mdc-fab-base .mat-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute}.mat-mdc-fab-base:focus>.mat-focus-indicator::before{content:""}.mat-mdc-fab-base._mat-animation-noopable{transition:none !important;animation:none !important}.mat-mdc-fab-base::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none}.mat-mdc-fab-base[hidden]{display:none}.mat-mdc-fab-base::-moz-focus-inner{padding:0;border:0}.mat-mdc-fab-base:active,.mat-mdc-fab-base:focus{outline:none}.mat-mdc-fab-base:hover{cursor:pointer}.mat-mdc-fab-base>svg{width:100%}.mat-mdc-fab-base .mat-icon,.mat-mdc-fab-base .material-icons{transition:transform 180ms 90ms cubic-bezier(0, 0, 0.2, 1);fill:currentColor;will-change:transform}.mat-mdc-fab-base .mat-focus-indicator::before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 2px)*-1)}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-fab-base[disabled],.mat-mdc-fab-base[disabled]:focus,.mat-mdc-fab-base.mat-mdc-button-disabled,.mat-mdc-fab-base.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-fab-base.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab{background-color:var(--mat-fab-container-color, var(--mat-sys-primary-container));border-radius:var(--mat-fab-container-shape, var(--mat-sys-corner-large));color:var(--mat-fab-foreground-color, var(--mat-sys-on-primary-container, inherit));box-shadow:var(--mat-fab-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-fab:hover{box-shadow:var(--mat-fab-hover-container-elevation-shadow, var(--mat-sys-level4))}.mat-mdc-fab:focus{box-shadow:var(--mat-fab-focus-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-fab:active,.mat-mdc-fab:focus:active{box-shadow:var(--mat-fab-pressed-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-fab[disabled],.mat-mdc-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-disabled-state-foreground-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-fab-disabled-state-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-fab-touch-target-display, block);left:50%;width:48px;transform:translate(-50%, -50%)}.mat-mdc-fab .mat-ripple-element{background-color:var(--mat-fab-ripple-color, color-mix(in srgb, var(--mat-sys-on-primary-container) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-state-layer-color, var(--mat-sys-on-primary-container))}.mat-mdc-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-disabled-state-layer-color)}.mat-mdc-fab:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-fab.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-fab.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-fab:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-mini-fab{width:40px;height:40px;background-color:var(--mat-fab-small-container-color, var(--mat-sys-primary-container));border-radius:var(--mat-fab-small-container-shape, var(--mat-sys-corner-medium));color:var(--mat-fab-small-foreground-color, var(--mat-sys-on-primary-container, inherit));box-shadow:var(--mat-fab-small-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-mini-fab:hover{box-shadow:var(--mat-fab-small-hover-container-elevation-shadow, var(--mat-sys-level4))}.mat-mdc-mini-fab:focus{box-shadow:var(--mat-fab-small-focus-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-mini-fab:active,.mat-mdc-mini-fab:focus:active{box-shadow:var(--mat-fab-small-pressed-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-mini-fab[disabled],.mat-mdc-mini-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none;color:var(--mat-fab-small-disabled-state-foreground-color, color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent));background-color:var(--mat-fab-small-disabled-state-container-color, color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent))}.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}.mat-mdc-mini-fab .mat-mdc-button-touch-target{position:absolute;top:50%;height:48px;display:var(--mat-fab-small-touch-target-display);left:50%;width:48px;transform:translate(-50%, -50%)}.mat-mdc-mini-fab .mat-ripple-element{background-color:var(--mat-fab-small-ripple-color, color-mix(in srgb, var(--mat-sys-on-primary-container) calc(var(--mat-sys-pressed-state-layer-opacity) * 100%), transparent))}.mat-mdc-mini-fab .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-state-layer-color, var(--mat-sys-on-primary-container))}.mat-mdc-mini-fab.mat-mdc-button-disabled .mat-mdc-button-persistent-ripple::before{background-color:var(--mat-fab-small-disabled-state-layer-color)}.mat-mdc-mini-fab:hover>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mat-mdc-mini-fab.cdk-program-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.cdk-keyboard-focused>.mat-mdc-button-persistent-ripple::before,.mat-mdc-mini-fab.mat-mdc-button-disabled-interactive:focus>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mat-mdc-mini-fab:active>.mat-mdc-button-persistent-ripple::before{opacity:var(--mat-fab-small-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity))}.mat-mdc-extended-fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;padding-left:20px;padding-right:20px;width:auto;max-width:100%;line-height:normal;box-shadow:var(--mat-fab-extended-container-elevation-shadow, var(--mat-sys-level3));height:var(--mat-fab-extended-container-height, 56px);border-radius:var(--mat-fab-extended-container-shape, var(--mat-sys-corner-large));font-family:var(--mat-fab-extended-label-text-font, var(--mat-sys-label-large-font));font-size:var(--mat-fab-extended-label-text-size, var(--mat-sys-label-large-size));font-weight:var(--mat-fab-extended-label-text-weight, var(--mat-sys-label-large-weight));letter-spacing:var(--mat-fab-extended-label-text-tracking, var(--mat-sys-label-large-tracking))}.mat-mdc-extended-fab:hover{box-shadow:var(--mat-fab-extended-hover-container-elevation-shadow, var(--mat-sys-level4))}.mat-mdc-extended-fab:focus{box-shadow:var(--mat-fab-extended-focus-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-extended-fab:active,.mat-mdc-extended-fab:focus:active{box-shadow:var(--mat-fab-extended-pressed-container-elevation-shadow, var(--mat-sys-level3))}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab.mat-mdc-button-disabled{cursor:default;pointer-events:none}.mat-mdc-extended-fab[disabled],.mat-mdc-extended-fab[disabled]:focus,.mat-mdc-extended-fab.mat-mdc-button-disabled,.mat-mdc-extended-fab.mat-mdc-button-disabled:focus{box-shadow:none}.mat-mdc-extended-fab.mat-mdc-button-disabled-interactive{pointer-events:auto}[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.mat-icon,[dir=rtl] .mat-mdc-extended-fab .mdc-button__label+.material-icons,.mat-mdc-extended-fab>.mat-icon,.mat-mdc-extended-fab>.material-icons{margin-left:-8px;margin-right:12px}.mat-mdc-extended-fab .mdc-button__label+.mat-icon,.mat-mdc-extended-fab .mdc-button__label+.material-icons,[dir=rtl] .mat-mdc-extended-fab>.mat-icon,[dir=rtl] .mat-mdc-extended-fab>.material-icons{margin-left:12px;margin-right:-8px}.mat-mdc-extended-fab .mat-mdc-button-touch-target{width:100%}
+</style><style ng-app-id="ng">.mat-mdc-card{display:flex;flex-direction:column;box-sizing:border-box;position:relative;border-style:solid;border-width:0;background-color:var(--mat-card-elevated-container-color, var(--mat-sys-surface-container-low));border-color:var(--mat-card-elevated-container-color, var(--mat-sys-surface-container-low));border-radius:var(--mat-card-elevated-container-shape, var(--mat-sys-corner-medium));box-shadow:var(--mat-card-elevated-container-elevation, var(--mat-sys-level1))}.mat-mdc-card::after{position:absolute;top:0;left:0;width:100%;height:100%;border:solid 1px rgba(0,0,0,0);content:"";display:block;pointer-events:none;box-sizing:border-box;border-radius:var(--mat-card-elevated-container-shape, var(--mat-sys-corner-medium))}.mat-mdc-card-outlined{background-color:var(--mat-card-outlined-container-color, var(--mat-sys-surface));border-radius:var(--mat-card-outlined-container-shape, var(--mat-sys-corner-medium));border-width:var(--mat-card-outlined-outline-width, 1px);border-color:var(--mat-card-outlined-outline-color, var(--mat-sys-outline-variant));box-shadow:var(--mat-card-outlined-container-elevation, var(--mat-sys-level0))}.mat-mdc-card-outlined::after{border:none}.mat-mdc-card-filled{background-color:var(--mat-card-filled-container-color, var(--mat-sys-surface-container-highest));border-radius:var(--mat-card-filled-container-shape, var(--mat-sys-corner-medium));box-shadow:var(--mat-card-filled-container-elevation, var(--mat-sys-level0))}.mdc-card__media{position:relative;box-sizing:border-box;background-repeat:no-repeat;background-position:center;background-size:cover}.mdc-card__media::before{display:block;content:""}.mdc-card__media:first-child{border-top-left-radius:inherit;border-top-right-radius:inherit}.mdc-card__media:last-child{border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}.mat-mdc-card-actions{display:flex;flex-direction:row;align-items:center;box-sizing:border-box;min-height:52px;padding:8px}.mat-mdc-card-title{font-family:var(--mat-card-title-text-font, var(--mat-sys-title-large-font));line-height:var(--mat-card-title-text-line-height, var(--mat-sys-title-large-line-height));font-size:var(--mat-card-title-text-size, var(--mat-sys-title-large-size));letter-spacing:var(--mat-card-title-text-tracking, var(--mat-sys-title-large-tracking));font-weight:var(--mat-card-title-text-weight, var(--mat-sys-title-large-weight))}.mat-mdc-card-subtitle{color:var(--mat-card-subtitle-text-color, var(--mat-sys-on-surface));font-family:var(--mat-card-subtitle-text-font, var(--mat-sys-title-medium-font));line-height:var(--mat-card-subtitle-text-line-height, var(--mat-sys-title-medium-line-height));font-size:var(--mat-card-subtitle-text-size, var(--mat-sys-title-medium-size));letter-spacing:var(--mat-card-subtitle-text-tracking, var(--mat-sys-title-medium-tracking));font-weight:var(--mat-card-subtitle-text-weight, var(--mat-sys-title-medium-weight))}.mat-mdc-card-title,.mat-mdc-card-subtitle{display:block;margin:0}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle{padding:16px 16px 0}.mat-mdc-card-header{display:flex;padding:16px 16px 0}.mat-mdc-card-content{display:block;padding:0 16px}.mat-mdc-card-content:first-child{padding-top:16px}.mat-mdc-card-content:last-child{padding-bottom:16px}.mat-mdc-card-title-group{display:flex;justify-content:space-between;width:100%}.mat-mdc-card-avatar{height:40px;width:40px;border-radius:50%;flex-shrink:0;margin-bottom:16px;object-fit:cover}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title{line-height:normal}.mat-mdc-card-sm-image{width:80px;height:80px}.mat-mdc-card-md-image{width:112px;height:112px}.mat-mdc-card-lg-image{width:152px;height:152px}.mat-mdc-card-xl-image{width:240px;height:240px}.mat-mdc-card-subtitle~.mat-mdc-card-title,.mat-mdc-card-title~.mat-mdc-card-subtitle,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-title-group .mat-mdc-card-title,.mat-mdc-card-title-group .mat-mdc-card-subtitle{padding-top:0}.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer){margin-bottom:0}.mat-mdc-card-actions-align-end{justify-content:flex-end}
+</style><style ng-app-id="ng">.mdc-list{margin:0;padding:8px 0;list-style-type:none}.mdc-list:focus{outline:none}.mdc-list-item{display:flex;position:relative;justify-content:flex-start;overflow:hidden;padding:0;align-items:stretch;cursor:pointer;padding-left:16px;padding-right:16px;background-color:var(--mat-list-list-item-container-color, transparent);border-radius:var(--mat-list-list-item-container-shape, var(--mat-sys-corner-none))}.mdc-list-item.mdc-list-item--selected{background-color:var(--mat-list-list-item-selected-container-color)}.mdc-list-item:focus{outline:0}.mdc-list-item.mdc-list-item--disabled{cursor:auto}.mdc-list-item.mdc-list-item--with-one-line{height:var(--mat-list-list-item-one-line-container-height, 48px)}.mdc-list-item.mdc-list-item--with-one-line .mdc-list-item__start{align-self:center;margin-top:0}.mdc-list-item.mdc-list-item--with-one-line .mdc-list-item__end{align-self:center;margin-top:0}.mdc-list-item.mdc-list-item--with-two-lines{height:var(--mat-list-list-item-two-line-container-height, 64px)}.mdc-list-item.mdc-list-item--with-two-lines .mdc-list-item__start{align-self:flex-start;margin-top:16px}.mdc-list-item.mdc-list-item--with-two-lines .mdc-list-item__end{align-self:center;margin-top:0}.mdc-list-item.mdc-list-item--with-three-lines{height:var(--mat-list-list-item-three-line-container-height, 88px)}.mdc-list-item.mdc-list-item--with-three-lines .mdc-list-item__start{align-self:flex-start;margin-top:16px}.mdc-list-item.mdc-list-item--with-three-lines .mdc-list-item__end{align-self:flex-start;margin-top:16px}.mdc-list-item.mdc-list-item--selected::before,.mdc-list-item.mdc-list-item--selected:focus::before,.mdc-list-item:not(.mdc-list-item--selected):focus::before{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;content:"";pointer-events:none}a.mdc-list-item{color:inherit;text-decoration:none}.mdc-list-item__start{fill:currentColor;flex-shrink:0;pointer-events:none}.mdc-list-item--with-leading-icon .mdc-list-item__start{color:var(--mat-list-list-item-leading-icon-color, var(--mat-sys-on-surface-variant));width:var(--mat-list-list-item-leading-icon-size, 24px);height:var(--mat-list-list-item-leading-icon-size, 24px);margin-left:16px;margin-right:32px}[dir=rtl] .mdc-list-item--with-leading-icon .mdc-list-item__start{margin-left:32px;margin-right:16px}.mdc-list-item--with-leading-icon:hover .mdc-list-item__start{color:var(--mat-list-list-item-hover-leading-icon-color)}.mdc-list-item--with-leading-avatar .mdc-list-item__start{width:var(--mat-list-list-item-leading-avatar-size, 40px);height:var(--mat-list-list-item-leading-avatar-size, 40px);margin-left:16px;margin-right:16px;border-radius:50%}.mdc-list-item--with-leading-avatar .mdc-list-item__start,[dir=rtl] .mdc-list-item--with-leading-avatar .mdc-list-item__start{margin-left:16px;margin-right:16px;border-radius:50%}.mdc-list-item__end{flex-shrink:0;pointer-events:none}.mdc-list-item--with-trailing-meta .mdc-list-item__end{font-family:var(--mat-list-list-item-trailing-supporting-text-font, var(--mat-sys-label-small-font));line-height:var(--mat-list-list-item-trailing-supporting-text-line-height, var(--mat-sys-label-small-line-height));font-size:var(--mat-list-list-item-trailing-supporting-text-size, var(--mat-sys-label-small-size));font-weight:var(--mat-list-list-item-trailing-supporting-text-weight, var(--mat-sys-label-small-weight));letter-spacing:var(--mat-list-list-item-trailing-supporting-text-tracking, var(--mat-sys-label-small-tracking))}.mdc-list-item--with-trailing-icon .mdc-list-item__end{color:var(--mat-list-list-item-trailing-icon-color, var(--mat-sys-on-surface-variant));width:var(--mat-list-list-item-trailing-icon-size, 24px);height:var(--mat-list-list-item-trailing-icon-size, 24px)}.mdc-list-item--with-trailing-icon:hover .mdc-list-item__end{color:var(--mat-list-list-item-hover-trailing-icon-color)}.mdc-list-item.mdc-list-item--with-trailing-meta .mdc-list-item__end{color:var(--mat-list-list-item-trailing-supporting-text-color, var(--mat-sys-on-surface-variant))}.mdc-list-item--selected.mdc-list-item--with-trailing-icon .mdc-list-item__end{color:var(--mat-list-list-item-selected-trailing-icon-color, var(--mat-sys-primary))}.mdc-list-item__content{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;align-self:center;flex:1;pointer-events:none}.mdc-list-item--with-two-lines .mdc-list-item__content,.mdc-list-item--with-three-lines .mdc-list-item__content{align-self:stretch}.mdc-list-item__primary-text{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:var(--mat-list-list-item-label-text-color, var(--mat-sys-on-surface));font-family:var(--mat-list-list-item-label-text-font, var(--mat-sys-body-large-font));line-height:var(--mat-list-list-item-label-text-line-height, var(--mat-sys-body-large-line-height));font-size:var(--mat-list-list-item-label-text-size, var(--mat-sys-body-large-size));font-weight:var(--mat-list-list-item-label-text-weight, var(--mat-sys-body-large-weight));letter-spacing:var(--mat-list-list-item-label-text-tracking, var(--mat-sys-body-large-tracking))}.mdc-list-item:hover .mdc-list-item__primary-text{color:var(--mat-list-list-item-hover-label-text-color, var(--mat-sys-on-surface))}.mdc-list-item:focus .mdc-list-item__primary-text{color:var(--mat-list-list-item-focus-label-text-color, var(--mat-sys-on-surface))}.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-three-lines .mdc-list-item__primary-text{display:block;margin-top:0;line-height:normal;margin-bottom:-20px}.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-three-lines .mdc-list-item__primary-text::before{display:inline-block;width:0;height:28px;content:"";vertical-align:0}.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-three-lines .mdc-list-item__primary-text::after{display:inline-block;width:0;height:20px;content:"";vertical-align:-20px}.mdc-list-item__secondary-text{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:block;margin-top:0;color:var(--mat-list-list-item-supporting-text-color, var(--mat-sys-on-surface-variant));font-family:var(--mat-list-list-item-supporting-text-font, var(--mat-sys-body-medium-font));line-height:var(--mat-list-list-item-supporting-text-line-height, var(--mat-sys-body-medium-line-height));font-size:var(--mat-list-list-item-supporting-text-size, var(--mat-sys-body-medium-size));font-weight:var(--mat-list-list-item-supporting-text-weight, var(--mat-sys-body-medium-weight));letter-spacing:var(--mat-list-list-item-supporting-text-tracking, var(--mat-sys-body-medium-tracking))}.mdc-list-item__secondary-text::before{display:inline-block;width:0;height:20px;content:"";vertical-align:0}.mdc-list-item--with-three-lines .mdc-list-item__secondary-text{white-space:normal;line-height:20px}.mdc-list-item--with-overline .mdc-list-item__secondary-text{white-space:nowrap;line-height:auto}.mdc-list-item--with-leading-radio.mdc-list-item,.mdc-list-item--with-leading-checkbox.mdc-list-item,.mdc-list-item--with-leading-icon.mdc-list-item,.mdc-list-item--with-leading-avatar.mdc-list-item{padding-left:0;padding-right:16px}[dir=rtl] .mdc-list-item--with-leading-radio.mdc-list-item,[dir=rtl] .mdc-list-item--with-leading-checkbox.mdc-list-item,[dir=rtl] .mdc-list-item--with-leading-icon.mdc-list-item,[dir=rtl] .mdc-list-item--with-leading-avatar.mdc-list-item{padding-left:16px;padding-right:0}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines .mdc-list-item__primary-text,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines .mdc-list-item__primary-text{display:block;margin-top:0;line-height:normal;margin-bottom:-20px}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines .mdc-list-item__primary-text::before{display:inline-block;width:0;height:32px;content:"";vertical-align:0}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines .mdc-list-item__primary-text::after{display:inline-block;width:0;height:20px;content:"";vertical-align:-20px}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end{display:block;margin-top:0;line-height:normal}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before,.mdc-list-item--with-leading-icon.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before,.mdc-list-item--with-leading-avatar.mdc-list-item--with-two-lines.mdc-list-item--with-trailing-meta .mdc-list-item__end::before{display:inline-block;width:0;height:32px;content:"";vertical-align:0}.mdc-list-item--with-trailing-icon.mdc-list-item,[dir=rtl] .mdc-list-item--with-trailing-icon.mdc-list-item{padding-left:0;padding-right:0}.mdc-list-item--with-trailing-icon .mdc-list-item__end{margin-left:16px;margin-right:16px}.mdc-list-item--with-trailing-meta.mdc-list-item{padding-left:16px;padding-right:0}[dir=rtl] .mdc-list-item--with-trailing-meta.mdc-list-item{padding-left:0;padding-right:16px}.mdc-list-item--with-trailing-meta .mdc-list-item__end{-webkit-user-select:none;user-select:none;margin-left:28px;margin-right:16px}[dir=rtl] .mdc-list-item--with-trailing-meta .mdc-list-item__end{margin-left:16px;margin-right:28px}.mdc-list-item--with-trailing-meta.mdc-list-item--with-three-lines .mdc-list-item__end,.mdc-list-item--with-trailing-meta.mdc-list-item--with-two-lines .mdc-list-item__end{display:block;line-height:normal;align-self:flex-start;margin-top:0}.mdc-list-item--with-trailing-meta.mdc-list-item--with-three-lines .mdc-list-item__end::before,.mdc-list-item--with-trailing-meta.mdc-list-item--with-two-lines .mdc-list-item__end::before{display:inline-block;width:0;height:28px;content:"";vertical-align:0}.mdc-list-item--with-leading-radio .mdc-list-item__start,.mdc-list-item--with-leading-checkbox .mdc-list-item__start{margin-left:8px;margin-right:24px}[dir=rtl] .mdc-list-item--with-leading-radio .mdc-list-item__start,[dir=rtl] .mdc-list-item--with-leading-checkbox .mdc-list-item__start{margin-left:24px;margin-right:8px}.mdc-list-item--with-leading-radio.mdc-list-item--with-two-lines .mdc-list-item__start,.mdc-list-item--with-leading-checkbox.mdc-list-item--with-two-lines .mdc-list-item__start{align-self:flex-start;margin-top:8px}.mdc-list-item--with-trailing-radio.mdc-list-item,.mdc-list-item--with-trailing-checkbox.mdc-list-item{padding-left:16px;padding-right:0}[dir=rtl] .mdc-list-item--with-trailing-radio.mdc-list-item,[dir=rtl] .mdc-list-item--with-trailing-checkbox.mdc-list-item{padding-left:0;padding-right:16px}.mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-icon,.mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-avatar,.mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-icon,.mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-avatar{padding-left:0}[dir=rtl] .mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-icon,[dir=rtl] .mdc-list-item--with-trailing-radio.mdc-list-item--with-leading-avatar,[dir=rtl] .mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-icon,[dir=rtl] .mdc-list-item--with-trailing-checkbox.mdc-list-item--with-leading-avatar{padding-right:0}.mdc-list-item--with-trailing-radio .mdc-list-item__end,.mdc-list-item--with-trailing-checkbox .mdc-list-item__end{margin-left:24px;margin-right:8px}[dir=rtl] .mdc-list-item--with-trailing-radio .mdc-list-item__end,[dir=rtl] .mdc-list-item--with-trailing-checkbox .mdc-list-item__end{margin-left:8px;margin-right:24px}.mdc-list-item--with-trailing-radio.mdc-list-item--with-three-lines .mdc-list-item__end,.mdc-list-item--with-trailing-checkbox.mdc-list-item--with-three-lines .mdc-list-item__end{align-self:flex-start;margin-top:8px}.mdc-list-group__subheader{margin:.75rem 16px}.mdc-list-item--disabled .mdc-list-item__start,.mdc-list-item--disabled .mdc-list-item__content,.mdc-list-item--disabled .mdc-list-item__end{opacity:1}.mdc-list-item--disabled .mdc-list-item__primary-text,.mdc-list-item--disabled .mdc-list-item__secondary-text{opacity:var(--mat-list-list-item-disabled-label-text-opacity, 0.3)}.mdc-list-item--disabled.mdc-list-item--with-leading-icon .mdc-list-item__start{color:var(--mat-list-list-item-disabled-leading-icon-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-disabled-leading-icon-opacity, 0.38)}.mdc-list-item--disabled.mdc-list-item--with-trailing-icon .mdc-list-item__end{color:var(--mat-list-list-item-disabled-trailing-icon-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-disabled-trailing-icon-opacity, 0.38)}.mat-mdc-list-item.mat-mdc-list-item-both-leading-and-trailing,[dir=rtl] .mat-mdc-list-item.mat-mdc-list-item-both-leading-and-trailing{padding-left:0;padding-right:0}.mdc-list-item.mdc-list-item--disabled .mdc-list-item__primary-text{color:var(--mat-list-list-item-disabled-label-text-color, var(--mat-sys-on-surface))}.mdc-list-item:hover::before{background-color:var(--mat-list-list-item-hover-state-layer-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-hover-state-layer-opacity, var(--mat-sys-hover-state-layer-opacity))}.mdc-list-item.mdc-list-item--disabled::before{background-color:var(--mat-list-list-item-disabled-state-layer-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-disabled-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-list-item:focus::before{background-color:var(--mat-list-list-item-focus-state-layer-color, var(--mat-sys-on-surface));opacity:var(--mat-list-list-item-focus-state-layer-opacity, var(--mat-sys-focus-state-layer-opacity))}.mdc-list-item--disabled .mdc-radio,.mdc-list-item--disabled .mdc-checkbox{opacity:var(--mat-list-list-item-disabled-label-text-opacity, 0.3)}.mdc-list-item--with-leading-avatar .mat-mdc-list-item-avatar{border-radius:var(--mat-list-list-item-leading-avatar-shape, var(--mat-sys-corner-full));background-color:var(--mat-list-list-item-leading-avatar-color, var(--mat-sys-primary-container))}.mat-mdc-list-item-icon{font-size:var(--mat-list-list-item-leading-icon-size, 24px)}@media(forced-colors: active){a.mdc-list-item--activated::after{content:"";position:absolute;top:50%;right:16px;transform:translateY(-50%);width:10px;height:0;border-bottom:solid 10px;border-radius:10px}a.mdc-list-item--activated [dir=rtl]::after{right:auto;left:16px}}.mat-mdc-list-base{display:block}.mat-mdc-list-base .mdc-list-item__start,.mat-mdc-list-base .mdc-list-item__end,.mat-mdc-list-base .mdc-list-item__content{pointer-events:auto}.mat-mdc-list-item,.mat-mdc-list-option{width:100%;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0)}.mat-mdc-list-item:not(.mat-mdc-list-item-interactive),.mat-mdc-list-option:not(.mat-mdc-list-item-interactive){cursor:default}.mat-mdc-list-item .mat-divider-inset,.mat-mdc-list-option .mat-divider-inset{position:absolute;left:0;right:0;bottom:0}.mat-mdc-list-item .mat-mdc-list-item-avatar~.mat-divider-inset,.mat-mdc-list-option .mat-mdc-list-item-avatar~.mat-divider-inset{margin-left:72px}[dir=rtl] .mat-mdc-list-item .mat-mdc-list-item-avatar~.mat-divider-inset,[dir=rtl] .mat-mdc-list-option .mat-mdc-list-item-avatar~.mat-divider-inset{margin-right:72px}.mat-mdc-list-item-interactive::before{top:0;left:0;right:0;bottom:0;position:absolute;content:"";opacity:0;pointer-events:none;border-radius:inherit}.mat-mdc-list-item>.mat-focus-indicator{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}.mat-mdc-list-item:focus>.mat-focus-indicator::before{content:""}.mat-mdc-list-item.mdc-list-item--with-three-lines .mat-mdc-list-item-line.mdc-list-item__secondary-text{white-space:nowrap;line-height:normal}.mat-mdc-list-item.mdc-list-item--with-three-lines .mat-mdc-list-item-unscoped-content.mdc-list-item__secondary-text{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}mat-action-list button{background:none;color:inherit;border:none;font:inherit;outline:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0);text-align:start}mat-action-list button::-moz-focus-inner{border:0}.mdc-list-item--with-leading-icon .mdc-list-item__start{margin-inline-start:var(--mat-list-list-item-leading-icon-start-space, 16px);margin-inline-end:var(--mat-list-list-item-leading-icon-end-space, 16px)}.mat-mdc-nav-list .mat-mdc-list-item{border-radius:var(--mat-list-active-indicator-shape, var(--mat-sys-corner-full));--mat-focus-indicator-border-radius: var(--mat-list-active-indicator-shape, var(--mat-sys-corner-full))}.mat-mdc-nav-list .mat-mdc-list-item.mdc-list-item--activated{background-color:var(--mat-list-active-indicator-color, var(--mat-sys-secondary-container))}
+</style></head>
+<body class="mat-typography"><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click","input","compositionstart","compositionend"],["blur"]);</script>
+  <app-root ng-version="20.1.2" _nghost-ng-c2518764147="" ngh="8" ng-server-context="ssg"><app-navbar _ngcontent-ng-c2518764147="" _nghost-ng-c3918952098="" ngh="3"><mat-toolbar _ngcontent-ng-c3918952098="" color="primary" class="mat-toolbar navbar-sticky mat-primary mat-toolbar-single-row" ngh="0"><div _ngcontent-ng-c3918952098="" class="navbar-container"><div _ngcontent-ng-c3918952098="" class="left-section"><div _ngcontent-ng-c3918952098="" class="navbar-brand"><a _ngcontent-ng-c3918952098="" routerlink="/" class="logo-link" href="/" jsaction="click:;"><img _ngcontent-ng-c3918952098="" src="assets/images/global/logo2.png" alt="Logo C&amp;E IPS S.A.S" class="logo"></a></div></div><div _ngcontent-ng-c3918952098="" class="navbar-nav"><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">home</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">INICIO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/sueroterapia" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/sueroterapia" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SUEROTERAPIA</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/services" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/services" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SERVICIOS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/bussiness" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/bussiness" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">groups</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">NOSOTROS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/pqrs" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">call</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">CONTACTO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-raised-button="" routerlink="/admin/login" class="mdc-button mat-mdc-button-base login-btn mdc-button--raised mat-mdc-raised-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/admin/login" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">lock</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">LOGIN</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a></div><div _ngcontent-ng-c3918952098="" class="mobile-toggle"><button _ngcontent-ng-c3918952098="" mat-icon-button="" class="mdc-icon-button mat-mdc-icon-button mat-mdc-button-base menu-btn mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" mat-ripple-loader-centered="" ngh="2" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-icon-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">menu</mat-icon><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div></mat-toolbar><div _ngcontent-ng-c3918952098="" class="mobile-menu"><div _ngcontent-ng-c3918952098="" class="mobile-search-container"><div _ngcontent-ng-c3918952098="" class="mobile-search-wrapper"><input _ngcontent-ng-c3918952098="" type="text" placeholder="Buscar servicios..." class="mobile-search-input ng-untouched ng-pristine ng-valid" value="" jsaction="input:;blur:;compositionstart:;compositionend:;"><button _ngcontent-ng-c3918952098="" class="mobile-search-button" jsaction="click:;"><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">search</mat-icon></button></div></div><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">home</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">INICIO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/sueroterapia" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/sueroterapia" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SUEROTERAPIA</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/services" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/services" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">SERVICIOS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/bussiness" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/bussiness" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">groups</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">NOSOTROS</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base mobile-nav-link mat-mdc-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/pqrs" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">call</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">CONTACTO</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a><a _ngcontent-ng-c3918952098="" mat-raised-button="" routerlink="/admin/login" class="mdc-button mat-mdc-button-base mobile-login-btn mdc-button--raised mat-mdc-raised-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" href="/admin/login" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><mat-icon _ngcontent-ng-c3918952098="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">lock</mat-icon><span class="mdc-button__label"><span _ngcontent-ng-c3918952098="">LOGIN</span></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></a></div></app-navbar><!--container--><main _ngcontent-ng-c2518764147="" class="main-content"><router-outlet _ngcontent-ng-c2518764147=""></router-outlet><app-sueroterapia _nghost-ng-c2250440546="" ngh="7"><div _ngcontent-ng-c2250440546="" class="health-page"><header _ngcontent-ng-c2250440546="" class="hero-header"><div _ngcontent-ng-c2250440546="" class="main-container"><div _ngcontent-ng-c2250440546="" class="hero-content"><span _ngcontent-ng-c2250440546="" class="eyebrow">CUIDANDO DE TI C&amp;E IPS S.A.S</span><h1 _ngcontent-ng-c2250440546="">Sueroterapia <span _ngcontent-ng-c2250440546="" class="highlight">Ortomolecular</span></h1><p _ngcontent-ng-c2250440546="">Tratamientos intravenosos directamente en tu hogar con rigor científico y seguridad clínica.</p><div _ngcontent-ng-c2250440546="" class="stats-row"><div _ngcontent-ng-c2250440546="" mattooltip="IPS legalmente constituida" class="mat-mdc-tooltip-trigger stat-box"><div _ngcontent-ng-c2250440546="" class="icon-wrapper"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">verified</mat-icon></div><div _ngcontent-ng-c2250440546="" class="text-wrapper"><span _ngcontent-ng-c2250440546="" class="stat-number">IPS</span><span _ngcontent-ng-c2250440546="" class="stat-label">Habilitada</span></div></div><!--container--><div _ngcontent-ng-c2250440546="" mattooltip="Atención en toda la ciudad" class="mat-mdc-tooltip-trigger stat-box"><div _ngcontent-ng-c2250440546="" class="icon-wrapper"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">location_on</mat-icon></div><div _ngcontent-ng-c2250440546="" class="text-wrapper"><span _ngcontent-ng-c2250440546="" class="stat-number">Cali</span><span _ngcontent-ng-c2250440546="" class="stat-label">Sede Principal</span></div></div><!--container--><div _ngcontent-ng-c2250440546="" mattooltip="Atención todos los días" class="mat-mdc-tooltip-trigger stat-box"><div _ngcontent-ng-c2250440546="" class="icon-wrapper"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">schedule</mat-icon></div><div _ngcontent-ng-c2250440546="" class="text-wrapper"><span _ngcontent-ng-c2250440546="" class="stat-number">24/7</span><span _ngcontent-ng-c2250440546="" class="stat-label">Disponibilidad</span></div></div><!--container--></div></div></div></header><section _ngcontent-ng-c2250440546="" class="video-section"><div _ngcontent-ng-c2250440546="" class="main-container"><div _ngcontent-ng-c2250440546="" class="video-grid"><div _ngcontent-ng-c2250440546="" class="video-info"><span _ngcontent-ng-c2250440546="" class="badge">Nuestra Experiencia</span><h2 _ngcontent-ng-c2250440546="">Cómo funciona la <span _ngcontent-ng-c2250440546="" class="primary-text">Sueroterapia Domiciliaria</span></h2><p _ngcontent-ng-c2250440546="">Llevamos la clínica a tu hogar. Nuestro proceso garantiza la máxima absorción de nutrientes bajo estricta supervisión profesional.</p><ul _ngcontent-ng-c2250440546="" class="feature-list"><li _ngcontent-ng-c2250440546=""><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon> Evaluación médica previa</li><li _ngcontent-ng-c2250440546=""><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon> Protocolos personalizados</li><li _ngcontent-ng-c2250440546=""><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">check_circle</mat-icon> Insumos certificados</li></ul></div><div _ngcontent-ng-c2250440546="" class="video-card"><div _ngcontent-ng-c2250440546="" class="video-aspect"><video _ngcontent-ng-c2250440546="" src="assets/sueroterapia.mp4" preload="metadata" playsinline="" controls="" poster="assets/img/preview-video.jpg" class="local-video"> Tu navegador no soporta videos. </video></div></div></div></div></section><section _ngcontent-ng-c2250440546="" class="services-carousel-section"><div _ngcontent-ng-c2250440546="" class="main-container"><div _ngcontent-ng-c2250440546="" class="section-header"><h2 _ngcontent-ng-c2250440546="">Portafolio de Especialidades</h2><p _ngcontent-ng-c2250440546="">Desliza o usa las flechas para explorar nuestros protocolos</p></div><div _ngcontent-ng-c2250440546="" class="category-block"><h3 _ngcontent-ng-c2250440546="" class="cat-title">Bienestar &amp; Balance General</h3><div _ngcontent-ng-c2250440546="" class="carousel-wrapper"><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn prev mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_left</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><div _ngcontent-ng-c2250440546="" class="carousel-container"><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon teal"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">clean_hands</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Detoxificación</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Elimina toxinas y metales pesados para un hígado fuerte.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Glutatión</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Vitamina C</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Limpieza celular</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon orange"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">bolt</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Energizante</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Combate el cansancio y estrés crónico aportando vitalidad.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Complejo B</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Minerales</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Concentración</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon blue"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">shield</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Inmunológica</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Refuerza las defensas para prevenir infecciones.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Zinc y Selenio</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Vitamina C alta</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Resistencia</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon indigo"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">psychology</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Ansiedad y Distrés</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Mejora el sistema nervioso y el bienestar emocional.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Magnesio</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Grupo B</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Equilibrio</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon teal"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">restaurant_menu</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Aparato Digestivo</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Equilibra el sistema digestivo y mejora la absorción.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Función hepática</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Microbiota</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Digestión</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><!--container--></div><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn next mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_right</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div><div _ngcontent-ng-c2250440546="" class="category-block"><h3 _ngcontent-ng-c2250440546="" class="cat-title">Salud Metabólica &amp; Crónica</h3><div _ngcontent-ng-c2250440546="" class="carousel-wrapper"><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn prev mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_left</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><div _ngcontent-ng-c2250440546="" class="carousel-container"><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon green"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">monitor_weight</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Obesidad y Peso</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Aumenta el metabolismo celular y graso.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Control apetito</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Metabolismo activo</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Circulación</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon green"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">opacity</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Diabetes Mellitus</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Nutrientes que ayudan a controlar el azúcar en sangre.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Control glucémico</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Saciedad</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Mejora insulina</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon red"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">favorite</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Hipertensión</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Protege las paredes de los vasos y el corazón.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Protección cardíaca</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Reparación vascular</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Glutatión</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon lime"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">loop</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Quelación</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Desintoxica el sistema circulatorio de metales pesados.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Limpieza arterial</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Triglicéridos</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Prevención</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon pink"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">female</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Glándula Tiroidea</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Apoyo nutricional para equilibrio hormonal.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Control hormonal</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Vitalidad</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Minerales</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><!--container--></div><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn next mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_right</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div><div _ngcontent-ng-c2250440546="" class="category-block"><h3 _ngcontent-ng-c2250440546="" class="cat-title">Estética &amp; Recuperación</h3><div _ngcontent-ng-c2250440546="" class="carousel-wrapper"><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn prev mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_left</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><div _ngcontent-ng-c2250440546="" class="carousel-container"><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon pink"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">auto_fix_high</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Antiedad</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Retrasa el envejecimiento y promueve colágeno.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Antioxidantes</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Aminoácidos</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Elasticidad</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon purple"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">face</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Belleza</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Potencia el brillo de piel, uñas y cabello.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Biotina</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Colágeno</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Hidratación</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon red"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">fitness_center</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Post-Entrenamiento</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Recuperación muscular rápida para deportistas.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Aminoácidos</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Electrolitos</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Menos dolor</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon orange"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">health_and_safety</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Piel (Acné)</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Desintoxica para mejorar la textura cutánea.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Control sebo</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Cicatrización</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Desinflamación</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon blue-grey"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Pre/Postquirúrgico</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Acelera la cicatrización y respuesta corporal.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Recuperación rápida</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Menos infección</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Cicatrización</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><!--container--></div><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn next mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_right</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div><div _ngcontent-ng-c2250440546="" class="category-block"><h3 _ngcontent-ng-c2250440546="" class="cat-title">Cuidado Especializado</h3><div _ngcontent-ng-c2250440546="" class="carousel-wrapper"><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn prev mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_left</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button><div _ngcontent-ng-c2250440546="" class="carousel-container"><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon blue"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">accessibility_new</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Enf. Osteoarticular</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Reduce el dolor en fibromialgia y fatiga.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Control dolor</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Modulación inmune</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Antiinflamatorio</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon red"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">bloodtype</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Plasma Rico en Plaquetas</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Medicina regenerativa para reparar tejidos.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Regeneración</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Factores crecimiento</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Tejidos</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon teal"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">biotech</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Neoplasias</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Altas dosis de Vitamina C para proteger tejidos.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Protección celular</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Apoyo en cáncer</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Inmunidad</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon purple"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">psychology</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Parkinson/Alzheimer</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Mejora la función cerebral y síntomas neurológicos.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Vitaminas B</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Cognición</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Antioxidantes</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon teal"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medication_liquid</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Próstata/Renal</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Ayuda en la relajación y expulsión de cálculos.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Desinflamación</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Alivio renal</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Hidratación</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><mat-card _ngcontent-ng-c2250440546="" class="mat-mdc-card mdc-card service-card" ngh="0"><div _ngcontent-ng-c2250440546="" class="mat-mdc-tooltip-trigger card-icon blue"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">air</mat-icon></div><!--container--><mat-card-header _ngcontent-ng-c2250440546="" class="mat-mdc-card-header" ngh="4"><div class="mat-mdc-card-header-text"><mat-card-title _ngcontent-ng-c2250440546="" class="mat-mdc-card-title">Respiratoria</mat-card-title></div></mat-card-header><mat-card-content _ngcontent-ng-c2250440546="" class="mat-mdc-card-content"><p _ngcontent-ng-c2250440546="">Desinflama la vía aérea en asma y alergias.</p><mat-list _ngcontent-ng-c2250440546="" class="mat-mdc-list mat-mdc-list-base mdc-list" aria-disabled="false" ngh="0"><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Apoyo pulmonar</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Nutrientes</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><mat-list-item _ngcontent-ng-c2250440546="" class="mat-mdc-list-item mdc-list-item mdc-list-item--with-leading-icon mat-mdc-list-item-single-line mdc-list-item--with-one-line" aria-disabled="false" ngh="5"><mat-icon _ngcontent-ng-c2250440546="" role="img" matlistitemicon="" class="mat-icon notranslate mat-mdc-list-item-icon check material-icons mat-ligature-font mat-icon-no-color mdc-list-item__start" aria-hidden="true" data-mat-icon-type="font" ngh="0">done</mat-icon><span class="mdc-list-item__content"><span _ngcontent-ng-c2250440546="" matlistitemtitle="" class="mat-mdc-list-item-title mdc-list-item__primary-text">Inmunidad</span><span class="mat-mdc-list-item-unscoped-content"></span></span><div class="mat-focus-indicator"></div></mat-list-item><!--container--></mat-list></mat-card-content><mat-card-actions _ngcontent-ng-c2250440546="" class="mat-mdc-card-actions mdc-card__actions"><button _ngcontent-ng-c2250440546="" mat-flat-button="" routerlink="/pqrs" class="mdc-button mat-mdc-button-base btn-cta mdc-button--unelevated mat-mdc-unelevated-button mat-unthemed" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="6" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class="mdc-button__label">SOLICITAR CITA</span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></mat-card-actions></mat-card><!--container--></div><button _ngcontent-ng-c2250440546="" mat-mini-fab="" class="mdc-fab mat-mdc-fab-base mdc-fab--mini mat-mdc-mini-fab mat-mdc-button-base nav-btn next mat-accent" mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple" ngh="1" jsaction="click:;"><span class="mat-mdc-button-persistent-ripple mdc-fab__ripple"></span><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">chevron_right</mat-icon><span class="mdc-button__label"></span><span class="mat-focus-indicator"></span><span class="mat-mdc-button-touch-target"></span></button></div></div><!--container--></div></section><section _ngcontent-ng-c2250440546="" class="path-section"><div _ngcontent-ng-c2250440546="" class="main-container"><div _ngcontent-ng-c2250440546="" class="path-header"><h2 _ngcontent-ng-c2250440546="">Apoyo en Patologías Crónicas</h2></div><div _ngcontent-ng-c2250440546="" class="path-grid"><div _ngcontent-ng-c2250440546="" class="path-card"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><div _ngcontent-ng-c2250440546=""><h4 _ngcontent-ng-c2250440546="">Obesidad</h4><p _ngcontent-ng-c2250440546="">Metabolismo celular y graso.</p></div></div><div _ngcontent-ng-c2250440546="" class="path-card"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><div _ngcontent-ng-c2250440546=""><h4 _ngcontent-ng-c2250440546="">Diabetes</h4><p _ngcontent-ng-c2250440546="">Control de azúcar e insulina.</p></div></div><div _ngcontent-ng-c2250440546="" class="path-card"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><div _ngcontent-ng-c2250440546=""><h4 _ngcontent-ng-c2250440546="">Ansiedad</h4><p _ngcontent-ng-c2250440546="">Bienestar del sistema nervioso.</p></div></div><div _ngcontent-ng-c2250440546="" class="path-card"><mat-icon _ngcontent-ng-c2250440546="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">medical_services</mat-icon><div _ngcontent-ng-c2250440546=""><h4 _ngcontent-ng-c2250440546="">Articular</h4><p _ngcontent-ng-c2250440546="">Inflamación y fibromialgia.</p></div></div><!--container--></div></div></section></div></app-sueroterapia><!--container--></main><app-footer _ngcontent-ng-c2518764147="" _nghost-ng-c2539398485="" ngh="0"><footer _ngcontent-ng-c2539398485="" class="footer"><div _ngcontent-ng-c2539398485="" class="container footer-grid"><div _ngcontent-ng-c2539398485="" class="footer-col"><img _ngcontent-ng-c2539398485="" src="/assets/images/global/logo.png" alt="Logo C&amp;E IPS S.A.S" class="footer-logo"><p _ngcontent-ng-c2539398485="">Comprometidos con tu salud y la de tu familia, ofreciendo un servicio humano y de calidad.</p></div><div _ngcontent-ng-c2539398485="" class="footer-col"><h4 _ngcontent-ng-c2539398485="">Enlaces Rápidos</h4><ul _ngcontent-ng-c2539398485=""><li _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="/services">Servicios</a></li><li _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="/bussiness">Empresa</a></li><li _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="/question">Preguntas Frecuentes</a></li></ul></div><div _ngcontent-ng-c2539398485="" class="footer-col"><h4 _ngcontent-ng-c2539398485="">Contacto</h4><ul _ngcontent-ng-c2539398485=""><li _ngcontent-ng-c2539398485=""><i _ngcontent-ng-c2539398485="" class="bi bi-geo-alt-fill"></i>Cali, Colombia</li><li _ngcontent-ng-c2539398485=""><i _ngcontent-ng-c2539398485="" class="bi bi-telephone-fill"></i> +57 315 105 4448</li><li _ngcontent-ng-c2539398485=""><i _ngcontent-ng-c2539398485="" class="bi bi-envelope-fill"></i> gerencia@ipscuidandodeti.com</li></ul></div><div _ngcontent-ng-c2539398485="" class="footer-col"><h4 _ngcontent-ng-c2539398485="">Síguenos</h4><div _ngcontent-ng-c2539398485="" class="social-links"><a _ngcontent-ng-c2539398485="" href="https://www.facebook.com/profile.php?id=61579108148916" aria-label="Facebook"><i _ngcontent-ng-c2539398485="" class="bi bi-facebook"></i></a><a _ngcontent-ng-c2539398485="" href="https://www.instagram.com/cuidandodeticeips" aria-label="Instagram"><i _ngcontent-ng-c2539398485="" class="bi bi-instagram"></i></a><a _ngcontent-ng-c2539398485="" href="#" aria-label="tiktok"><i _ngcontent-ng-c2539398485="" class="bi bi-tiktok"></i></a><a _ngcontent-ng-c2539398485="" href="#" aria-label="X"><i _ngcontent-ng-c2539398485="" class="bi bi-twitter-x"></i></a><a _ngcontent-ng-c2539398485="" href="#" aria-label="LinkedIn"><i _ngcontent-ng-c2539398485="" class="bi bi-linkedin"></i></a></div></div></div><div _ngcontent-ng-c2539398485="" class="footer-bottom"><div _ngcontent-ng-c2539398485="" class="container"><p _ngcontent-ng-c2539398485="">© 2026 C&amp;E IPS S.A.S. Todos los derechos reservados. - Desarrollado por: <b _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="https://www.vooltlab.com">VooltLab Software</a></b></p><p _ngcontent-ng-c2539398485=""><a _ngcontent-ng-c2539398485="" href="#">Términos y Condiciones</a> | <a _ngcontent-ng-c2539398485="" href="#">Política de Privacidad</a></p></div></div></footer></app-footer><!--container--><div _ngcontent-ng-c2518764147="" class="floating-contact-container"><div _ngcontent-ng-c2518764147="" class="floating-icons-stack"><div _ngcontent-ng-c2518764147="" class="floating-icon-wrapper"><span _ngcontent-ng-c2518764147="" class="floating-contact-text floating-text-top">Consulta rápida</span><a _ngcontent-ng-c2518764147="" href="https://t.me/+573151054448" target="_blank" rel="noopener noreferrer" aria-label="Contactar por Audífonos" class="floating-icon-link floating-icon-top"><mat-icon _ngcontent-ng-c2518764147="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font" ngh="0">headphones</mat-icon></a></div><div _ngcontent-ng-c2518764147="" class="floating-icon-wrapper"><span _ngcontent-ng-c2518764147="" class="floating-contact-text floating-text-bottom">Agenda tu cita</span><a _ngcontent-ng-c2518764147="" href="https://wa.me/+573151054448" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="floating-icon-link floating-icon-bottom"><img _ngcontent-ng-c2518764147="" src="assets/images/global/wsp.png" alt="WhatsApp"></a></div></div></div><!--container--></app-root>
+<link rel="modulepreload" href="chunk-EFCNBKEP.js"><link rel="modulepreload" href="chunk-3N2L2BUB.js"><link rel="modulepreload" href="chunk-PT7R7SID.js"><link rel="modulepreload" href="chunk-QOYWAKCN.js"><link rel="modulepreload" href="chunk-QNZMPU6U.js"><script src="main.js" type="module"></script>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"n":{"2":"hfn2","5":"hfn3"}},{"n":{"2":"hfn2"}},{"n":{"1":"0f","8":"7fn","9":"8f","10":"7fn2f","13":"12fn","14":"13f","15":"12fn2f","18":"17fn","19":"18f","20":"17fn2f","23":"22fn","24":"23f","25":"22fn2f","28":"27fn","29":"28f","30":"27fn2f","33":"32fn","34":"33f","35":"32fn2f","39":"38fn","40":"39f","47":"46f","49":"48fn","50":"49f","51":"48fn2f","54":"53fn","55":"54f","56":"53fn2f","59":"58fn","60":"59f","61":"58fn2f","64":"63fn","65":"64f","66":"63fn2f","69":"68fn","70":"69f","71":"68fn2f","74":"73fn","75":"74f","76":"73fn2f"}},{"n":{"1":"hf"}},{"n":{"1":"hfn","4":"1fn","9":"hfn2"}},{"n":{"2":"hfn","5":"hfn2"}},{"c":{"13":[],"22":[],"31":[],"76":[{"i":"t1","r":1,"n":{"5":"4fn","6":"5f","11":"10fn","12":"11f"},"t":{"9":"t2"},"c":{"9":[{"i":"t2","r":1,"n":{"1":"0f","3":"2f","5":"4f2","11":"10f","14":"13fnf"},"c":{"1":[],"11":[{"i":"t3","r":1,"n":{"1":"0f","2":"1f","3":"0fnf"},"x":3}]},"t":{"11":"t3"},"x":5}]},"x":3},{"i":"t1","r":1,"n":{"5":"4fn","6":"5f","11":"10fn","12":"11f"},"t":{"9":"t2"},"c":{"9":[{"i":"t2","r":1,"n":{"1":"0f","3":"2f","5":"4f2","11":"10f","14":"13fnf"},"c":{"1":[],"11":[{"i":"t3","r":1,"n":{"1":"0f","2":"1f","3":"0fnf"},"x":3}]},"t":{"11":"t3"},"x":6}]}}],"83":[{"i":"t4","r":1,"n":{"2":"1f"},"x":4}]},"n":{"16":"15f","25":"24f","34":"33f","55":"54f","59":"58f","63":"62f"},"t":{"76":"t1","83":"t4"}},{"t":{"0":"t0","3":"t5","4":"t6"},"c":{"0":[{"i":"t0","r":1}],"2":[{"i":"c2250440546","r":1}],"3":[{"i":"t5","r":1}],"4":[{"i":"t6","r":1,"n":{"7":"6f"}}]}}]}</script></body></html>`;

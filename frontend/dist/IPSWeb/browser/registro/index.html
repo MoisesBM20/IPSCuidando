@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="utf-8">
+  <title>Registro de Paciente</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Accede a nuestros servicios de salud con la calidad y el respaldo que mereces. Tu bienestar es nuestra prioridad absoluta.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap Icons para complementar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css"><style ng-app-id="ng">
+
+main[_ngcontent-ng-c2518764147] {
+  overflow-x: hidden;
+}
+main.main-content[_ngcontent-ng-c2518764147] {
+  min-height: calc(100vh - 200px);
+  padding-top: 35px;
+}
+main[_ngcontent-ng-c2518764147]:not(.main-content) {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+*[_ngcontent-ng-c2518764147] {
+  box-sizing: border-box;
+}
+button[_ngcontent-ng-c2518764147], 
+a[_ngcontent-ng-c2518764147] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+img[_ngcontent-ng-c2518764147] {
+  max-width: 100%;
+  height: auto;
+}
+html[_ngcontent-ng-c2518764147] {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 768px) {
+  main[_ngcontent-ng-c2518764147] {
+    min-height: calc(100vh - 150px);
+  }
+}
+@media (max-width: 480px) {
+  main[_ngcontent-ng-c2518764147] {
+    min-height: calc(100vh - 120px);
+  }
+}
+.floating-contact-container[_ngcontent-ng-c2518764147] {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.floating-icons-stack[_ngcontent-ng-c2518764147] {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.floating-icon-wrapper[_ngcontent-ng-c2518764147] {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.floating-contact-text[_ngcontent-ng-c2518764147] {
+  position: absolute;
+  right: 100%;
+  margin-right: 8px;
+  background-color: white;
+  color: #005A9C;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.floating-text-top[_ngcontent-ng-c2518764147] {
+  color: #0088cc;
+}
+.floating-text-bottom[_ngcontent-ng-c2518764147] {
+  color: #25d366;
+}
+.floating-icon-wrapper[_ngcontent-ng-c2518764147]:hover   .floating-contact-text[_ngcontent-ng-c2518764147] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147] {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147]:hover {
+  transform: scale(1.1);
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147] {
+  background:
+    linear-gradient(
+      135deg,
+      #0088cc 0%,
+      #00a8ff 100%);
+  border: 2px solid #fff;
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]:hover {
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.3);
+}
+.floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+  font-size: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  color: white;
+}
+.floating-icon-link.floating-icon-bottom[_ngcontent-ng-c2518764147] {
+  background:
+    linear-gradient(
+      135deg,
+      #25d366 0%,
+      #128c7e 100%);
+  border: 2px solid #fff;
+}
+.floating-icon-link.floating-icon-bottom[_ngcontent-ng-c2518764147]:hover {
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+.floating-icon-link[_ngcontent-ng-c2518764147]   img[_ngcontent-ng-c2518764147] {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  animation: _ngcontent-ng-c2518764147_signal-pulse 2.5s infinite ease-in-out;
+}
+@keyframes _ngcontent-ng-c2518764147_signal-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+@media (max-width: 768px) {
+  .floating-contact-container[_ngcontent-ng-c2518764147] {
+    bottom: 20px;
+    right: 20px;
+  }
+  .floating-icon-link[_ngcontent-ng-c2518764147] {
+    width: 50px;
+    height: 50px;
+  }
+  .floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .floating-contact-text[_ngcontent-ng-c2518764147] {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .floating-contact-container[_ngcontent-ng-c2518764147] {
+    bottom: 15px;
+    right: 15px;
+  }
+  .floating-icon-link[_ngcontent-ng-c2518764147] {
+    width: 45px;
+    height: 45px;
+  }
+  .floating-icon-link.floating-icon-top[_ngcontent-ng-c2518764147]   mat-icon[_ngcontent-ng-c2518764147] {
+    font-size: 1.3rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .floating-contact-text[_ngcontent-ng-c2518764147] {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
+/*# sourceMappingURL=/app.css.map */</style><style ng-app-id="ng">.mat-focus-indicator{position:relative}.mat-focus-indicator::before{top:0;left:0;right:0;bottom:0;position:absolute;box-sizing:border-box;pointer-events:none;display:var(--mat-focus-indicator-display, none);border-width:var(--mat-focus-indicator-border-width, 3px);border-style:var(--mat-focus-indicator-border-style, solid);border-color:var(--mat-focus-indicator-border-color, transparent);border-radius:var(--mat-focus-indicator-border-radius, 4px)}.mat-focus-indicator:focus::before{content:""}@media(forced-colors: active){html{--mat-focus-indicator-display: block}}
+</style><style ng-app-id="ng">
+
+.registro-page[_ngcontent-ng-c974485163] {
+  min-height: 100vh;
+  background: #f1f5f9;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px;
+}
+.registro-card[_ngcontent-ng-c974485163] {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 36px;
+}
+.registro-header[_ngcontent-ng-c974485163] {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.registro-header[_ngcontent-ng-c974485163]   .logo[_ngcontent-ng-c974485163] {
+  width: 64px;
+  margin-bottom: 12px;
+}
+.registro-header[_ngcontent-ng-c974485163]   h1[_ngcontent-ng-c974485163] {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f2644;
+  margin: 0 0 6px;
+}
+.registro-header[_ngcontent-ng-c974485163]   p[_ngcontent-ng-c974485163] {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.alert-error[_ngcontent-ng-c974485163] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+.alert-error[_ngcontent-ng-c974485163]   .material-icons[_ngcontent-ng-c974485163] {
+  font-size: 18px;
+}
+.form-grid[_ngcontent-ng-c974485163] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+@media (max-width: 560px) {
+  .form-grid[_ngcontent-ng-c974485163] {
+    grid-template-columns: 1fr;
+  }
+}
+.field[_ngcontent-ng-c974485163] {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.field.field-full[_ngcontent-ng-c974485163] {
+  grid-column: 1/-1;
+}
+.field[_ngcontent-ng-c974485163]   label[_ngcontent-ng-c974485163] {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.field[_ngcontent-ng-c974485163]   input[_ngcontent-ng-c974485163], 
+.field[_ngcontent-ng-c974485163]   select[_ngcontent-ng-c974485163] {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 7px;
+  padding: 9px 12px;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+  outline: none;
+}
+.field[_ngcontent-ng-c974485163]   input[_ngcontent-ng-c974485163]:focus, 
+.field[_ngcontent-ng-c974485163]   select[_ngcontent-ng-c974485163]:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+.field[_ngcontent-ng-c974485163]   input[_ngcontent-ng-c974485163]::placeholder, 
+.field[_ngcontent-ng-c974485163]   select[_ngcontent-ng-c974485163]::placeholder {
+  color: #94a3b8;
+}
+.btn-submit[_ngcontent-ng-c974485163] {
+  width: 100%;
+  padding: 13px;
+  background: #0f2644;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s;
+}
+.btn-submit[_ngcontent-ng-c974485163]:hover:not(:disabled) {
+  background: #1d3a5c;
+}
+.btn-submit[_ngcontent-ng-c974485163]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.spinner[_ngcontent-ng-c974485163] {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: _ngcontent-ng-c974485163_spin 0.7s linear infinite;
+}
+@keyframes _ngcontent-ng-c974485163_spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.login-link[_ngcontent-ng-c974485163] {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+.login-link[_ngcontent-ng-c974485163]   a[_ngcontent-ng-c974485163] {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+.login-link[_ngcontent-ng-c974485163]   a[_ngcontent-ng-c974485163]:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=/registro.css.map */</style></head>
+<body class="mat-typography"><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["input","compositionstart","compositionend","change","click"],["blur"]);</script>
+  <app-root ng-version="20.1.2" _nghost-ng-c2518764147="" ngh="1" ng-server-context="ssg"><!--container--><main _ngcontent-ng-c2518764147="" class=""><router-outlet _ngcontent-ng-c2518764147=""></router-outlet><app-registro _nghost-ng-c974485163="" ngh="0"><div _ngcontent-ng-c974485163="" class="registro-page"><div _ngcontent-ng-c974485163="" class="registro-card"><div _ngcontent-ng-c974485163="" class="registro-header"><img _ngcontent-ng-c974485163="" src="assets/images/global/logo2.png" alt="Logo IPS" class="logo"><h1 _ngcontent-ng-c974485163="">Crear cuenta de paciente</h1><p _ngcontent-ng-c974485163="">Regístrate para agendar tus citas en línea</p></div><!--container--><div _ngcontent-ng-c974485163="" class="form-grid"><div _ngcontent-ng-c974485163="" class="field field-full"><label _ngcontent-ng-c974485163="">Nombre completo *</label><input _ngcontent-ng-c974485163="" type="text" name="full_name" placeholder="Nombres y apellidos" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Tipo de documento *</label><select _ngcontent-ng-c974485163="" name="doc_type" class="ng-untouched ng-pristine ng-valid" jsaction="change:;blur:;"><option _ngcontent-ng-c974485163="" value="CC">Cédula de ciudadanía</option><option _ngcontent-ng-c974485163="" value="TI">Tarjeta de identidad</option><option _ngcontent-ng-c974485163="" value="CE">Cédula de extranjería</option><option _ngcontent-ng-c974485163="" value="PA">Pasaporte</option><!--container--></select></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Número de documento *</label><input _ngcontent-ng-c974485163="" type="text" name="doc_num" placeholder="Ej: 1012345678" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Fecha de nacimiento *</label><input _ngcontent-ng-c974485163="" type="date" name="birth_date" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Sexo *</label><select _ngcontent-ng-c974485163="" name="gender" class="ng-untouched ng-pristine ng-valid" jsaction="change:;blur:;"><option _ngcontent-ng-c974485163="" value="M">Masculino</option><option _ngcontent-ng-c974485163="" value="F">Femenino</option><option _ngcontent-ng-c974485163="" value="I">Indeterminado</option><!--container--></select></div><div _ngcontent-ng-c974485163="" class="field field-full"><label _ngcontent-ng-c974485163="">Correo electrónico *</label><input _ngcontent-ng-c974485163="" type="email" name="email" placeholder="correo@ejemplo.com" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Contraseña *</label><input _ngcontent-ng-c974485163="" type="password" name="password" placeholder="Mínimo 6 caracteres" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Confirmar contraseña *</label><input _ngcontent-ng-c974485163="" type="password" name="password_confirm" placeholder="Repite la contraseña" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Grupo sanguíneo *</label><select _ngcontent-ng-c974485163="" name="blood_type" class="ng-untouched ng-pristine ng-valid" jsaction="change:;blur:;"><option _ngcontent-ng-c974485163="" value="A_POS">A+</option><option _ngcontent-ng-c974485163="" value="A_NEG">A-</option><option _ngcontent-ng-c974485163="" value="B_POS">B+</option><option _ngcontent-ng-c974485163="" value="B_NEG">B-</option><option _ngcontent-ng-c974485163="" value="AB_POS">AB+</option><option _ngcontent-ng-c974485163="" value="AB_NEG">AB-</option><option _ngcontent-ng-c974485163="" value="O_POS">O+</option><option _ngcontent-ng-c974485163="" value="O_NEG">O-</option><option _ngcontent-ng-c974485163="" value="UNKNOWN">Desconocido</option><!--container--></select></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Teléfono *</label><input _ngcontent-ng-c974485163="" type="tel" name="phone" placeholder="Ej: 3001234567" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">EPS / Aseguradora *</label><input _ngcontent-ng-c974485163="" type="text" name="eps" placeholder="Ej: Sura, Nueva EPS" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Régimen *</label><select _ngcontent-ng-c974485163="" name="regime" class="ng-untouched ng-pristine ng-valid" jsaction="change:;blur:;"><option _ngcontent-ng-c974485163="" value="">Seleccionar...</option><option _ngcontent-ng-c974485163="" value="Contributivo">Contributivo</option><option _ngcontent-ng-c974485163="" value="Subsidiado">Subsidiado</option><option _ngcontent-ng-c974485163="" value="Vinculado">Vinculado</option><option _ngcontent-ng-c974485163="" value="Excepción">Excepción</option><!--container--></select></div><div _ngcontent-ng-c974485163="" class="field"><label _ngcontent-ng-c974485163="">Ciudad *</label><input _ngcontent-ng-c974485163="" type="text" name="city" placeholder="Ej: Cali" value="Cali" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div><div _ngcontent-ng-c974485163="" class="field field-full"><label _ngcontent-ng-c974485163="">Dirección *</label><input _ngcontent-ng-c974485163="" type="text" name="address" placeholder="Dirección de residencia" value="" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"></div></div><button _ngcontent-ng-c974485163="" class="btn-submit" jsaction="click:;"><!--container--> Crear mi cuenta <!--container--></button><p _ngcontent-ng-c974485163="" class="login-link"> ¿Ya tienes cuenta? <a _ngcontent-ng-c974485163="" routerlink="/admin/login" href="/admin/login" jsaction="click:;">Iniciar sesión</a></p></div></div></app-registro><!--container--></main><!--container--><!--container--></app-root>
+<link rel="modulepreload" href="chunk-EFCNBKEP.js"><link rel="modulepreload" href="chunk-3N2L2BUB.js"><link rel="modulepreload" href="chunk-PT7R7SID.js"><link rel="modulepreload" href="chunk-QOYWAKCN.js"><link rel="modulepreload" href="chunk-QNZMPU6U.js"><script src="main.js" type="module"></script>
+<link rel="modulepreload" href="chunk-NPQOGV6U.js">
+<link rel="modulepreload" href="chunk-NCFNA77J.js">
+
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"8":"t6","19":"t7","33":"t8","51":"t9","67":"t10","77":"t11","78":"t12"},"c":{"8":[],"19":[{"i":"t7","r":1,"x":4}],"33":[{"i":"t8","r":1,"x":3}],"51":[{"i":"t9","r":1,"x":9}],"67":[{"i":"t10","r":1,"x":4}],"77":[],"78":[{"i":"t12","r":1}]}},{"t":{"0":"t0","3":"t1","4":"t2"},"c":{"0":[],"2":[{"i":"c974485163","r":1}],"3":[],"4":[]}}]}</script></body></html>
